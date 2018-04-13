@@ -1,45 +1,13 @@
+/*mixin*/
+@import "base/mixin";
+
 @import 'base/normalize';
 @import 'base/color';
 @import 'base/fonts';
 @import "base/class";
 
-/*mixin*/
-@import "base/mixin";
-
-/*venders*/
-@import "vendors/slick";
-
-/*blocks kapital*/
+/*blocks damutek*/
 @import "bloks/header";
 @import "bloks/footer";
 @import "bloks/nav";
-@import "bloks/fast-news";
-@import "bloks/panel-right";
-@import "bloks/lang";
-@import "bloks/social";
-@import "bloks/seo-text";
-@import "bloks/contacts";
-@import "bloks/subscription";
-@import "bloks/sass";
-@import "bloks/all-block";
-@import "bloks/slider-strategy";
-@import "bloks/main";
-@import "bloks/aside";
-@import "bloks/breadcrumbs";
-@import "bloks/dowload-pdf";
-@import "bloks/about-missia";
-@import "bloks/spotlight";
-@import "bloks/partners-list";
-@import "bloks/form-contacts";
-@import "bloks/form-subscription";
-@import "bloks/useful-materials";
-@import "bloks/in-social";
-@import "bloks/reports-pdf";
-@import "bloks/smi";
-@import "bloks/our-video";
-@import "bloks/news";
-@import "bloks/photo-month";
-@import "bloks/main-info";
-@import "bloks/paginator";
-@import "bloks/publications";
 
