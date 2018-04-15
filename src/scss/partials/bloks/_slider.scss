@@ -1,23 +1,33 @@
-.header{
+.slider {
   position: relative;
-  padding: 25px 0;
-  &__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
   }
-  &__logo{}
+  &__inner{
+    max-width: 1003px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
   &__search{
     width: 100%;
-    max-width: 352px;
-    height: 39px;
-    position: relative;
+    max-width: 490px;
+    height: 60px;
+    position: absolute;
+    bottom: 84px;
+    left: 0;
   }
   &__input{
     width: 100%;
     height: 100%;
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     padding: 0 10px;
     margin: 0;
     border: 0;
@@ -31,10 +41,9 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: transparent;
-    width: 18px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
     border: 0;
     text-indent: -999999px;
   }
-
 }

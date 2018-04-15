@@ -1,0 +1,28 @@
+.course{
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__header{
+    color: #040308;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__item{
+    max-width: 234px;
+    width: 100%;
+  }
+  &__img{
+    width: 100%;
+    height: 162px;
+  }
+  &__txt{
+    background-color: #f0f1f4;
+    padding: 26px 19px;
+  }
+}
