@@ -2,6 +2,10 @@
 //= partials/slick.min.js
 
 $(function () {
+    $('.js-like').on('click', function () {
+        $(this).toggleClass('active');
+    });
+
     $('.js-reviews').slick({
         dots: false,
         arrows: true,
