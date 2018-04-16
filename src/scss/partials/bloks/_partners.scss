@@ -1,0 +1,14 @@
+.partners{
+	position: relative;
+	padding: 25px 0;
+	&__header{
+		font-size: 25px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	&__inner{
+		display: flex;
+		align-items: center;
+		align-content: space-between;
+	}
+}

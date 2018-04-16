@@ -7,10 +7,17 @@
 @import 'base/fonts';
 @import "base/class";
 
+/*blocks vendors*/
+@import "vendors/slick";
+
 /*blocks damutek*/
 @import "bloks/header";
 @import "bloks/slider";
-@import "bloks/course";
-@import "bloks/footer";
 @import "bloks/nav";
+@import "bloks/course";
+@import "bloks/reviews";
+@import "bloks/partners";
+@import "bloks/teacher";
+@import "bloks/footer";
+
 

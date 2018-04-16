@@ -1,0 +1,79 @@
+.reviews{
+	position: relative;
+	background-color: #f0f1f4;
+	padding: 25px 0;
+	&__header{
+		color: #040308;
+		font-size: 25px;
+		text-align: center;
+	}
+	&__inner{
+		width: 100%;
+		max-width: 1003px;
+		margin: 0 auto;
+	}
+	&__item,
+	.slick-initialized .slick-slide{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__img{
+		width: 188px;
+		height: 188px;
+
+		flex-shrink: 0;
+		margin-right: 67px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-image: url("../img/reviews__img.png");
+			width: 51px;
+			height: 36px;
+		}
+		&-resize{
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
+	&__txt{
+		width: 100%;
+		max-width: 616px;
+		color: #040308;
+	}
+	&__data{
+		font-size: 16px;
+		margin-bottom: 24px;
+	}
+	&__anons{
+		font-size: 18px;
+		margin: 0 0 30px;
+	}
+	&__name{
+		font-size: 18px;
+	}
+	.slick-arrow{
+		position: absolute;
+		top: 50%;
+		background-color: transparent;
+		background-image: url("../img/reviews__arrow.png");
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 27px;
+		cursor: pointer;
+		text-indent: -999999px;
+		border: none;
+		outline: none;
+	}
+	.slick-prev{
+		left: 0;
+		background-position: top left;
+	}
+	.slick-next{
+		right: 0;
+		background-position: top right;
+	}
+}
