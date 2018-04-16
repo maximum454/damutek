@@ -1,0 +1,40 @@
+.form-reg{
+	&__item{
+		margin-bottom: 20px;
+	}
+	&__label{
+		display: block;
+		margin-bottom: 10px;
+		color: #000;
+		font-size: 16px;
+	}
+	&__input{
+		width: 100%;
+		height: 51px;
+		border: 1px solid #487fc7;
+		font-size: 16px;
+		border-radius: 2px;
+		padding: 0 20px;
+	}
+	&__forgot{
+		color: #010101;
+		font-size: 15px;
+		text-align: right;
+		display: block;
+		text-decoration: none;
+		&:hover{
+			color: #010101;
+		}
+	}
+	&__social{
+		p{
+			margin: 0 0 10px;
+			color: #1e2e78;
+			font-size: 14px;
+		}
+		a{
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+}

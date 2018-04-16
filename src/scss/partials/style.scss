@@ -9,6 +9,7 @@
 
 /*blocks vendors*/
 @import "vendors/slick";
+@import "vendors/arcticmodal-0.3";
 
 /*blocks damutek*/
 @import "bloks/header";
@@ -19,5 +20,8 @@
 @import "bloks/partners";
 @import "bloks/teacher";
 @import "bloks/footer";
+@import "bloks/modal-auth";
+@import "bloks/modal-reg";
+@import "bloks/form-reg";
 
 
