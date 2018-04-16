@@ -1,40 +1,73 @@
-.header{
-  position: relative;
-  padding: 25px 0;
-  &__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  &__logo{}
-  &__search{
-    width: 100%;
-    max-width: 352px;
-    height: 39px;
-    position: relative;
-  }
-  &__input{
-    width: 100%;
-    height: 100%;
-    background-color: #f3f3f3;
-    padding: 0 10px;
-    margin: 0;
-    border: 0;
-  }
-  &__submit{
-    position: absolute;
-    top: 50%;
-    right: 17px;
-    transform: translate(0,-50%);
-    background-image: url("../img/loupe.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 18px;
-    height: 18px;
-    border: 0;
-    text-indent: -999999px;
-  }
-
+.header {
+	position: relative;
+	padding: 25px 0;
+	color: #040308;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__logo {
+		width: 168px;
+		margin-right: 35px;
+	}
+	&__category {
+		color: #040308;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-right: 56px;
+	}
+	&__search {
+		width: 100%;
+		max-width: 352px;
+		height: 39px;
+		position: relative;
+	}
+	&__input {
+		width: 100%;
+		height: 100%;
+		background-color: #f3f3f3;
+		padding: 0 10px;
+		margin: 0;
+		border: 0;
+	}
+	&__submit {
+		position: absolute;
+		top: 50%;
+		right: 17px;
+		transform: translate(0, -50%);
+		background-image: url("../img/loupe.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		width: 18px;
+		height: 18px;
+		border: 0;
+		text-indent: -999999px;
+	}
+	&__registr{
+		display: flex;
+		margin-left: auto;
+		margin-right: 0;
+	}
+	&__auth {
+		color: #040308;
+    	font-size: 14px;
+		margin-right: 20px;
+	}
+	&__reg {
+		color: #040308;
+		font-size: 14px;
+		margin-right: 26px;
+	}
+	&__basket{
+		display: block;
+		background-image: url("../img/basket.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 23px;
+		height: 19px;
+	}
 }
