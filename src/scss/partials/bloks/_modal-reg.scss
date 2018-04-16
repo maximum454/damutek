@@ -63,6 +63,16 @@
 		padding: 45px 55px;
 		background: #fff;
 	}
+	&__problem{
+		text-align: center;
+		padding: 5px;
+		a{
+			color: #fff;
+			font-size: 14px;
+			text-decoration: none;
+			text-align: center;
+		}
+	}
 	#tab1:checked ~ #content1,
 	#tab2:checked ~ #content2{
 		display: block;
