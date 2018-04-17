@@ -1,0 +1,41 @@
+.about-course{
+	&__inner{
+
+	}
+
+	&__video{
+		position: relative;
+		width: 100%;
+		max-width: 594px;
+		margin-right: 65px;
+	}
+	&__label{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url("../img/course__label.png");
+		background-repeat: no-repeat;
+		width: 84px;
+		height: 84px;
+	}
+	&__bottom{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__like{
+		display: block;
+		background-image: url("../img/about-course__like.png");
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 24px;
+		height: 21px;
+		cursor: pointer;
+		&.active{
+			background-position: top right;
+		}
+	}
+	&__txt{
+
+	}
+}

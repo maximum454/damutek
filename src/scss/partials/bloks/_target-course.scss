@@ -1,0 +1,34 @@
+.target-course{
+	width: 100%;
+	padding: 25px 0;
+	background-color: #487fc7;
+	&__header{
+		color: #fff;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		padding: 30px 0;
+		border-bottom: 2px solid #fff;
+		&:last-of-type{
+			border: 0;
+		}
+	}
+	&__name{
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		width: 257px;
+		flex-shrink: 0;
+	}
+	&__anons{
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+	}
+}
