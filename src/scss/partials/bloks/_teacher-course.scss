@@ -1,0 +1,30 @@
+.teacher-course{
+	position: relative;
+	margin-bottom: 40px;
+	&__header{
+		color: #040308;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	&__inner{
+		display: flex;
+	}
+	&__img{
+		width: 300px;
+		flex-shrink: 0;
+	}
+	&__txt{
+		background-color: #f0f1f4;
+		padding: 25px 40px;
+	}
+	&__name{
+		color: #040308;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	p{
+		color: #6b6b6b;
+		font-size: 16px;
+		line-height: 29px;
+	}
+}

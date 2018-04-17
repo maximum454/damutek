@@ -1,0 +1,49 @@
+.accordion{
+	position: relative;
+	width: 100%;
+	&__item{
+		width: 100%;
+		border-bottom: 2px solid #c5c5c5;
+		position: relative;
+		margin-bottom: 20px;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 55px;
+			height: 2px;
+			background-color: #487fc7;
+		}
+		&.active{
+			.accordion__arrow{
+				transform: rotate(180deg);
+			}
+			.accordion__anons{
+				display: block;
+			}
+		}
+	}
+	&__header{
+		color: #040308;
+		font-size: 16px;
+		position: relative;
+		padding-bottom: 20px;
+	}
+	&__arrow{
+		position: absolute;
+		top: 8px;
+		right: 0;
+		background-image: url("../img/accordion__arrow.png");
+		background-repeat: no-repeat;
+		width: 11px;
+		height: 10px;
+	}
+	&__anons{
+		color: #888888;
+		font-size: 16px;
+		line-height: 25px;
+		padding-bottom: 25px;
+		display: none;
+	}
+}

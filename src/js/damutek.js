@@ -7,6 +7,10 @@ $(function () {
         $(this).toggleClass('active');
     });
 
+    $('.js-accardion').on('click', function () {
+        $(this).toggleClass('active');
+    });
+
     $('.popap_box').click(function() {
         $('#modalbox_' + $(this).data('body')).arcticmodal({
             overlay: {
