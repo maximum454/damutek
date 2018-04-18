@@ -1,6 +1,9 @@
 .about-course{
+	position: relative;
+	background-color: #f0f1f4;
+	padding: 25px 0;
 	&__inner{
-
+		display: flex;
 	}
 
 	&__video{
@@ -13,7 +16,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-image: url("../img/course__label.png");
+		background-image: url("../img/course__label.svg");
+		background-size: 100%;
 		background-repeat: no-repeat;
 		width: 84px;
 		height: 84px;
@@ -21,21 +25,93 @@
 	&__bottom{
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		margin-top: 25px;
 	}
 	&__like{
 		display: block;
-		background-image: url("../img/about-course__like.png");
-		background-repeat: no-repeat;
-		background-position: top left;
-		width: 24px;
-		height: 21px;
 		cursor: pointer;
-		&.active{
-			background-position: top right;
+		position: relative;
+		padding-left: 30px;
+		margin-right: 30px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/about-course__like.png");
+			background-repeat: no-repeat;
+			width: 24px;
+			height: 21px;
+		}
+	}
+	&__reviews{
+		display: block;
+		cursor: pointer;
+		position: relative;
+		padding-left: 54px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			background-image: url("../img/about-course__reviews.svg");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 41px;
+			height: 27px;
 		}
 	}
 	&__txt{
-
+		color: #040308;
+		p{
+			font-size: 16px;
+		}
+	}
+	&__name{
+		font-size: 24px;
+	}
+	&__rating{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 20px;
+	}
+	&__price{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 10px;
+		span{
+			font-size: 36px;
+			color: #040308;
+		}
+		.s{
+			font-size: 30px;
+			text-decoration: line-through;
+		}
+	}
+	&__link{
+		color: #1a2a75;
+	}
+	&__available{
+		color: #487fc7;
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	&__btn{
+		display: block;
+		background-color: #487fc7;
+		width: 274px;
+		height: 60px;
+		color: #fff;
+		font-size: 18px;
+		line-height: 60px;
+		text-align: center;
+		box-shadow: 5px 5px 20px -10px #000;
+		&:hover{
+			color: #fff;
+		}
 	}
 }

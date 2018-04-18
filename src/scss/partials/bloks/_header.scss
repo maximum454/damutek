@@ -11,6 +11,9 @@
 	&__logo {
 		width: 168px;
 		margin-right: 35px;
+		img{
+			width: 168px;
+		}
 	}
 	&__category {
 		color: #040308;
@@ -38,7 +41,7 @@
 		top: 50%;
 		right: 17px;
 		transform: translate(0, -50%);
-		background-image: url("../img/loupe.png");
+		background-image: url("../img/loupe.svg");
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-color: transparent;
@@ -64,7 +67,7 @@
 	}
 	&__basket{
 		display: block;
-		background-image: url("../img/basket.png");
+		background-image: url("../img/basket.svg");
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 23px;
