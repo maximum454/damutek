@@ -1,6 +1,6 @@
 .target-course{
 	width: 100%;
-	padding: 25px 0;
+	padding: 37px 0;
 	background-color: #487fc7;
 	&__header{
 		color: #fff;
@@ -8,6 +8,7 @@
 		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
+		margin-bottom: 11px;
 	}
 	&__item{
 		display: flex;
@@ -21,9 +22,9 @@
 	&__name{
 		color: #fff;
 		font-size: 18px;
-		line-height: 25px;
+		line-height: 22px;
 		font-weight: bold;
-		width: 257px;
+		width: 255px;
 		flex-shrink: 0;
 	}
 	&__anons{
