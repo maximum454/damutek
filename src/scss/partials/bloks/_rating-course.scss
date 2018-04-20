@@ -1,0 +1,63 @@
+.rating-course{
+	position: relative;
+	margin-bottom: 60px;
+	&__header{
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	&__common{
+		width: 100%;
+		max-width: 165px;
+		text-align: center;
+		p{
+			font-size: 18px;
+			margin: 0;
+		}
+		.stars{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&__num{
+		font-size: 125px;
+		line-height: 128px;
+	}
+	&__star{
+		margin-bottom: 10px;
+	}
+	&__inner{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+	&__progress{
+		width: 100%;
+		max-width: 795px;
+		color: #040308;
+		font-size: 18px;
+	}
+	.progress{
+		background-color: #487fc7;
+		border-radius: 0;
+		border: 0;
+		width: 514px;
+		height: 21px;
+		margin-right: 50px;
+		&::-webkit-progress-bar {
+			background-color: #d5d5d5;
+		}
+		&::-moz-progress-bar {
+			background-color: #d5d5d5;
+
+		}
+		&::-webkit-progress-value {
+			background-color: #487fc7;
+		}
+	}
+}
