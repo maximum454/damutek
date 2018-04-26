@@ -50,5 +50,17 @@ $(function () {
     $('.js-star').rating();
 
     $('input, select').styler();
+    
+    $('.js-select').on('click', function (e) {
+        e.preventDefault();
+        $('.basket__item').each(function() {
+            if ( $('.basket__check').attr('checked')) {
+                $('.basket__check').attr('checked', false).trigger('refresh');
+            } else {
+                $('.basket__check').attr('checked', 'checked').trigger('refresh');
+            }
+        });
+
+    });
 });
 
