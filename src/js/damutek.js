@@ -49,7 +49,7 @@ $(function () {
 
     $('.js-star').rating();
 
-    $('input, select').styler();
+    $('input[type=checkbox], select').styler();
     
     $('.js-select').on('click', function (e) {
         e.preventDefault();
@@ -65,7 +65,6 @@ $(function () {
     $('.js-delet-all').on('click',function (e) {
         e.preventDefault();
         $('.select-all').attr('checked', false).trigger('refresh');
-
         $('.basket__item').each(function() {
             $('.basket__check').attr('checked', false).trigger('refresh');
         });

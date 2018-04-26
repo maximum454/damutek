@@ -1,0 +1,11 @@
+.form-card{
+	position: relative;
+	background-color: #f0f1f4;
+	padding: 20px 18px;
+	margin-bottom: 20px;
+	&__header{
+		padding-bottom: 15px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #acacac;
+	}
+}

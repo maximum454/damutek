@@ -26,23 +26,23 @@
     &.i250 {
       padding-left: 58px;
       &:before{
-        background-image: url("../img/nav-1.png");
-        width: 43px;
+        background-image: url("../img/nav-1.svg");
+        width: 42px;
         height: 31px;
       }
     }
     &.best {
       &:before{
-        background-image: url("../img/nav-2.png");
+        background-image: url("../img/nav-2.svg");
         width: 31px;
-        height: 32px;
+        height: 31px;
       }
     }
     &.easy {
       &:before{
-        background-image: url("../img/nav-3.png");
+        background-image: url("../img/nav-3.svg");
         width: 36px;
-        height: 36px;
+        height: 35px;
       }
     }
   }
