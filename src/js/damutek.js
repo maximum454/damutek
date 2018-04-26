@@ -2,6 +2,7 @@
 //= partials/slick.min.js
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/rating.js
+//= partials/jquery.formstyler.js
 
 $(function () {
     $('.js-like').on('click', function () {
@@ -47,5 +48,7 @@ $(function () {
     });
 
     $('.js-star').rating();
+
+    $('input, select').styler();
 });
 
