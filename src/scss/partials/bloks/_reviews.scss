@@ -62,7 +62,7 @@
 		position: absolute;
 		top: 50%;
 		background-color: transparent;
-		background-image: url("../img/reviews__arrow.png");
+		background-image: url("../img/reviews__arrow-left.svg");
 		background-repeat: no-repeat;
 		width: 16px;
 		height: 27px;
@@ -73,10 +73,9 @@
 	}
 	.slick-prev{
 		left: 0;
-		background-position: top left;
 	}
 	.slick-next{
 		right: 0;
-		background-position: top right;
+		transform: rotate(180deg);
 	}
 }
