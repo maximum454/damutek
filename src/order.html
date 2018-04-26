@@ -27,23 +27,16 @@
             <div class="basket__inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8">
-                            <div class="basket__select">
-                                <div class="js-select">
-                                    <input class="select-all" id="select-all" type="checkbox"> <label for="select-all">Выбрать все</label>
-                                </div>
-                                <div class="basket__delet-all js-delet-all">Удалить выбранное</div>
-                            </div>
+                        <div class="col-lg-6">
+                            <div class="basket__num">Ваши товары: 2</div>
                             <div class="basket__item">
-                                <label for="select-item-1" class="basket__img">
+                                <div class="basket__img">
                                     <img src="img/del/basket__img-1.jpg" alt="">
-                                    <input class="basket__check" id="select-item-1" type="checkbox">
-                                </label>
-                                <div class="basket__txt">
+                                </div>
+                                <div class="basket__txt basket__txt--order">
                                     <div class="basket__name">Базовый курс программы Adobe Indesign</div>
                                     <div class="basket__author">Соколов Дима</div>
-                                    <a href="#" class="basket__favorit">Переместить в избранное</a>
-                                    <div class="basket__price">
+                                    <div class="basket__price basket__price--position">
                                         <div class="basket__cena">7 000 тг</div>
                                         <div class="basket__discount">9 500 тг</div>
                                     </div>
@@ -51,37 +44,21 @@
 
                             </div>
                             <div class="basket__item">
-                                <label for="select-item-2" class="basket__img">
+                                <div class="basket__img">
                                     <img src="img/del/basket__img-2.jpg" alt="">
-                                    <input class="basket__check" id="select-item-2" type="checkbox">
-                                </label>
-                                <div class="basket__txt">
+                                </div>
+                                <div class="basket__txt  basket__txt--order">
                                     <div class="basket__name">Кодировка в реальном времени - просто и легко</div>
                                     <div class="basket__author">Ермек Кажигулов</div>
-                                    <a href="#" class="basket__favorit">Уже в избранном</a>
-                                    <div class="basket__price">
+                                    <div class="basket__price basket__price--position">
                                         <div class="basket__cena">6 500 тг</div>
                                         <div class="basket__discount">7 500 тг</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="basket__item">
-                                <label for="select-item-3" class="basket__img">
-                                    <img src="img/del/basket__img-3.jpg" alt="">
-                                    <input class="basket__check" id="select-item-3" type="checkbox">
-                                </label>
-                                <div class="basket__txt">
-                                    <div class="basket__name">Профессиональное оцифровывание изображения </div>
-                                    <div class="basket__author">Алибек Дарменов</div>
-                                    <a href="#" class="basket__favorit">Переместить в избранное</a>
-                                    <div class="basket__price">
-                                        <div class="basket__cena">8 000 тг</div>
-                                        <div class="basket__discount">9 000 тг</div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <form action="" class="form-order">
                                 <div class="form-order__header">Общая сумма</div>
                                 <div class="form-order__price">
@@ -92,6 +69,17 @@
                                 <input type="text" class="form-order__promo" placeholder="Напишите промо-код">
                                 <input type="submit" class="form-order__btn form-order__btn--submit">
                             </form>
+
+                            <div class="paypal">
+                                <div class="paypal__header">
+                                    <input id="paypal" type="checkbox"> <label for="paypal"><img src="img/logo-paypal.png" alt=""></label>
+                                </div>
+                                <p>Чтобы завершить операцию, мы переведем вас на защищенные серверы PayPal.</p>
+                                <div class="paypal__inner">
+                                    <a href="#" class="paypal__btn">Продолжить</a>
+                                    <span>Завершая покупку, вы принимаете данные <b>Условия предоставления услуг.</b></span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>

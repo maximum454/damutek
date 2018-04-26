@@ -1,0 +1,47 @@
+.paypal{
+	position: relative;
+	background-color: #f0f1f4;
+	padding: 20px 18px;
+	&__header{
+		padding-bottom: 15px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #acacac;
+	}
+	p{
+		color: #acacac;
+		font-size: 16px;
+		margin: 0 0 35px;
+	}
+	span{
+		color: #acacac;
+		font-size: 12px;
+		b{
+			color: #487fc7;
+			font-weight: bold;
+		}
+	}
+	&__inner{
+		display: flex;
+	}
+	&__btn{
+		display: block;
+		background-color: #487fc7;
+		width: 100%;
+		height: 50px;
+		color: #fff;
+		font-size: 16px;
+		line-height: 50px;
+		text-align: center;
+		text-decoration: none;
+		margin-right: 15px;
+		border: none;
+		&:hover{
+			color: #fff;
+		}
+		&--submit{
+			background-color: #acacac;
+			color: #fff;
+			margin-bottom: 0;
+		}
+	}
+}
