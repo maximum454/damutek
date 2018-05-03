@@ -9,93 +9,55 @@
 <div class="wrp">
     //= template/header.html
     <main class="main">
-        <div class="basket">
-            <div class="basket__header">
-                <div class="container">
-                    <div class="row">
-                        Профиль
-                    </div>
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Профиль
                 </div>
             </div>
-            <div class="basket__count">
-                <div class="container">
-                    <div class="row">
-                        Оформление заказа
-                    </div>
-                </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row"></div>
             </div>
-            <div class="basket__inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="basket__num">Ваши товары: 2</div>
-                            <div class="basket__item">
-                                <div class="basket__img">
-                                    <img src="img/del/basket__img-1.jpg" alt="">
-                                </div>
-                                <div class="basket__txt basket__txt--order">
-                                    <div class="basket__name">Базовый курс программы Adobe Indesign</div>
-                                    <div class="basket__author">Соколов Дима</div>
-                                    <div class="basket__price basket__price--position">
-                                        <div class="basket__cena">7 000 тг</div>
-                                        <div class="basket__discount">9 500 тг</div>
-                                    </div>
-                                </div>
-
+        </div>
+        <div class="profile">
+            <div class="profile__left"></div>
+            <div class="profile__right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="profile__inner">
+                        <div class="profile__aside">
+                            <div class="profile__photo">
+                                <img src="img/del/profile__photo.jpg" alt="">
                             </div>
-                            <div class="basket__item">
-                                <div class="basket__img">
-                                    <img src="img/del/basket__img-2.jpg" alt="">
-                                </div>
-                                <div class="basket__txt  basket__txt--order">
-                                    <div class="basket__name">Кодировка в реальном времени - просто и легко</div>
-                                    <div class="basket__author">Ермек Кажигулов</div>
-                                    <div class="basket__price basket__price--position">
-                                        <div class="basket__cena">6 500 тг</div>
-                                        <div class="basket__discount">7 500 тг</div>
-                                    </div>
-                                </div>
+                            <div class="profile__name">Ержан<br> <b>Куанбеков</b></div>
 
+                            <a class="profile__link active" href="#">Профиль</a>
+                            <a class="profile__link" href="#">Сообщения</a>
+                            <a class="profile__link" href="#">Мои курсы</a>
+                            <a class="profile__link" href="#">Архив</a>
+                            <a class="profile__link" href="#">Настройки</a>
+                            <a class="profile__link" href="#">Коммерческая часть</a>
+                            <a class="profile__link" href="#">Сертификаты</a>
+                            <a class="profile__link" href="#">Перестать быть преподавателем</a>
+                            <a class="profile__link" href="#">Выйти</a>
+                        </div>
+                        <div class="profile__content">
+                            <div class="profile__h1">Ержан Куанбеков</div>
+                            <div class="profile__online">
+                                <span>Преподаватель</span>
+                                <span>Онлайн</span>
+                            </div>
+                            <div class="profile__item">
+                                <div class="profile__h2">Биография:</div>
+                                <p>Ержан Куанбеков, увлекаюсь работой с&nbsp;компьютерными программами. Меня вдохновляет обучение через <nobr>онлайн-курсы</nobr>, благодаря их&nbsp;доступность и&nbsp;неограничении по&nbsp;времени. Мне нравится учиться новым навыкам, и&nbsp;с&nbsp;2012 года я&nbsp;стараюсь обучаться у&nbsp;людей, имеющих хороший опыт за&nbsp;плечами.</p>
+                            </div>
+                            <div class="profile__item">
+                                <div class="profile__h2">Язык:</div>
+                                <p>Русский, Казахский, Английский</p>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <form action="" class="form-card">
-                                <div class="form-card__header">
-                                    <input id="new-card" type="checkbox"> <label for="new-card">Новая карта оплаты <img src="img/card-visa.png" alt=""> <img src="img/card-master.png" alt=""></label>
-                                </div>
-                                <div class="form-card__num">
-                                    <input type="text" placeholder="ХХХХ - ХХХХ - ХХХХ - ХХХХ">
-                                </div>
-                                <div class="form-card__data">
-                                    <input type="text" class="form-card__mm" placeholder="ММ">
-                                    <input type="text" class="form-card__gg" placeholder="ГГ">
-                                    <input type="text" class="form-card__cod" placeholder="Код безопасности">
-                                </div>
-                                <div class="form-card__fio">
-                                    <input type="text" class="form-card__name" placeholder="ИМЯ">
-                                    <input type="text" class="surname" placeholder="ФАМИЛИЯ">
-                                </div>
-                                <div class="form-card__save">
-                                    <input id="save-card" type="checkbox" checked disabled> <label for="save-card">Запомнить эту карту</label>
-                                </div>
-                                <div class="paypal__inner">
-                                    <a href="#" class="form-card__btn">Продолжить</a>
-                                    <span>Завершая покупку, вы принимаете данные <b>Условия предоставления услуг.</b></span>
-                                </div>
-                            </form>
-
-                            <div class="paypal">
-                                <div class="paypal__header">
-                                    <input id="paypal" type="checkbox"> <label for="paypal"><img src="img/logo-paypal.png" alt=""></label>
-                                </div>
-                                <p>Чтобы завершить операцию, мы переведем вас на защищенные серверы PayPal.</p>
-                                <div class="paypal__inner">
-                                    <a href="#" class="paypal__btn">Продолжить</a>
-                                    <span>Завершая покупку, вы принимаете данные <b>Условия предоставления услуг.</b></span>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
