@@ -27,6 +27,9 @@
 		max-width: 352px;
 		height: 39px;
 		position: relative;
+		&--in{
+			max-width: 221px;
+		}
 	}
 	&__input {
 		width: 100%;
@@ -54,6 +57,13 @@
 		display: flex;
 		margin-left: auto;
 		margin-right: 0;
+		&--in{
+			width: 100%;
+			max-width: 395px;
+			justify-content: space-between;
+			margin-right: auto;
+			align-items: baseline;
+		}
 	}
 	&__auth {
 		color: #040308;
@@ -70,7 +80,57 @@
 		background-image: url("../img/basket.svg");
 		background-repeat: no-repeat;
 		background-size: 100%;
+		width: 26px;
+		height: 22px;
+		position: relative;
+		span{
+			position: absolute;
+			bottom: -17px;
+			background-color: #1a2a75;
+			padding: 1px 13px;
+			border-radius: 12px;
+			color: #fff;
+			font-size: 10px;
+			line-height: 1;
+		}
+	}
+	&__like{
+		display: block;
+		background-image: url("../img/about-course__like.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
 		width: 23px;
-		height: 19px;
+		height: 22px;
+		position: relative;
+		span{
+			position: absolute;
+			bottom: -17px;
+			background-color: #1a2a75;
+			padding: 1px 13px;
+			border-radius: 12px;
+			color: #fff;
+			font-size: 10px;
+			line-height: 1;
+		}
+	}
+	&__user,
+	&__course,
+	&__profile{
+		color: #040308;
+		font-size: 14px;
+		line-height: 1;
+		position: relative;
+		top: -2px;
+		span{
+			position: absolute;
+			bottom: -15px;
+			left: 0;
+			background-color: #1a2a75;
+			padding: 1px 9px;
+			border-radius: 12px;
+			color: #fff;
+			font-size: 10px;
+			line-height: 1;
+		}
 	}
 }
