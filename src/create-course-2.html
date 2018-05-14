@@ -7,8 +7,30 @@
 </head>
 <body>
 <div class="wrp">
-    //= template/header.html
+    //= template/header-teacher.html
     <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Мои курсы
+                </div>
+            </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item col-lg-2"><a href="#">Все курсы</a></div>
+                        <div class="account-menu__item col-lg-2"><a href="#">Активные</a></div>
+                        <div class="account-menu__item col-lg-2"><a href="#">Хочу пройти</a></div>
+                        <div class="account-menu__item col-lg-2 col-lg-offset-1"><a href="#">Мои курсы</a></div>
+                        <div class="account-menu__item col-lg-3"><a class="account-menu__btn" href="#">Создать новый
+                            курс</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="about-course">
             <div class="container">
                 <div class="row">
@@ -50,49 +72,48 @@
         </div>
         <div class="target-course">
             <div class="target-course__header">ЦЕЛЕВАЯ АУДИТОРИЯ</div>
+            <div class="target-course__subtitle">Ответьте на несколько вопросов, чтобы студенты могли определить, будет ли полезен им этот курс. </div>
             <div class="container">
                 <div class="row">
-                    <div class="target-course__item">
-                        <div class="target-course__name">
+                    <div class="target-course__item target-course__item--border">
+
+                        <div class="target-course__name col-lg-3">
                             Что нужно знать<br>
                             для освоения курса
                         </div>
-                        <div class="target-course__anons">
-                            Для освоения курса предпочтительно знать базовые теоретические сведения о том, для чего<br>
-                            предназначена программа Adobe Photoshop CC.
+                        <div class="target-course__anons col-lg-9">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
                         </div>
                     </div>
-                    <div class="target-course__item">
-                        <div class="target-course__name">
+                    <div class="target-course__item target-course__item--border">
+                        <div class="target-course__name col-lg-3">
                             Для кого этот курс
                         </div>
-                        <div class="target-course__anons">
-                            Курс предназначен для людей, желающих освоить базовые основы работы в Photoshop CC,<br>
-                            развить навык обработки фотографий и изображений, а также их компоновку.
+                        <div class="target-course__anons col-lg-9">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
                         </div>
                     </div>
-                    <div class="target-course__item">
-                        <div class="target-course__name">
+                    <div class="target-course__item target-course__item--border">
+                        <div class="target-course__name col-lg-3">
                             Каких результатов<br>
                             достигнут студенты<br>
                             по завершению курса?
                         </div>
-                        <div class="target-course__anons">
-                            Вы сможете самостоятельно пользоваться программой, работать со слоями, деформировать<br>
-                            изображение и текст, накладывать фиьтры и пользоваться эффектами программы, ретушировать<br>
-                            фотографию и готовить файлы для печати.
+                        <div class="target-course__anons col-lg-9">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
                         </div>
                     </div>
-                    <div class="target-course__item">
-                        <div class="target-course__name">
+                    <div class="target-course__item target-course__item--border">
+                        <div class="target-course__name col-lg-3">
                             Технические<br>
                             Требования
                         </div>
-                        <div class="target-course__anons">
-                            Компьютер с подключением к Интернету<br>
-                            Компьютер с установленной программой Adobe Photoshop (русская версия)<br>
-                            Базовые знания программы
+                        <div class="target-course__anons col-lg-9">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
                         </div>
+                    </div>
+                    <div class="lg-col-12">
+                        <a href="#" class="target-course__btn">Сохранить</a>
                     </div>
                 </div>
             </div>
@@ -102,14 +123,11 @@
             <div class="container">
                 <div class="row">
                     <div class="description-course__item">
-                        <div class="description-course__name">
+                        <div class="description-course__name col-lg-3">
                             Описание курса
                         </div>
-                        <div class="description-course__anons">
-                            <b>Безграничное обучение</b>, неограниченные возможности. Обучение может происходить <b>в
-                            любом месте</b> с нашими приложениями на вашем компьютере, мобильном устройстве и телевизоре
-                            с расширенной навигацией и более быстрой потоковой передачей <b>для обучения в любое
-                            время</b>.
+                        <div class="description-course__anons col-lg-9">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Краткое описание курса"></textarea>
                         </div>
                     </div>
                 </div>
@@ -120,101 +138,18 @@
             <div class="container">
                 <div class="row">
                     <div class="content-course__item">
-                        <div class="content-course__name">
+                        <div class="content-course__name col-lg-3">
                             Содержание курса
                         </div>
-                        <div class="content-course__anons">
-                            <div class="accordion">
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 1.</b> Интерфейс программы и первоначальные
-                                        навыки работы
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 2.</b> Работа с изображениями
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 3.</b> Инструменты рисования
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 4.</b> Коррекция изображения
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 5.</b> Действия со слоями
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 6.</b> Текст
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 7.</b> Фильтры
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 8.</b> Текстовые эффекты
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 9.</b> Работа с объектами
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 10.</b> Подготовка к печати
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                                <div class="accordion__item js-accardion">
-                                    <div class="accordion__header"><b>Тема 7.</b> Фильтры
-                                        <div class="accordion__arrow"></div>
-                                    </div>
-                                    <div class="accordion__anons">В этом уроке вы научитесь владеть базовыми функциями
-                                        программы, освоите интерфейс графического редактора Adobe Photoshop,.
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="content-course__anons col-lg-9">
+                            <div class="content-course__title">Тема 1.</div>
+                            <textarea name="" id="" cols="30" rows="2" placeholder="Название темы"></textarea>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Краткое описание темы"></textarea>
+                            <hr>
+                            <div class="content-course__title">Тема 2.</div>
+                            <textarea name="" id="" cols="30" rows="2" placeholder="Название темы"></textarea>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Краткое описание темы"></textarea>
+
                         </div>
                     </div>
                 </div>
