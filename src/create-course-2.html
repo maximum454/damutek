@@ -36,36 +36,34 @@
                 <div class="row">
                     <div class="about-course__inner">
                         <div class="about-course__video">
-                            <img src="img/del/about__video.jpg" alt="">
-                            <div class="about-course__label"></div>
-                            <div class="about-course__bottom">
-                                <div class="about-course__like">Добавить в избранное</div>
-                                <div class="about-course__reviews">Оставить отзыв</div>
+                            <img src="img/del/about__video-create.png" alt="">
+                        </div>
+                        <div class="about-course__txt about-course__txt--create">
+                            <div class="about-course__item">
+                                <input type="text" placeholder="Название курса">
+                            </div>
+                            <div class="about-course__item">
+                                <label for="">Язык: </label>
+                                <input type="text" placeholder="Русский">
+                            </div>
+                            <div class="about-course__item">
+                                <label for="">Категория:</label>
+                                <input type="text" placeholder="Дизайн">
+                            </div>
+                            <div class="about-course__item">
+                                <label for="">Длительность: </label>
+                                <input type="text" placeholder="15 уроков, 80 часов">
+                            </div>
+                            <div class="about-course__item">
+                                <label for="">Цена:</label>
+                                <input type="text" placeholder="7500">
                             </div>
                         </div>
-                        <div class="about-course__txt">
-                            <div class="about-course__name">Adobe Photoshop CC</div>
-                            <p>Базовый курс, язык: русский</p>
-                            <p>Категория: Дизайн</p>
-                            <p>Автор: <a href="#" class="about-course__link">Иванов Артем</a></p>
-                            <p>Дата загрузки: 01.01.18</p>
-                            <p>Длительность: 15 уроков, 80 часов</p>
-                            <div class="about-course__rating">
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <span>Оценили: 32</span>
-                            </div>
-                            <div class="about-course__price">
-                                <span>7 500 тг</span> <span class="s">9 000 тг</span>
-                            </div>
-                            <div class="about-course__available">Данная цена доступна еще <b>16 часов</b></div>
-                            <a href="#" class="about-course__btn">Купить</a>
-                        </div>
+                    </div>
+                    <div class="about-course__button">
+                        <button type="button">Загрузить видео</button>
+                        <button type="button">Выбрать обложку превью</button>
+                        <button type="button">Сохранить</button>
                     </div>
                 </div>
             </div>
@@ -169,21 +167,18 @@
         <div class="teacher-course">
             <div class="container">
                 <div class="row">
-                    <div class="teacher-course__header">Преподаватели курса</div>
+                    <div class="teacher-course__header teacher-course__header--create">Преподаватели курса</div>
                     <div class="teacher-course__inner">
-                        <div class="teacher-course__img">
-                            <img src="../img/del/teacher-course__img.jpg" alt="">
+                        <div class="teacher-course__img teacher-course__img--create">
+
                         </div>
                         <div class="teacher-course__txt">
-                            <div class="teacher-course__name">Биржанова Томирис</div>
-                            <p>Привет всем, меня зовут Томирис. У&nbsp;меня есть степень в&nbsp;области вычислений в&nbsp;Имперском
-                                колледже Лондона и&nbsp;физический диплом Открытого университета. Я&nbsp;начала работать
-                                для себя в&nbsp;возрасте 18 лет и&nbsp;никогда не&nbsp;оглядывалась назад. За&nbsp;плечами
-                                у&nbsp;меня многолетний и&nbsp;разнообразный опыт из&nbsp;разных сфер деятельности, но&nbsp;по&nbsp;настоящему
-                                я&nbsp;влюбилась в&nbsp;работу через графические редакторы и&nbsp;теперь я&nbsp;с&nbsp;радостью
-                                трачу все свое время на&nbsp;то, чтобы делиться своей страстью с&nbsp;такими людьми, как
-                                Вы.</p>
-                            <a href="#" class="teacher-course__btn">Подробнее</a>
+                            <div class="teacher-course__name">
+                                <input type="text" placeholder="Фамилия Имя">
+                            </div>
+                            <textarea name="" id="" cols="2" rows="5"
+                                      placeholder="Краткая информация о себе"></textarea>
+                            <button type="button">Сохранить</button>
                             <div class="teacher-course__panel">
                                 <div class="teacher-course__rating">Средний рейтинг: 4,6</div>
                                 <div class="teacher-course__student">Студентов: 1 342</div>
@@ -191,237 +186,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rating-course">
-            <div class="container">
-                <div class="row">
-                    <div class="rating-course__header">Оценка курса студентами</div>
-                    <div class="rating-course__inner">
-                        <div class="rating-course__common">
-                            <div class="rating-course__num">4.9</div>
-                            <div class="rating-course__star">
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                            </div>
-                            <p>Средний рейтинг</p>
+                    <div class="teacher-course__button">
+                        <button type="button">Загрузить фото</button>
+                        <button type="button">Добавить преподавателя</button>
+                    </div>
+                    <br><br><br><br>
+                    <div class="teacher-course__button">
+                        <div class="teacher-course__button-item">
+                            <button type="button">Отмена</button>
                         </div>
-                        <div class="rating-course__progress">
-                            <div class="rating-course__item">
-                                <progress class="progress" value="80" max="100"></progress>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="rating-course__percent">84%</div>
-
-                            </div>
-                            <div class="rating-course__item">
-                                <progress class="progress" value="80" max="100"></progress>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="rating-course__percent">84%</div>
-
-                            </div>
-                            <div class="rating-course__item">
-                                <progress class="progress" value="80" max="100"></progress>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="rating-course__percent">84%</div>
-
-                            </div>
-                            <div class="rating-course__item">
-                                <progress class="progress" value="80" max="100"></progress>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="rating-course__percent">84%</div>
-
-                            </div>
-                            <div class="rating-course__item">
-                                <progress class="progress" value="80" max="100"></progress>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="rating-course__percent">84%</div>
-
-                            </div>
+                        <div class="teacher-course__button-item">
+                            <button type="button">Предварительный просмотр</button>
+                            <button type="button">Отправить на утверждение</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        //= template/reviews.html
-        <div class="course">
-            <div class="course__header">Популярные курсы по данной теме</div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="course__item">
-                            <div class="course__img">
-                                <img src="img/del/course-5.jpg" alt="">
-                                <div class="course__label"></div>
-                            </div>
-                            <div class="course__txt">
-                                <div class="course__name">Веб-разработка</div>
-                                <div class="course__author">Алия Медетова</div>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="course__bottom">
-                                    <div class="course__price">7 500 тг</div>
-                                    <div class="course__like js-like"></div>
-                                </div>
-                            </div>
-                            <div class="course__hover">
-                                <h4>Adobe Indesign</h4>
-                                <div class="course__base">Базовый курс, язык: русский</div>
-                                <div class="course__base">Автор: Соколов Дима</div>
-                                <div>Длительность: 15 уроков, 80 часов</div>
-                                <p>Если вы работаете с печатными или цифровыми материалами, Adobe InDesign поможет вам
-                                    создать оригинальные макеты для страниц.
-                                    Разрабатывайте свой дизайн материалов:
-                                    бланков, листовок, постеров, брошюр, годовых отчетов, книг, журналов.</p>
-                                <a href="#" class="course__btn">Добавить в корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="course__item">
-                            <div class="course__img">
-                                <img src="img/del/course-6.jpg" alt="">
-                            </div>
-                            <div class="course__txt">
-                                <div class="course__name">Экономика</div>
-                                <div class="course__author">Майя Тен</div>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="course__bottom">
-                                    <div class="course__price">6 500 тг</div>
-                                    <div class="course__like js-like"></div>
-                                </div>
-                            </div>
-                            <div class="course__hover">
-                                <h4>Adobe Indesign</h4>
-                                <div class="course__base">Базовый курс, язык: русский</div>
-                                <div class="course__base">Автор: Соколов Дима</div>
-                                <div>Длительность: 15 уроков, 80 часов</div>
-                                <p>Если вы работаете с печатными или цифровыми материалами, Adobe InDesign поможет вам
-                                    создать оригинальные макеты для страниц.
-                                    Разрабатывайте свой дизайн материалов:
-                                    бланков, листовок, постеров, брошюр, годовых отчетов, книг, журналов.</p>
-                                <a href="#" class="course__btn">Добавить в корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="course__item">
-                            <div class="course__img">
-                                <img src="img/del/course-7.jpg" alt="">
-                            </div>
-                            <div class="course__txt">
-                                <div class="course__name">Маркетинг и финансы</div>
-                                <div class="course__author">Олжас Альжанов</div>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="course__bottom">
-                                    <div class="course__price">6 900 тг</div>
-                                    <div class="course__like js-like active"></div>
-                                </div>
-                            </div>
-                            <div class="course__hover">
-                                <h4>Adobe Indesign</h4>
-                                <div class="course__base">Базовый курс, язык: русский</div>
-                                <div class="course__base">Автор: Соколов Дима</div>
-                                <div>Длительность: 15 уроков, 80 часов</div>
-                                <p>Если вы работаете с печатными или цифровыми материалами, Adobe InDesign поможет вам
-                                    создать оригинальные макеты для страниц.
-                                    Разрабатывайте свой дизайн материалов:
-                                    бланков, листовок, постеров, брошюр, годовых отчетов, книг, журналов.</p>
-                                <a href="#" class="course__btn">Добавить в корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="course__item">
-                            <div class="course__img">
-                                <img src="img/del/course-8.jpg" alt="">
-                            </div>
-                            <div class="course__txt">
-                                <div class="course__name">Продвинутая Java</div>
-                                <div class="course__author">Алина Антонова</div>
-                                <div class="star js-star">
-                                    <input type="radio" name="example" class="star__rating" value="1"/>
-                                    <input type="radio" name="example" class="star__rating" value="2"/>
-                                    <input type="radio" name="example" class="star__rating" value="3"/>
-                                    <input type="radio" name="example" class="star__rating" value="4"/>
-                                    <input type="radio" name="example" class="star__rating" value="5"/>
-                                </div>
-                                <div class="course__bottom">
-                                    <div class="course__price">5 000 тг</div>
-                                    <div class="course__like js-like"></div>
-                                </div>
-                            </div>
-                            <div class="course__hover">
-                                <h4>Adobe Indesign</h4>
-                                <div class="course__base">Базовый курс, язык: русский</div>
-                                <div class="course__base">Автор: Соколов Дима</div>
-                                <div>Длительность: 15 уроков, 80 часов</div>
-                                <p>Если вы работаете с печатными или цифровыми материалами, Adobe InDesign поможет вам
-                                    создать оригинальные макеты для страниц.
-                                    Разрабатывайте свой дизайн материалов:
-                                    бланков, листовок, постеров, брошюр, годовых отчетов, книг, журналов.</p>
-                                <a href="#" class="course__btn">Добавить в корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </main>
     //= template/footer.html
 </div>
