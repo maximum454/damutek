@@ -49,7 +49,7 @@ $(function () {
 
     $('.js-star').rating();
 
-    $('input[type=checkbox], select').styler();
+    $('input[type=checkbox],input[type=file], select').styler();
     
     $('.js-select').on('click', function (e) {
         e.preventDefault();
