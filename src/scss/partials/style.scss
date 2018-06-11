@@ -8,10 +8,12 @@
 @import "base/class";
 
 /*blocks vendors*/
+@import "vendors/bootstrap-theme";
 @import "vendors/slick";
 @import "vendors/arcticmodal-0.3";
 @import "vendors/formstyler";
 @import "vendors/formstyler.theme";
+
 
 /*blocks damutek*/
 @import "bloks/header";
@@ -43,6 +45,7 @@
 @import "bloks/account-menu";
 @import "bloks/create-course";
 @import "bloks/setting-profile";
+@import "bloks/passing";
 
 
 

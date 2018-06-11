@@ -3,6 +3,7 @@
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/rating.js
 //= partials/jquery.formstyler.js
+//= partials/bootstrap.js
 
 $(function () {
     $('.js-like').on('click', function () {
