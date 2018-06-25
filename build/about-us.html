@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Twitter Card data -->
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <title>Damutek</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__inner">
+                    <a href="#" class="header__logo"><img src="img/logo-damutek.svg" alt=""></a>
+                    <div class="header__category">Категории</div>
+                    <div class="header__search header__search--in">
+                        <input type="text" class="header__input">
+                        <input type="submit" class="header__submit">
+                    </div>
+                    <div class="header__registr header__registr--in">
+                        <a href="#" class="header__user">Стать преподавателем</a>
+                        <a href="#" class="header__course">Мои курсы</a>
+                        <a href="#" class="header__profile">Профиль
+                            <span>14</span>
+                        </a>
+                        <a href="#" class="header__like">
+                            <span>4</span>
+                        </a>
+                        <a href="#" class="header__basket">
+                            <span>2</span>
+                        </a>
+                    </div>
+                    <div class="hidden">
+                        <div id="modalbox_auth" class="modal-auth">
+                            <div class="box-modal_close arcticmodal-close"></div>
+                            <div class="modal-auth__logo"><img src="img/modal__logo.png" alt=""></div>
+                            <div class="modal-auth__header">ЗАРЕГИСТРИРОВАТЬСЯ КАК ПРЕПОДАВАТЕЛЬ</div>
+    
+                            <div class="modal-auth__anons">
+                                Здравствуйте! Для того, чтобы стать преподавателем на нашем ресурсе, делиться своими
+                                знаниями и иметь дополнительный источник дохода, Вам необходимо пройти несколько процедур:
+                            </div>
+                            <div class="modal-auth__inner">
+                                <div class="modal-auth__item">
+                                    <div class="modal-auth__num">1</div>
+                                    <p>Ознакомиться с договором<br>
+                                        о сотрудничестве</p>
+                                </div>
+                                <div class="modal-auth__item">
+                                    <div class="modal-auth__num">2</div>
+                                    <p>Пройти процедуру регистрации<br>
+                                        аккаунта преподавателя</p>
+                                </div>
+                                <div class="modal-auth__item">
+                                    <div class="modal-auth__num">3</div>
+                                    <p>Записать 3-х минутное видео<br>
+                                        о курсе, который вы будете<br>
+                                        преподавать и отправить нам.</p>
+                                </div>
+                                <a href="#" class="modal-auth__btn">Продолжить</a>
+                                <a href="#" class="modal-auth__btn modal-auth__btn--gray">Отмена</a>
+                            </div>
+                        </div>
+    
+                        <div id="modalbox_reg" class="modal-reg">
+                            <div class="box-modal_close arcticmodal-close"></div>
+                            <div class="modal-reg__logo"><img src="img/modal__logo.png" alt=""></div>
+    
+                            <div class="modal-reg__tabs">
+                                <input class="modal-reg__input" id="tab1" type="radio" name="tabs" checked>
+                                <label class="modal-reg__label" for="tab1" title="Вкладка 1">ВОЙТИ</label>
+    
+                                <input class="modal-reg__input" id="tab2" type="radio" name="tabs">
+                                <label class="modal-reg__label" for="tab2" title="Вкладка 2">ЗАРЕГИСТРИРОВАТЬСЯ</label>
+    
+                                <section class="modal-reg__content" id="content1">
+                                    <form class="form-reg" action="">
+                                        <div class="form-reg__item">
+                                            <label class="form-reg__label" for="login">Адрес электронной почты</label>
+                                            <input id="login" type="text" class="form-reg__input"
+                                                   placeholder="Andrei@mail.com">
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <label class="form-reg__label" for="pass">Пароль</label>
+                                            <input id="pass" type="text" class="form-reg__input"
+                                                   placeholder="***************">
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <a href="#" class="form-reg__forgot">Забыли пароль?</a>
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <a href="#" class="modal-reg__btn">Войти</a>
+                                        </div>
+                                        <div class="form-reg__social">
+                                            <p>Войти через социальные сети: </p>
+                                            <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
+                                        </div>
+                                    </form>
+                                </section>
+                                <section class="modal-reg__content" id="content2">
+                                    2
+                                </section>
+                            </div>
+                            <div class="modal-reg__problem">
+                                <a href="#">У Вас возникли проблемы со входом?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="about-us">
+            <div class="about-us__header">
+                <img src="img/about-us__img.jpg" alt="">
+                <div class="about-us__caption">РАЗВИВАЙТЕ СВОИ ТАЛАНТЫ</div>
+            </div>
+            <h1>Дамутек это</h1>
+            <div class="about-us__item">
+                <div class="about-us__row">
+                    <div class="about-us__img col-lg-2">
+                        <img src="img/about-us-1.png" alt="">
+                    </div>
+                    <div class="about-us__txt col-lg-10">
+                        Высокачественные онлайн курсы на казахском и русском языках по широкому кругу
+                        специальностей
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__row">
+                    <div class="about-us__img col-lg-2">
+                        <img src="img/about-us-2.png" alt="">
+                    </div>
+                    <div class="about-us__txt col-lg-10">
+                        Экспертная и техническая поддержка, оказываемая нашими преподавателями и командой Damutek
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__row">
+                    <div class="about-us__img col-lg-2">
+                        <img src="img/about-us-3.png" alt="">
+                    </div>
+                    <div class="about-us__txt col-lg-10">
+                        Возможность проходить курсы где угодно и с таким темпом, который наиболее подходит Вам
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__row">
+                    <div class="about-us__img col-lg-2">
+                        <img src="img/about-us-1.png" alt="">
+                    </div>
+                    <div class="about-us__txt col-lg-10">
+                        Узнаваемые сертификаты, которые украсят Ваше резюме и будут способствовать Вашей карьере
+                    </div>
+                </div>
+            </div>
+            <div class="about-us__history">
+                <div class="about-us">
+                    <div class="container">
+                        <div class="row">
+                            <h2>Наша история </h2>
+                            <p>Как часто мы&nbsp;слышим рассказы про то&nbsp;как тот или иной преподаватель проводил
+                                впечатляю&shy;щие лекции и&nbsp;какой неизгладимый след он&nbsp;оставлял в&nbsp;жизни
+                                студентов? К&nbsp;сожалению, в&nbsp;силу тех или иных причин не&nbsp;каждый из&nbsp;нас
+                                имеет удовольствие услышать вживую уроки талантливейших преподавателей,
+                                <nobr>бизнес-тренеров</nobr>
+                                и&nbsp;экспертов. Развитие технологий дает нам широкие возможности в&nbsp;предоставлении
+                                знаний широкому кругу обучающихся на&nbsp;родном языке.
+                            </p>
+                            <p>Damutek создан группой энтузиастов с&nbsp;целью сохранения и&nbsp;распространения лучших
+                                проявлений преподавательского таланта. Наша команда стремится обеспечить условия при
+                                которых образование высокого уровня и&nbsp;экономические возможности для роста доступны
+                                каждому.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="commands">
+            <div class="container">
+                <div class="row">
+                    <h2>Наша команда</h2>
+                    <div class="col-xs-4 col-sm-4 placeholder">
+                        <img data-src="holder.js/195x195/auto/sky" class="img-responsive" alt="195x195"
+                             src="img/del/commands-1.png">
+                        <h4>Тлеужанова Манатжан <br>Основатель</h4>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 placeholder">
+                        <img data-src="holder.js/195x195/auto/sky" class="img-responsive" alt="195x195"
+                             src="img/del/commands-2.png">
+                        <h4>Новицкий Иван <br>Координатор Проекта</h4>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 placeholder">
+                        <img data-src="holder.js/195x195/auto/sky" class="img-responsive" alt="195x195"
+                             src="img/del/commands-3.png">
+                        <h4>Нурай <br>Консультант</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="main__hr">
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__inner">
+                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                        <a href="#" class="footer__logo"><img src="img/logo-damutek.svg" alt=""></a>
+                        <p>Информационно-образовательный портал</p>
+                        <p>2018 Дамутек. Все права защищены</p>
+                    </div>
+                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer__header">КОМПАНИЯ</div>
+                        <a href="#">О нас</a>
+                        <a href="#">Damutek для бизнеса</a>
+                        <a href="#">Стань преподавателем</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Сертификаты</a>
+                    </div>
+                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer__header">БУДЬ С НАМИ</div>
+                        <a href="#">События</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Форум</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Приложения</a>
+                    </div>
+                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer__header">ЕЩЕ</div>
+                        <a href="#">Поддержка</a>
+                        <a href="#">Наши партнеры</a>
+                        <a href="#">Условия использования</a>
+                        <a href="#">Конфиденциальность</a>
+                        <a href="#">Интелектуальная собственность</a>
+                        <div class="footer__social">
+                            <span>Мы в социальных сетях:</span> <a href="#"><img src="img/footer__insta.svg" width="22" alt=""></a> <a
+                                href="#"><img src="img/footer__vk.svg" width="33" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
