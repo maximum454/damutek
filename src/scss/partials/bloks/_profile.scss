@@ -48,6 +48,9 @@
 				color: #487fc7;
 				font-weight: bold;
 			}
+			.color{
+				color: #4a7ec5;
+			}
 		}
 	}
 	&__photo{
@@ -199,6 +202,36 @@
 				height: 7px;
 				border-radius: 50%;
 			}
+		}
+	}
+	&__ul-no{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		li{
+			margin-bottom: 20px;
+			position: relative;
+			padding-left: 20px;
+			&:before {
+				content:  "";
+				position: absolute;
+			}
+		}
+	}
+	&__warning{
+		background-color: #9a9a9a;
+		padding: 23px;
+		position: relative;
+		color: #FFF;
+		&:after{
+			content: '!';
+			position: absolute;
+			top: 50%;
+			right: 23px;
+			transform: translate(0,-50%);
+			color: #FFF;
+			font-size: 60px;
 		}
 	}
 }
