@@ -180,4 +180,25 @@
 			}
 		}
 	}
+	&__ul-price{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		li{
+			margin-bottom: 20px;
+			position: relative;
+			padding-left: 20px;
+			&:before {
+				content:  "";
+				position: absolute;
+				top: 6px;
+				left:0;
+				background-color: #4a7ec5;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+			}
+		}
+	}
 }
