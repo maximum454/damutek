@@ -23,11 +23,35 @@
 		margin-bottom: 10px;
 	}
 	input[type=text]{
-		background-color: transparent;
+		background-color: #fff;
 		width: 100%;
 		max-width: 450px;
 		height: 59px;
 		padding: 0 10px;
+		margin-bottom: 15px;
+		border: 1px solid #487fc7;
+		color: #9fa0a0;
+		font-size: 16px;
+		font-weight: normal;
+		&::-webkit-input-placeholder {
+			color: #9fa0a0;
+		}
+		&::-moz-placeholder {
+			color: #9fa0a0;
+		}
+		&:-ms-input-placeholder {
+			color: #9fa0a0;
+		}
+		&:-moz-placeholder {
+			color: #fff;
+		}
+	}
+	textarea{
+		background-color: #fff;
+		width: 100%;
+		max-width: 450px;
+		height: 100px;
+		padding: 10px;
 		margin-bottom: 15px;
 		border: 1px solid #487fc7;
 		color: #9fa0a0;
@@ -63,6 +87,7 @@
 		font-size: 16px;
 		line-height: 48px;
 		text-align: center;
+		font-weight: bold;
 		text-decoration: none;
 		box-shadow: 3px 3px 12px -4px rgba(#000,.6);
 		&:last-child{
