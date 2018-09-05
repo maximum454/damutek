@@ -6,6 +6,15 @@
 //= partials/bootstrap.js
 
 $(function () {
+    /*link*/
+    $("a[href='#']").click(function () {
+        return false;
+    });
+
+    $('.js-course-btn').on("click",function () {
+        $(this).prev(".course__anons").slideToggle();
+    });
+
     $('.js-like').on('click', function () {
         $(this).toggleClass('active');
     });

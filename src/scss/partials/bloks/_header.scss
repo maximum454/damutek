@@ -21,6 +21,33 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		margin-right: 56px;
+		.dropdown-menu{
+			width: 192px;
+			padding: 0;
+			margin: 0;
+			top: 35px;
+			box-shadow: 0 2px 8px 1px rgba(#000, .5);
+			li{
+				border-bottom: 1px solid #5693e3;
+				&:last-of-type{
+					border-bottom: none;
+				}
+
+			}
+			a{
+				color: #fff;
+				font-size: 16px;
+				text-transform: none;
+				padding: 5px 20px;
+				background-color: #487fc7;
+				background-image: none;
+				&:hover{
+					color: #fff;
+					background-color: #1a2a75;
+					background-image: none;
+				}
+			}
+		}
 	}
 	&__search {
 		width: 100%;
