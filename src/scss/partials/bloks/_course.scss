@@ -27,16 +27,23 @@
 		width: 100%;
 		height: 162px;
 		position: relative;
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 	&__label{
 		position: absolute;
-		top: 0;
-		left: 0;
-		background-image: url("../img/course__label.svg");
-		background-size: 100%;
-		background-repeat: no-repeat;
-		width: 84px;
-		height: 84px;
+		bottom: 5px;
+		right: 0;
+		background-color: #487fc7;
+		padding: 2px 8px 1px;
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+
 	}
 	&__txt {
 		background-color: #f0f1f4;
