@@ -57,7 +57,7 @@
                                 <div class="modal-reg__title">ЗАРЕГИСТРИРОВАТЬСЯ КАК ПРЕПОДАВАТЕЛЬ</div>
                             </div>
                             <form class="msform">
-                                <!-- fieldsets -->
+    
                                 <fieldset class="msform__fieldset">
                                     <header class="msform__header">
                                         Здравствуйте! Для того, чтобы стать преподавателем на нашем ресурсе, делиться
@@ -75,11 +75,10 @@
                                 </fieldset>
                                 <fieldset class="msform__fieldset msform__fieldset--2">
                                     <header class="msform__header">
-                                        Договор о заключении сотрудничества<br>
-                                        с образовательным порталом Damutek.kz.
-                                        <ul class="msform__progressbar">
-                                            <li class="active"></li>
-                                        </ul>
+                                        <div class="msform__num">1</div>
+                                        <div>Договор о заключении сотрудничества<br>
+                                            с образовательным порталом Damutek.kz.</div>
+                                        <div class="arctic-close"></div>
                                     </header>
                                     <main class="msform__main">
                                         <div class="msform__warning">
@@ -576,27 +575,27 @@
                                 </fieldset>
                                 <fieldset class="msform__fieldset">
                                     <header class="msform__header">
-                                        Договор о заключении сотрудничества<br>
-                                        с образовательным порталом Damutek.kz.
-                                        <ul class="msform__progressbar">
-                                            <li class="active"></li>
-                                        </ul>
+                                        <div class="msform__num">2</div>
+                                        <div>Пройти процедуру регистрации<br>
+                                        аккаунта преподавателя</div>
+    
+                                        <div class="arctic-close"></div>
                                     </header>
                                     <main class="msform__main">
                                         <label class="msform__label" for="fname">Имя</label>
                                         <input class="msform__input" type="text" id="fname" name="fname"
-                                               placeholder="Ануар"/>
-                                        <label class="msform__label" for="lname">Фамилия</label>
+                                               placeholder="Ануар" required/>
+                                        <label class="msform__label" for="lname" >Фамилия</label>
                                         <input class="msform__input" type="text" id="lname" name="lname"
-                                               placeholder="Рахметов"/>
+                                               placeholder="Рахметов" required/>
                                         <label class="msform__label" for="spec">Специализация</label>
                                         <input class="msform__input" type="text" id="spec" name="spec"
-                                               placeholder="Программист"/>
+                                               placeholder="Программист" required/>
                                         <label class="msform__label" for="stepen">Ученая степень</label>
                                         <input class="msform__input" type="text" id="stepen" name=""
                                                placeholder="Магистр"/>
                                         <label class="msform__label" for="email">Электронный адрес</label>
-                                        <input class="msform__input" type="text" id="email" name=""
+                                        <input class="msform__input error" type="text" id="email" name=""
                                                placeholder="anuarkz@mail.com"/>
     
                                         <label class="msform__label" for="phone">Мобильный телефон</label>
@@ -615,6 +614,11 @@
                                             принимаю <b>Условия<br>
                                                 использования и Политика<br>
                                                 конфиденциальности</b> Damutek</label>
+                                        </div>
+    
+                                        <div class="msform__error">
+                                            Заполните пожалуйста<br>
+                                            обязательные данные
                                         </div>
                                         <input type="submit" name="submit" class="submit action-button"
                                                value="Продолжить"/>
