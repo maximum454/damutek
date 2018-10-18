@@ -4,6 +4,8 @@
 //= partials/rating.js
 //= partials/jquery.formstyler.js
 //= partials/bootstrap.js
+//= partials/jquery.easing.min.js
+//= partials/step-form.js
 
 $(function () {
     /*link*/
