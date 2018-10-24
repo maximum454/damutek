@@ -12,7 +12,7 @@
         <div class="main__header">
             <div class="container">
                 <div class="row">
-                    Мои курсы
+                    Преподаватель
                 </div>
             </div>
         </div>
@@ -20,186 +20,217 @@
             <div class="container">
                 <div class="row">
                     <div class="account-menu">
-                        <div class="account-menu__item col-lg-2"><a href="#">Все курсы</a></div>
-                        <div class="account-menu__item col-lg-2"><a href="#">Активные</a></div>
-                        <div class="account-menu__item col-lg-2"><a href="#">Хочу пройти</a></div>
-                        <div class="account-menu__item col-lg-2 col-lg-offset-1"><a href="#">Мои курсы</a></div>
-                        <div class="account-menu__item col-lg-3"><a class="account-menu__btn" href="#">Создать новый
-                            курс</a></div>
+                        <div class="account-menu__item"><span>Создать новый курс</span></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="about-course">
-            <div class="container">
-                <div class="row">
-                    <div class="about-course__inner">
-                        <div class="about-course__video">
-                            <img src="img/del/about__video-create.png" alt="">
-                        </div>
-                        <div class="about-course__txt about-course__txt--create">
-                            <div class="about-course__item">
-                                <input type="text" placeholder="Название курса">
+        <div class="create-course-2">
+            <div class="create-course-2__about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="create-course-2__about-item">
+                                <label for="">Название курса: </label>
+                                <input class="create-course-2__about-input" type="text"
+                                       placeholder="Например, Микроэкономика">
                             </div>
-                            <div class="about-course__item">
+
+                            <div class="create-course-2__about-item">
+                                <label for="">Подзаголовок курса: </label>
+                                <input class="create-course-2__about-input" type="text"
+                                       placeholder="Например, Основы микроэкономики">
+                            </div>
+
+                            <div class="create-course-2__about-item">
                                 <label for="">Язык: </label>
-                                <input type="text" placeholder="Русский">
+                                <select class="create-course-2__about-select" name="" id="">
+                                    <option value="">Русский</option>
+                                    <option value="">Русский</option>
+                                    <option value="">Русский</option>
+                                </select>
                             </div>
-                            <div class="about-course__item">
+
+                            <div class="create-course-2__about-item">
                                 <label for="">Категория:</label>
-                                <input type="text" placeholder="Дизайн">
+                                <select name="" id="">
+                                    <option value="">Дизайн</option>
+                                    <option value="">Дизайн</option>
+                                    <option value="">Дизайн</option>
+                                </select>
                             </div>
-                            <div class="about-course__item">
+
+                            <div class="create-course-2__about-item">
+                                <label for="">Подкатегория:</label>
+                                <select name="" id="">
+                                    <option value="">Графический дизайн</option>
+                                    <option value="">Графический дизайн</option>
+                                    <option value="">Графический дизайн</option>
+                                </select>
+                            </div>
+
+                            <div class="create-course-2__about-item">
                                 <label for="">Длительность: </label>
-                                <input type="text" placeholder="15 уроков, 80 часов">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input class="create-course-2__about-input" type="text" placeholder="15 уроков">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="create-course-2__about-input" type="text" placeholder="12 часов">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="about-course__item">
-                                <label for="">Цена:</label>
-                                <input type="text" placeholder="7500">
+
+                            <div class="create-course-2__about-item">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="">Возрастные рамки</label>
+                                        <select name="" id="">
+                                            <option value="">от 12 лет</option>
+                                            <option value="">от 12 лет</option>
+                                            <option value="">от 12 лет</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="">Цена в тенге:</label>
+                                        <input class="create-course-2__about-input" type="text" placeholder="7500">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="about-course__button">
-                        <button type="button">Загрузить видео</button>
-                        <button type="button">Выбрать обложку превью</button>
-                        <button type="button">Сохранить</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="target-course">
-            <div class="target-course__header">ЦЕЛЕВАЯ АУДИТОРИЯ</div>
-            <div class="target-course__subtitle">Ответьте на несколько вопросов, чтобы студенты могли определить, будет
-                ли полезен им этот курс.
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="target-course__item target-course__item--border">
+                        <div class="col-lg-1">
+                            <div class="create-course-2__about-line"></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex mb-5">
+                                <div class="create-course-2__about-img">
+                                    <img src="" alt="">
+                                    <button class="create-course-2__about-delete">Удалить обложку курса</button>
+                                </div>
+                                <div class="create-course-2__about-txt">
+                                    <p>Выделите свой курс с помощью красивого изображения. При создании
+                                        изображения
+                                        помните: оно должно соответствовать нашим стандартам изображения для
+                                        курса,
+                                        чтобы быть одобренным.</p>
 
-                        <div class="target-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Что нужно знать<br>
-                            для освоения курса
-                        </div>
-                        <div class="target-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
-                        </div>
-                    </div>
-                    <div class="target-course__item target-course__item--border">
-                        <div class="target-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Для кого этот курс
-                        </div>
-                        <div class="target-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
-                        </div>
-                    </div>
-                    <div class="target-course__item target-course__item--border">
-                        <div class="target-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Каких результатов<br>
-                            достигнут студенты<br>
-                            по завершению курса?
-                        </div>
-                        <div class="target-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
-                        </div>
-                    </div>
-                    <div class="target-course__item target-course__item--border">
-                        <div class="target-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Технические<br>
-                            Требования
-                        </div>
-                        <div class="target-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
-                        </div>
-                    </div>
-                    <div class="lg-col-12">
-                        <a href="#" class="target-course__btn">Сохранить</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="description-course">
-            <div class="container">
-                <div class="row">
-                    <div class="description-course__item">
-                        <div class="description-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Описание курса
-                        </div>
-                        <div class="description-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Краткое описание курса"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-course">
-            <div class="container">
-                <div class="row">
-                    <div class="content-course__item">
-                        <div class="content-course__name col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                            Содержание курса
-                        </div>
-                        <div class="content-course__anons col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                            <div class="content-course__title">Тема 1.</div>
-                            <textarea name="" id="" cols="30" rows="2" placeholder="Название темы"></textarea>
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Краткое описание темы"></textarea>
-                            <hr>
-                            <div class="content-course__title">Тема 2.</div>
-                            <textarea name="" id="" cols="30" rows="2" placeholder="Название темы"></textarea>
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Краткое описание темы"></textarea>
-
-                            <div class="content-course__button">
-                                <button class="content-course__btn">Удалить тему</button>
+                                    <p><b>Ключевые требования:<br>
+                                        Формат - JPG, JPEG, PNG.</b></p>
+                                    <button class="create-course-2__btn">Загрузить обложку курса</button>
+                                </div>
                             </div>
-                            <hr>
-                            <div class="content-course__button">
-                                <button class="content-course__btn">Добавить тему</button>
-                                <button class="content-course__btn">Сохранить</button>
+                            <div class="d-flex mb-3">
+                                <div class="create-course-2__about-img play">
+                                    <img src="" alt="">
+                                    <button class="create-course-2__about-delete">Удалить промо видео</button>
+                                </div>
+                                <div class="create-course-2__about-txt">
+
+                                    <p>После просмотра качественного промовидео вероятность того, что студенты
+                                        запишутся на ваш курс, может увеличиться в 5 раз. А при наличии
+                                        исключительно хороших видео - даже в 10 раз!</p>
+
+                                    <p><b>Научитесь делать отличные проморолики!</b></p>
+                                    <button class="create-course-2__btn">Загрузить промо видео</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="teacher-course">
-            <div class="container">
-                <div class="row">
-                    <div class="teacher-course__header teacher-course__header--create">Преподаватели курса</div>
-                    <div class="teacher-course__inner">
-                        <div class="teacher-course__img teacher-course__img--create">
-
-                        </div>
-                        <div class="teacher-course__txt">
-                            <div class="teacher-course__name">
-                                <input type="text" placeholder="Фамилия Имя">
-                            </div>
-                            <textarea name="" id="" cols="2" rows="5"
-                                      placeholder="Краткая информация о себе"></textarea>
-                            <button type="button">Сохранить</button>
-                            <div class="teacher-course__panel">
-                                <div class="teacher-course__rating">Средний рейтинг: 4,6</div>
-                                <div class="teacher-course__student">Студентов: 1 342</div>
-                                <div class="teacher-course__course">Курсов: 13</div>
+            <div class="create-course-2__target">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="create-course-2__title">ЦЕЛЕВАЯ АУДИТОРИЯ</div>
+                            <div class="create-course-2__subtitle">Ответьте на несколько вопросов, чтобы студенты могли
+                                определить,
+                                будет
+                                ли полезен им этот курс.
                             </div>
                         </div>
                     </div>
-                    <div class="teacher-course__button">
-                        <button type="button">Загрузить фото</button>
-                        <button type="button">Добавить преподавателя</button>
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Описание курса</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
                     </div>
-                    <br><br><br><br>
-                    <div class="teacher-course__button">
-                        <div class="teacher-course__button-item">
-                            <button type="button">Отмена</button>
-                        </div>
-                        <div class="teacher-course__button-item">
-                            <button type="button">Предварительный просмотр</button>
-                            <button type="button">Отправить на утверждение</button>
+
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Что нужно знать для освоения курса</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Для кого этот курс</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Каких результатов достигнут студенты по&nbsp;завершению курса?</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Добавить ответ"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Технические требования</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Указать список требований"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Требуемый<br> уровень навыка</label>
+                        <select name="" id="">
+                            <option value="">Начальный уровень</option>
+                            <option value="">Профессиональный уровень</option>
+                            <option value="">Все уровни</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="create-course-2__title">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</div>
+                            <div class="create-course-2__subtitle">Укажите приветственное и поздравительное сообщение
+                                для обучающихся
+                            </div>
                         </div>
                     </div>
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Приветствие студента</label>
+                        <textarea name="" id="" cols="30" rows="10"
+                                  placeholder="Напишите приветственную речь для обучающихся при начале прохождения курса"></textarea>
+                    </div>
+                    <div class="d-flex mb-4 justify-items-start  align-item-start">
+                        <label class="" for="">Поздравление студента</label>
+                        <textarea name="" id="" cols="30" rows="10"
+                                  placeholder="Напишите поздравительную речь  для обучающихся по завершению прохождения курса"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="create-course-2__teacher">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="create-course-2__title">ПРЕПОДАВАТЕЛЬ КУРСА</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="create-course-2__teacher-img">
+
+                            </div>
+                            <button class="create-course-2__btn">Загрузить фото</button>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="mb-4">
+                                <input class="create-course-2__teacher-input" type="text" placeholder="Фамилия Имя">
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="" id="" cols="30" rows="10"
+                                          placeholder="Краткая информация о себе"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

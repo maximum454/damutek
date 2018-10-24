@@ -1,0 +1,201 @@
+.create-course-2{
+	position: relative;
+	margin-bottom: 20px;
+	&__title{
+		color: #fff;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	&__subtitle{
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 50px;
+	}
+	&__about{
+		background-color: #f0f1f4;
+		padding: 40px 0;
+	}
+	&__about-item{
+		margin-bottom: 11px;
+		label{
+			display: block;
+			color: #040308;
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+	}
+	&__about-line{
+		width: 1px;
+		height: 100%;
+		background-color: #487fc7;
+		margin: 0 auto;
+	}
+	&__about-input{
+		width: 100%;
+		height: 38px;
+		padding: 20px;
+		border: 1px solid #487fc7;
+		color: #9fa0a0;
+		font-size: 16px;
+	}
+	.jq-selectbox{
+		width: 100%;
+		&__select{
+			width: 100%;
+			height: 38px;
+			background: #fff;
+			border: 1px solid #487fc7;
+			border-radius: 0;
+		}
+		&__trigger{
+			background-color: #487fc7;
+			width: 25px;
+			&-arrow{
+				right: 7px;
+				border-top: 5px solid #fff;
+			}
+		}
+	}
+	&__about-img{
+		width: 340px;
+		height: 240px;
+		background-color: #8c8c8c;
+		position: relative;
+		flex-shrink: 0;
+		margin-right: 30px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&.play{
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				background-image: url("../img/create-course-2-play.png");
+				width: 40px;
+				height: 55px;
+			}
+		}
+	}
+	&__about-txt{
+		p{
+			font-size: 16px;
+			line-height: 21px;
+			margin-bottom: 12px;
+		}
+	}
+	&__about-delete{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: rgba(#000,.57);
+		width: 100%;
+		padding: 14px;
+		color: #fff;
+		font-size: 18px;
+		border: none;
+		z-index: 10;
+	}
+
+	&__target{
+		background-color: #487fc7;
+		padding: 40px 0;
+		hr{
+			background-color: #fff;
+		}
+		label{
+			width: 100%;
+			max-width: 234px;
+			padding-right: 50px;
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		textarea{
+			background-color: #2963b0;
+			width: 100%;
+			height: 70px;
+			padding: 10px 25px;
+			border: 1px solid #fff;
+			color: #fff;
+			&::-webkit-input-placeholder {
+				color: #fff;
+			}
+			&::-moz-placeholder {
+				color: #fff;
+			}
+			&:-ms-input-placeholder {
+				color: #fff;
+			}
+			&:-moz-placeholder {
+				color: #fff;
+			}
+		}
+		.jq-selectbox{
+			width: 100%;
+			&__select{
+				width: 100%;
+				height: 38px;
+				background: #2963b0;
+				padding: 0 25px;
+				border: 1px solid #fff;
+				border-radius: 0;
+				box-shadow: none;
+				color: #fff;
+				text-shadow: none;
+			}
+			&__trigger{
+				background-color: #487fc7;
+				width: 25px;
+				border-left: 0;
+				&-arrow{
+					right: 7px;
+					border-top: 5px solid #fff;
+				}
+			}
+		}
+	}
+	&__teacher{
+		background-color: #ffffff;
+		padding: 40px 0;
+	}
+	&__teacher-img{
+		width: 100%;
+		height: 245px;
+		border: 1px solid #487fc7;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-image: url("../img/teacher-course__img-no.png");
+			background-size: 100%;
+			width: 180px;
+			height: 180px;
+		}
+	}
+	&__teacher-input{
+		background-color: transparent;
+		width: 100%;
+		height: 38px;
+		padding: 20px;
+		border: 1px solid #487fc7;
+		color: #9fa0a0;
+		font-size: 16px;
+	}
+	&__btn{
+		width: 100%;
+		height: 48px;
+		background-color: #487fc7;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+	}
+}
