@@ -28,8 +28,7 @@
 <div class="wrp">
     <div class="header">
         <div class="container">
-            <div class="row">
-                <div class="header__inner">
+            <div class="row justify-content-between align-items-center">
                     <a href="#" class="header__logo"><img src="img/logo-damutek.svg" alt=""></a>
                     <div class="header__category">Категории</div>
                     <div class="header__search header__search--in">
@@ -633,7 +632,6 @@
                             </form>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -641,7 +639,7 @@
         <div class="main__header">
             <div class="container">
                 <div class="row">
-                    Мои курсы
+                    Преподователь
                 </div>
             </div>
         </div>
@@ -649,40 +647,30 @@
             <div class="container">
                 <div class="row">
                     <div class="account-menu">
-                        <div class="account-menu__item col-lg-2"><a href="#">Все курсы</a></div>
-                        <div class="account-menu__item col-lg-2"><a href="#">Активные</a></div>
-                        <div class="account-menu__item col-lg-2"><a href="#">Хочу пройти</a></div>
-                        <div class="account-menu__item col-lg-2 col-lg-offset-1"><a href="#">Мои курсы</a></div>
-                        <div class="account-menu__item col-lg-3"><a class="account-menu__btn" href="#">Создать новый
-                            курс</a></div>
+                        <div class="account-menu__item col-lg-2"><span>Создать новый курс</span></div>
                     </div>
                 </div>
             </div>
         </div>
-        <br><br>
         <div class="create-course">
-
-            <div class="create-course__header">Создать новый курс</div>
-            <form action="" class="create-course__form">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <label for="" class="create-course__label">Название курса</label>
-                        </div>
-                        <div class="col-lg-9">
-                            <input id="" type="text" class="create-course__input"
-                                   placeholder="Введите название вашего курса, например Освоить Photoshop CS 6  с нуля">
-                        </div>
-                    </div>
-                </div>
+            <div class="create-course__header">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <a href="#" class="create-course__btn">Сохранить и начать</a>
+                        <div class="create-course__header-block">
+                            <p>
+                                &laquo;Поздравляем Вас с&nbsp;решением создать онлайн-курс!
+                                Надеемся, этот опыт станет увлекательным для Вас
+                                и&nbsp;полезным для Ваших студентов. Приступим
+                                к&nbsp;созданию Вашего уникального курса!&raquo;
+                            </p>
+                        </div>
+                        <a href="#" class="create-course__btn">Приступить к созданию курса</a>
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -700,15 +688,16 @@
                                 Наша служба технической поддержки готова всегда ответить на ваши вопросы. </b></p>
                             <hr>
                             <h4 class="create-course__contact">КОНТАКТЫ </h4>
-                            <a class="create-course__tel" href="tel:+77777777777">+7 777 777 77 77</a>
-                            <a class="create-course__email" href="mailto:Damutek@kzmail.com">Damutek@kzmail.com</a>
+                            <a class="create-course__email" href="mailto:damutekservice@gmail.com">damutekservice@gmail.com</a>
                         </div>
-                        <div class="col-lg-6">
-                            <a class="create-course__btn create-course__btn--left" href="#">Скачать руководство</a>
-                        </div>
-                        <div class="col-lg-6">
-                            <a class="create-course__btn" href="#">Запросить обратный звонок</a>
-                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3">
+                        <a class="create-course__btn create-course__btn--left" href="#">Скачать руководство</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="create-course__btn" href="#">Запросить обратный звонок</a>
                     </div>
                 </div>
             </div>
@@ -718,13 +707,13 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="footer__inner">
-                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+    
+                    <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
                         <a href="#" class="footer__logo"><img src="img/logo-damutek.svg" alt=""></a>
                         <p>Информационно-образовательный портал</p>
                         <p>2018 Дамутек. Все права защищены</p>
                     </div>
-                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer__header">КОМПАНИЯ</div>
                         <a href="#">О нас</a>
                         <a href="#">Damutek для бизнеса</a>
@@ -732,7 +721,7 @@
                         <a href="#">Вакансии</a>
                         <a href="#">Сертификаты</a>
                     </div>
-                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer__header">БУДЬ С НАМИ</div>
                         <a href="#">События</a>
                         <a href="#">Новости</a>
@@ -740,7 +729,7 @@
                         <a href="#">Блог</a>
                         <a href="#">Приложения</a>
                     </div>
-                    <div class="footer__item col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="footer__header">ЕЩЕ</div>
                         <a href="#">Поддержка</a>
                         <a href="#">Наши партнеры</a>
@@ -752,7 +741,6 @@
                                 href="#"><img src="img/footer__vk.svg" width="33" alt=""></a>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
