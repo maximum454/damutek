@@ -118,5 +118,24 @@
 			margin-right: 20px;
 		}
 	}
-
+	&__addon{
+		color: #6a6464;
+	}
+	&__addon-item{
+		margin-bottom: 20px;
+		label{
+			width: 170px;
+			flex-shrink: 0;
+		}
+	}
+	.jq-file{
+		width: 100%;
+		&__name{
+			background-color: #fff;
+			max-width: 100%;
+		}
+		&__browse{
+			background-color: #487fc7;
+		}
+	}
 }
