@@ -1,0 +1,122 @@
+.create-course-3{
+	background-color: #dadada;
+	padding: 40px 0;
+	&__title{
+		color: #487fc7;
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__name-theme{
+		margin-bottom: 20px;
+		position: relative;
+	}
+	&__num{
+		position: absolute;
+		top: -24px;
+		right: 0;
+		color:#c4c4c4;
+		font-size: 16px;
+		font-weight: bold;
+		span{
+			color: #487fc7;
+		}
+	}
+	&__name-lesson{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__name-lesson-num{
+		position: absolute;
+		top: 50%;
+		left: -30px;
+		transform: translate(0,-50%);
+		color:#6a6464;
+		font-size: 18px;
+
+	}
+	&__input{
+		background-color: #fff;
+		width: 100%;
+		height: 38px;
+		padding: 20px;
+		border: 1px solid #487fc7;
+		color: #9fa0a0;
+		font-size: 16px;
+	}
+	&__textarea{
+		background-color: #fff;
+		width: 100%;
+		height: 234px;
+		padding: 20px;
+		border: 1px solid #487fc7;
+		color: #9fa0a0;
+		font-size: 16px;
+	}
+	&__inner{
+		background-color: #f1f1f1;
+		padding: 22px 22px 22px 64px;
+	}
+	&__img{
+		position: relative;
+		height:calc(100% - 54px);
+		&:before{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-image: url("../img/create-course-2-play.png");
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 20px;
+			height: 35px;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	}
+	&__btn{
+		width: 100%;
+		height: 48px;
+		background-color: #487fc7;
+		color: #fff;
+		font-weight: bold;
+		border: none;
+		&.disable{
+			background-color: #8b8a8a;
+		}
+		&.color{
+			background-color: #1a2a75;
+		}
+		&.back,
+		&.next {
+			width: 155px;
+			background-color: #1a2a75;
+		}
+		&.save{
+			width: 236px;
+			background-color: #8b8a8a;
+			margin: 0 8px;
+		}
+	}
+	&__base{
+		background-color: #dadada;
+		padding: 23px;
+		margin: 20px 0;
+		label{
+			color: #6a6464;
+			font-size: 18px;
+		}
+		button{
+			display: inline-block;
+			width: auto;
+			padding: 0 40px;
+			margin-right: 20px;
+		}
+	}
+
+}
