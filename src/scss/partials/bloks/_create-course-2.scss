@@ -12,11 +12,28 @@
 		font-weight: bold;
 		margin-bottom: 50px;
 	}
+	&__num{
+		position: absolute;
+		top: -18px;
+		right: 0;
+		color: #6b6b6b;
+		font-size: 12px;
+		&.white{
+			color: #fff;
+		}
+		&.pos{
+			top: 10px;
+		}
+		span{
+			color: #487fc7;
+		}
+	}
 	&__about{
 		background-color: #f0f1f4;
 		padding: 40px 0;
 	}
 	&__about-item{
+		position: relative;
 		margin-bottom: 11px;
 		label{
 			display: block;
