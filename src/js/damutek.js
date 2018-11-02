@@ -1,11 +1,11 @@
 //= partials/jquery.min.js
-//= partials/slick.min.js
+//= partials/jquery.easing.min.js
 //= partials/popper.min.js
+//= partials/bootstrap.js
+//= partials/slick.min.js
 //= partials/jquery.arcticmodal-0.3.min.js
 //= partials/rating.js
 //= partials/jquery.formstyler.js
-//= partials/bootstrap.js
-//= partials/jquery.easing.min.js
 //= partials/step-form.js
 
 $(function () {

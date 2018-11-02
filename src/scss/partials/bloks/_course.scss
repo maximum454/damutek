@@ -88,7 +88,6 @@
 	&__slide{
 		width: 100%;
 		position: absolute;
-		top: 150px;
 		left: 0;
 		right: 0;
 		z-index: 100;
@@ -97,7 +96,7 @@
 	&__anons{
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: 0 15px;
 		display: none;
 		position: relative;
 		top: 0;
