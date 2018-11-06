@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/meta.html
+    <title>Профиль учителя</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-teacher.html
+    <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Профиль
+                </div>
+            </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row"></div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__left"></div>
+            <div class="profile__right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="profile__inner">
+                        <div class="profile__aside">
+                            <div class="profile__photo">
+                                <img src="img/del/profile__photo.jpg" alt="">
+                            </div>
+                            <div class="profile__name">Ержан<br> <b>Куанбеков</b></div>
+
+                            <a class="profile__link" href="#">Профиль</a>
+                            <a class="profile__link" href="#">Сообщения</a>
+                            <a class="profile__link" href="#">Руководство по созданию курса</a>
+                            <a class="profile__link" href="#">База тестовых заданий</a>
+                            <a class="profile__link" href="#">Курсы</a>
+                            <a class="profile__link" href="#">Архив</a>
+                            <a class="profile__link" href="#">Настройки</a>
+                            <a class="profile__link" href="#">Коммерческая часть</a>
+                            <a class="profile__link" href="#">Поддержка и продвижение курса</a>
+                            <a class="profile__link" href="#">Сертификаты</a>
+                            <a class="profile__link active" href="#">Перестать быть преподавателем</a>
+                            <a class="profile__link" href="#">Выйти</a>
+                        </div>
+                        <div class="profile__content">
+                            <p>Чтобы перестать быть преподавателем,<br>
+                                нужно выполнить несколько обязательных действий</p>
+                            <hr>
+                            <div class="profile__item">
+                                <div class="mb-4">
+                                    <input type="checkbox"> <label for="">Закончить вести свои текущие курсы либо
+                                    передать их другому преподавателю.</label>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="checkbox"> <label for="">Поместить все свои созданные курсы в Архив,
+                                    чтобы новые студенты<br>
+                                    не подписывались на них.</label>
+                                </div>
+                                <a href="#" class="profile__btn long mb-4">Перейти к моим курсам</a>
+                            </div>
+                            <div class="mb-4">
+                                <p class="disable">Кнопка "Перестать быть приподавателем" становится активной только после того, как
+                                    выполнены все условия для этого и все обязательства по договору перед компанией
+                                    "Damutek" и студентами, купившими курсы этого преподавателя. После</p>
+                                <a href="#" class="profile__btn disable long">Послать запрос на удаление профиляпреподавателя</a>
+                            </div>
+                            <div class="profile__img">
+                                <img src="img/del/account-teacher-stop.jpg" alt="">
+                                <p><b>Предупреждение!</b></p>
+                                <p>Последующие действия необратимы, вы уверены, что хотите продолжить?</p>
+                            </div>
+                            <div class="profile__button">
+                                <a href="#" class="profile__btn">Продолжить</a>
+                                <a href="#" class="profile__btn disable">Отмена</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
