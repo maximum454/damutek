@@ -13,10 +13,15 @@
 		text-align: center;
 		margin-bottom: 25px;
 	}
+	&__filter{
+		width: 100%;
+		background-color: #f3f3f3;
+		padding: 20px 15px;
+	}
 	&__item {
 		max-width: 234px;
 		width: 100%;
-		margin: 0 auto 20px;
+		margin: 0 auto 40px;
 		&:hover{
 			.course__hover{
 				display: block;
@@ -90,6 +95,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
+		bottom: 0;
 		z-index: 100;
 		background-color: #f0f1f4;
 	}

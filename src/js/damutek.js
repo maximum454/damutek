@@ -82,5 +82,9 @@ $(function () {
             $('.basket__check').attr('checked', false).trigger('refresh');
         });
     });
+
+    $('.js-filter-btn').on('click', function () {
+        $('.filter__panel').slideToggle();
+    });
 });
 

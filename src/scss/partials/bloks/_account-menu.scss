@@ -50,4 +50,31 @@
 		height: 100%;
 
 	}
+	.nav-item{
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #fff;
+			width: 1px;
+			height: 100%;
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+		&:first-child{
+			.nav-link{
+				padding-left: 0!important;
+			}
+		}
+	}
+	.nav-link{
+		color: #fff;
+		padding-left: 20px!important;
+		padding-right: 20px!important;
+	}
 }
