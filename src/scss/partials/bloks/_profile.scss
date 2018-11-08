@@ -309,26 +309,33 @@
 		}
 	}
 	&__img {
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__notice{
 		background-color: #487fc7;
-		padding-bottom: 20px;
+		padding: 20px 0;
 		text-align: center;
 		color: #fff;
 		font-size: 18px;
 		b {
 			font-size: 24px;
 		}
-		img {
-			width: 100%;
-			height: 100%;
-			display: block;
-			object-fit: cover;
-			margin-bottom: 20px;
-		}
 	}
 	&__title {
 		font-size: 21px;
 		letter-spacing: -1px;
 		font-weight: bold;
+	}
+	&__header{
+		color: #487fc7;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
 	}
 	.jq-checkbox {
 		vertical-align: top;

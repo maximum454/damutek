@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/meta.html
+    <title>Панель преподавателя ИНТЕРФЕЙС</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-student.html
+    <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Панель преподавателя
+                </div>
+            </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>Тесты/задания</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__left"></div>
+            <div class="profile__right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="profile__inner">
+                        <nav class="profile__aside">
+                            <a class="profile__link active" href="#">Интерфейс</a>
+                            <a class="profile__link" href="#">Параметры группы</a>
+                            <a class="profile__link" href="#">Формулировки</a>
+                            <a class="profile__link" href="#">Черновики</a>
+                            <a class="profile__link" href="#">Одиночный вариант ответа</a>
+                            <a class="profile__link" href="#">Множественный вариант ответа</a>
+                            <a class="profile__link" href="#">Вопросы с изображением</a>
+                            <a class="profile__link" href="#">Вернуться к руководству</a>
+                        </nav>
+                        <div class="profile__content">
+                            <div class="profile__header">ИНТЕРФЕЙС</div>
+                            <p>Модуль редактора тестов предоставляет удобный интерфейс. В&nbsp;нем можно изменять и&nbsp;дополнять
+                                существующие тесты и&nbsp;создавать новые. Отдельные настройки процесса тестирования так&nbsp;же
+                                настраиваются в&nbsp;редакторе.</p>
+                            <p>При создании нового теста в&nbsp;первую очередь открывается меню ввода названия и&nbsp;описания
+                                новой базы тестовых заданий. Ниже находятся параметры создаваемого тестового блока:</p>
+                            <br>
+                            <div class="profile__img">
+                                <img src="img/teacher-panel-interface.jpg" alt="">
+                            </div>
+                            <br>
+                            <p>Название теста может отражать название курса или темы, к&nbsp;которой данный тестовый
+                                блок будет прикреплен.</p>
+                            <p>Поле &laquo;Описание базы тестов&raquo; является необязательным для заполнения и&nbsp;используется
+                                для удобства автора теста.</p>
+                            <p>Группа &laquo;Формулировка вопроса&raquo; управляет выбором формулировок вопроса, которые
+                                задаются при прохождении задания разными людьми. Так, автор может указать несколько
+                                разных формулировок одного вопроса. Тем самым у&nbsp;нескольких людей один и&nbsp;тот&nbsp;же
+                                вопрос будет звучат
+                                <nobr>по-разному</nobr>
+                                .
+                            </p>
+                            <div class="profile__button">
+                                <a class="profile__btn color" href="#">Создать курс</a>
+                                <a href="#" class="profile__btn">Мои курсы</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
