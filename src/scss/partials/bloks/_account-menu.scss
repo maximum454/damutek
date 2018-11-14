@@ -49,11 +49,23 @@
 		}
 		.nav-link{
 			color: #fff;
+			position: relative;
 			&.create{
 				display: block;
 				background-color: #487fc7;
-				position: relative;
 				padding:10px 35px;
+				&:before{
+					content: '+';
+					position: absolute;
+					top: 50%;
+					left: 13px;
+					transform: translate(0,-50%);
+					color: #fff;
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+			&.dots{
 				&:before{
 					content: '+';
 					position: absolute;
