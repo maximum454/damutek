@@ -46,6 +46,20 @@
 					display: none;
 				}
 			}
+			&.dots{
+				&:before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translate(0,-50%);
+					background-image: url("../img/nav-dots.png");
+					background-position: center;
+					background-repeat: no-repeat;
+					width: 4px;
+					height: 18px;
+				}
+			}
 		}
 		.nav-link{
 			color: #fff;
@@ -54,18 +68,6 @@
 				display: block;
 				background-color: #487fc7;
 				padding:10px 35px;
-				&:before{
-					content: '+';
-					position: absolute;
-					top: 50%;
-					left: 13px;
-					transform: translate(0,-50%);
-					color: #fff;
-					font-size: 24px;
-					font-weight: bold;
-				}
-			}
-			&.dots{
 				&:before{
 					content: '+';
 					position: absolute;
