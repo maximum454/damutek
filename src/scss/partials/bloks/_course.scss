@@ -19,7 +19,7 @@
 		padding: 20px 15px;
 	}
 	&__item {
-		max-width: 234px;
+		max-width: 250px;
 		width: 100%;
 		margin: 0 auto 40px;
 		&:hover{
@@ -48,7 +48,13 @@
 		color: #fff;
 		font-size: 14px;
 		text-transform: uppercase;
-
+		&.lider{
+			background-color: #e89f21;
+			color: #000;
+		}
+		&.hight{
+			background-color: #bf4747;
+		}
 	}
 	&__txt {
 		background-color: #f0f1f4;
