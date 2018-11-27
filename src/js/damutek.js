@@ -10,11 +10,6 @@
 
 
 $(function () {
-    /*link*/
-    $("a[href='#']").click(function () {
-        return false;
-    });
-
     $('.js-course-btn').on("click",function () {
         $(this).prev(".course__anons").slideToggle();
     });
@@ -28,7 +23,6 @@ $(function () {
             $(this).toggleClass('active');
         });
     }
-
 
     $('.popap_box').click(function() {
         $('#modalbox_' + $(this).data('body')).arcticmodal({

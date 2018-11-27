@@ -1,0 +1,146 @@
+.course-pass{
+	&__header{
+		background-color: #f0f1f4;
+		padding: 26px 35px;
+		color: #040308;
+		span{
+			color: #487fc7;
+		}
+	}
+	&__title{
+		font-size: 24px;
+	}
+	&__subtitle{
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+	&__rating{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		span{
+			margin-left: 20px;
+			font-size: 16px;
+			color: #040308;
+		}
+	}
+	&__certificat{
+		background-image: url("../img/course-pass__certificat.png");
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 42px;
+		margin: 0 auto 15px;
+		&.active{
+			background-image: url("../img/course-pass__certificat-active.png");
+			.text{
+				display: block;
+			}
+		}
+		.text{
+			display: none;
+			position: absolute;
+			top: -35px;
+			left: 0;
+			color: #487fc7;
+			font-size: 12px;
+			line-height: 12px;
+			text-align: center;
+		}
+
+	}
+	&__btn{
+		display: block;
+		background-color: #487fc7;
+		width: 100%;
+		max-width: 256px;
+		height: 60px;
+		margin-bottom: 25px;
+		color: #fff;
+		font-size: 16px;
+		line-height: 60px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		box-shadow: 3px 3px 12px -4px rgba(#000,.6);
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.progress{
+		margin-top: 10px;
+		border-radius: 0;
+		background-image: none;
+		background-color: #c4c4c4;
+	}
+	.progress-bar{
+		background-image: none;
+		background-color: #487fc7;
+	}
+	&__nav{
+		.navbar{
+			background-color: #1a2a75;
+			.nav-link{
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+		.nav-item{
+			margin-right: 100px;
+		}
+		.dropdown-menu{
+			top: 70px;
+			background-color: #3478d0;
+			&:before{
+				content: '';
+				position: absolute;
+				top: -40px;
+				left: 80px;
+				border: 20px solid transparent;
+				border-bottom: 30px solid #3478d0;
+			}
+		}
+		.dropdown-item{
+			color: #fff;
+		}
+		.dropdown-divider{
+			margin: .5rem 10px;
+		}
+		.dropdown-item:focus, .dropdown-item:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #1a2a75;
+		}
+	}
+	&__main{
+		padding: 36px 0;
+	}
+	&__form{
+		width: 100%;
+		max-width: 400px;
+		position: relative;
+		margin-bottom: 25px;
+		input[type=text]{
+			background-color: #f0f1f4;
+			width: 100%;
+			height: 38px;
+			padding: 0 20px;
+			border: 1px solid #a2a2a2;
+		}
+		input[type=submit]{
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: #487fc7;
+			background-image: url("../img/course-pass-search.png");
+			background-repeat: no-repeat;
+			background-size: 18px;
+			background-position: center;
+			width: 40px;
+			height: 100%;
+			border: none;
+		}
+
+	}
+}
