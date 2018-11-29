@@ -1,0 +1,131 @@
+.open-topics{
+	position: relative;
+	margin-bottom: 40px;
+	&__item{
+		margin-bottom: 20px;
+	}
+	&__header{
+		position: relative;
+		background-color: #f1f1f1;
+		padding: 20px;
+		margin-bottom: 2px;
+	}
+	&__num{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		color: #c4c4c4;
+		font-size: 16px;
+		b{
+			color: #487fc7;
+			font-weight: bold;
+		}
+
+	}
+	&__tema{
+		color: #487fc7;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	&__name{
+		font-size: 24px;
+	}
+	&__lesson{
+		position: relative;
+		background-color: #f1f1f1;
+		padding: 20px;
+		width: 100%;
+		color: #757070;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&.active{
+			background-color: #1a2a75;
+			color: #fff;
+		}
+	}
+	&__video{
+		display: block;
+		background-image: url("../img/open-topics-play.png");
+		background-repeat: no-repeat;
+		width: 27px;
+		height: 27px;
+		margin-right: 25px;
+		text-decoration: none;
+	}
+	&__title{
+		font-size: 18px;
+		margin-left: 0;
+		margin-right: auto;
+	}
+	&__resources{
+		position: relative;
+		background-color: #e4e4e4;
+		padding: 20px;
+		width: 100%;
+		color: #6a6464;
+		hr{
+			border-color: #487fc7;
+		}
+	}
+	&__completed{
+		background-color: #e4e4e4;
+		position: relative;
+		width: 100%;
+		padding: 10px 0;
+		color: #000;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		a{
+			color: #1a2a75;
+			font-weight: bold;
+		}
+	}
+	&__check{
+		position: relative;
+		background-color: #fff;
+		height: 27px;
+		width: 27px;
+		margin-right: 20px;
+		border: 1px solid #487fc7;
+		border-radius: 50%;
+		cursor: pointer;
+		&.active,
+		&.check{
+			background-color: #487fc7;
+			background-image: url("../img/checkbox__check.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 14px 10px;
+		}
+	}
+	&__transcript{
+		background-image: url("../img/open-topics__transcript.png");
+		background-repeat: no-repeat;
+		height: 27px;
+		width: 27px;
+		margin-left: 30px;
+	}
+	&__passed{
+		position: relative;
+		background-color: #fff;
+		height: 27px;
+		width: 27px;
+		margin-left: 20px;
+		border: 1px solid #487fc7;
+		border-radius: 50%;
+		cursor: pointer;
+		&.active,
+		&.check,
+		&:hover{
+			background-color: #487fc7;
+			background-image: url("../img/checkbox__check.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 14px 10px;
+		}
+	}
+}
