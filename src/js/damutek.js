@@ -95,5 +95,10 @@ $(function () {
         });
     }
 
+    $('.js-transcript').tooltip();
+    $(".collapse").collapse({
+        parent: false,
+        toggle: false
+    })
 });
 
