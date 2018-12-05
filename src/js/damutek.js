@@ -63,7 +63,9 @@ $(function () {
 
     $('.js-star').rating();
 
-    $('input[type=checkbox],input[type=file], select').styler();
+    $('input[type=checkbox],input[type=file], select').styler({
+        fileBrowse: 'Прикрепить изображение'
+    });
 
     if ($('.js-select').length) {
         $('.js-select').on('click', function (e) {
@@ -96,6 +98,7 @@ $(function () {
     }
 
     $('.js-transcript').tooltip();
+
     $(".collapse").collapse({
         parent: false,
         toggle: false
