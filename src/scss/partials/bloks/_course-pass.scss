@@ -74,6 +74,10 @@
 		&.disable{
 			background-color: #c3c3c3;
 		}
+		&.form{
+			width: 234px;
+			height: 38px;
+		}
 	}
 	.progress{
 		margin-top: 10px;
@@ -162,6 +166,14 @@
 	}
 	&__form{
 		width: 100%;
+		position: relative;
+		margin-bottom: 25px;
+		span{
+			color: #6a6464;
+		}
+	}
+	&__form-inner{
+		width: 100%;
 		max-width: 400px;
 		position: relative;
 		margin-bottom: 25px;
@@ -184,6 +196,9 @@
 			width: 40px;
 			height: 100%;
 			border: none;
+		}
+		&.long{
+			max-width: 684px;
 		}
 
 	}
