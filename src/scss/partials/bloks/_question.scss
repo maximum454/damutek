@@ -1,0 +1,35 @@
+.question{
+	margin-bottom: 46px;
+	border-bottom: 2px solid #c4c4c4;
+	&__item{
+		display: flex;
+		margin-bottom: 18px;
+		&:first-child{
+			border-bottom: 2px solid #c4c4c4;
+		}
+		&.level{
+			margin-left: 58px;
+		}
+	}
+	&__img{
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 30px;
+		flex-shrink: 0;
+	}
+	&__name{
+		color: #487fc7;
+		font-size: 18px;
+		font-weight: bold;
+		span{
+			color: #c4c4c4;
+			font-weight: normal;
+			margin-left: 30px;
+		}
+	}
+	&__anons{
+		font-size: 18px;
+	}
+}
