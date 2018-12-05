@@ -1,6 +1,11 @@
 .question{
 	margin-bottom: 46px;
 	border-bottom: 2px solid #c4c4c4;
+	&__title{
+		font-size: 21px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
 	&__item{
 		display: flex;
 		margin-bottom: 18px;
