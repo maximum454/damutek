@@ -65,4 +65,27 @@
 			background-color: #b6b6b6;
 		}
 	}
+	&__results{
+		background-color: #3478d0;
+		padding: 28px 60px;
+		margin-bottom: 30px;
+		color: #fff;
+		text-align: center;
+		hr{
+			border-color: #fff;
+		}
+		img{
+			display: block;
+			margin: 0 auto 10px;
+		}
+		p{
+			font-size: 24px;
+		}
+		b{
+			font-size: 60px;
+		}
+		span{
+			font-size: 18px;
+		}
+	}
 }
