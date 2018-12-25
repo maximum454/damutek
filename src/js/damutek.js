@@ -10,6 +10,7 @@
 
 
 $(function () {
+    /*Подробнее курс всплывашка*/
     $('.js-course-btn').on("click",function () {
         $(this).prev(".course__anons").slideToggle();
     });
@@ -60,7 +61,7 @@ $(function () {
         });
     }
 
-
+    /*Рейтинг*/
     $('.js-star').rating();
 
     $('input[type=checkbox],input[type=file], select').styler({

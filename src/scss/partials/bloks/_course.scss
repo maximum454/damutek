@@ -9,9 +9,10 @@
 	}
 	&__header {
 		color: #040308;
-		font-size: 25px;
+		font-size: 24px;
+		letter-spacing: -.5px;
 		text-align: center;
-		margin-bottom: 25px;
+		margin-bottom: 14px;
 	}
 	&__filter{
 		width: 100%;
@@ -19,7 +20,7 @@
 		padding: 20px 15px;
 	}
 	&__item {
-		max-width: 250px;
+		max-width: 234px;
 		width: 100%;
 		margin: 0 auto 40px;
 		&:hover{
@@ -58,31 +59,30 @@
 	}
 	&__txt {
 		background-color: #f0f1f4;
-		padding: 26px 19px;
+		padding: 20px 20px 10px;
 		color: #040308;
 		position: relative;
 	}
 	&__name {
-		font-size: 17px;
+		font-size: 16px;
+		letter-spacing: -.5px;
 		font-weight: bold;
-		margin-bottom: 13px;
+		margin-bottom: 2px;
 	}
 	&__author {
-		font-size: 15px;
-		margin-bottom: 15px;
-	}
-	&__star {
-		margin-bottom: 13px;
+		font-size: 14px;
+		margin-bottom: 8px;
 	}
 	&__bottom{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
 	&__price {
 		font-size: 20px;
 		font-weight: bold;
+		letter-spacing: -1.6px;
 	}
 	&__like{
 		display: block;
@@ -101,9 +101,13 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 0;
+		top: 0;
 		z-index: 100;
 		background-color: #f0f1f4;
+	}
+	&__down{
+		position: relative;
+		bottom: 0;
 	}
 	&__anons{
 		list-style: none;
@@ -111,7 +115,7 @@
 		padding: 0 15px;
 		display: none;
 		position: relative;
-		top: 0;
+		bottom: 0;
 		li{
 			padding: 5px 0;
 			border-top: 1px solid #aaaaaa;
@@ -135,5 +139,8 @@
 	&__base{
 		font-size: 14px;
 		margin-bottom: 10px;
+	}
+	.star {
+		margin-bottom: 5px;
 	}
 }
