@@ -89,7 +89,7 @@
 		margin-right: 0;
 		&--in{
 			width: 100%;
-			max-width: 395px;
+			max-width: 480px;
 			justify-content: space-between;
 			margin-right: auto;
 			align-items: baseline;
@@ -108,6 +108,7 @@
 	&__basket{
 		display: block;
 		background-image: url("../img/basket.svg");
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 26px;
@@ -116,6 +117,8 @@
 		span{
 			position: absolute;
 			bottom: -17px;
+			left: 50%;
+			transform: translate(-50%,0);
 			background-color: #1a2a75;
 			padding: 1px 13px;
 			border-radius: 12px;
@@ -123,10 +126,17 @@
 			font-size: 10px;
 			line-height: 1;
 		}
+		&.active{
+			background-image: url("../img/basket__active.svg");
+			span{
+				background-color: #9cbb44;
+			}
+		}
 	}
 	&__like{
 		display: block;
 		background-image: url("../img/about-course__like.svg");
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 23px;
@@ -135,12 +145,20 @@
 		span{
 			position: absolute;
 			bottom: -17px;
+			left: 50%;
+			transform: translate(-50%,0);
 			background-color: #1a2a75;
 			padding: 1px 13px;
 			border-radius: 12px;
 			color: #fff;
 			font-size: 10px;
 			line-height: 1;
+		}
+		&.active{
+			background-image: url("../img/about-course__like-active.svg");
+			span{
+				background-color: #487fc7;
+			}
 		}
 	}
 	&__user,
@@ -154,7 +172,8 @@
 		span{
 			position: absolute;
 			bottom: -15px;
-			left: 0;
+			left: 50%;
+			transform: translate(-50%,0);
 			background-color: #1a2a75;
 			padding: 1px 9px;
 			border-radius: 12px;

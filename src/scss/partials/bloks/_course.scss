@@ -79,10 +79,25 @@
 		justify-content: space-between;
 		margin-bottom: 0;
 	}
+
 	&__price {
 		font-size: 20px;
 		font-weight: bold;
 		letter-spacing: -1.6px;
+	}
+	&__basket{
+		display: block;
+		background-image: url("../img/course__basket.svg");
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 28px;
+		height: 25px;
+		cursor: pointer;
+		margin-right: 0;
+		margin-left: auto;
+		&.active{
+			background-image: url("../img/course__basket-active.svg");
+		}
 	}
 	&__like{
 		display: block;
@@ -92,6 +107,7 @@
 		width: 28px;
 		height: 25px;
 		cursor: pointer;
+		margin-left: 10px;
 		&.active{
 			background-position: top right;
 		}

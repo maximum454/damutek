@@ -15,7 +15,7 @@ $(function () {
         $(this).prev(".course__anons").slideToggle();
     });
 
-    $('.js-like').on('click', function () {
+    $('.js-active').on('click', function () {
         $(this).toggleClass('active');
     });
 
