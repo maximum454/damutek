@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/meta.html
+    <title>ПРОХОЖДЕНИЕ КУРСА - ВОЗВРАТ СРЕДСТВ</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-student.html
+    <main class="main">
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>Возврат денежных средств</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="course-pass">
+            <div class="container">
+                <div class="row">
+                    <form class="form-refunds" action="">
+                        <div class="form-refunds__title">Пожалуйста, укажите причину отказа от прохождения курса:</div>
+                        <div class="form-refunds__main">
+                            <div class="form-group">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked>
+                                    Не понравился курс
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    <input type="checkbox" class="form-check-input">
+                                    Не соответствует заявленному формату
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    <input type="checkbox" class="form-check-input">
+                                    Другое
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="" cols="50" rows="4"
+                                          placeholder="Напишите вашу причину отказа от прохождения курса"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-refunds__warning  mb-4">
+                            <p>Внимание! Если вы&nbsp;не&nbsp;довольны приобретенным курсом, Damutek для большинства
+                                курсов предлагает возможность отказа от&nbsp;курса в&nbsp;<b>течение 14 дней после
+                                    покупки курса</b>.</p>
+                            <p>В&nbsp;целях безопасности возврат денежных средств будет осуществлен в&nbsp;течение <b>44
+                                дней</b> на&nbsp;платежную карту, по&nbsp;которой производилась оплата.</p>
+                        </div>
+                        <div class="form-refunds__footer">
+                            <a href="#" class="form-refunds__btn dark">Назад к содержанию курса</a>
+                            <input  class="form-refunds__btn" type="submit" value="Отправить заявку">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
