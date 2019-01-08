@@ -9,21 +9,23 @@
 <div class="wrp">
     //= template/header.html
     <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Корзина
+                </div>
+            </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>Оформление заказа</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="basket">
-            <div class="basket__header">
-                <div class="container">
-                    <div class="row">
-                        Корзина
-                    </div>
-                </div>
-            </div>
-            <div class="basket__count">
-                <div class="container">
-                    <div class="row">
-                        Оформление заказа
-                    </div>
-                </div>
-            </div>
             <div class="basket__inner">
                 <div class="container">
                     <div class="row">
@@ -61,39 +63,40 @@
                         <div class="col-lg-6">
                             <form action="" class="form-card">
                                 <div class="form-card__header">
-                                    <input id="new-card" type="checkbox"> <label for="new-card">Новая карта оплаты <img src="img/card-visa.png" alt=""> <img src="img/card-master.png" alt=""></label>
+                                    <input id="new-card" type="checkbox"> <label for="new-card">Новая карта оплаты <img
+                                        src="img/card-visa.png" alt=""> <img src="img/card-master.png" alt=""></label>
                                 </div>
-                                <div class="form-card__num">
-                                    <input type="text" placeholder="ХХХХ - ХХХХ - ХХХХ - ХХХХ">
-                                </div>
-                                <div class="form-card__data">
-                                    <input type="text" class="form-card__mm" placeholder="ММ">
-                                    <input type="text" class="form-card__gg" placeholder="ГГ">
-                                    <input type="text" class="form-card__cod" placeholder="Код безопасности">
-                                </div>
-                                <div class="form-card__fio">
-                                    <input type="text" class="form-card__name" placeholder="ИМЯ">
-                                    <input type="text" class="surname" placeholder="ФАМИЛИЯ">
+                                <div class="form-card__inner">
+                                    <div class="form-card__num">
+                                        <input type="text" placeholder="ХХХХ - ХХХХ - ХХХХ - ХХХХ">
+                                    </div>
+                                    <div class="form-card__data">
+                                        <input type="text" class="form-card__mm" placeholder="ММ">
+                                        <input type="text" class="form-card__gg" placeholder="ГГ">
+                                        <input type="text" class="form-card__cod" placeholder="Код безопасности">
+                                    </div>
+                                    <div class="form-card__fio row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-card__name" placeholder="ИМЯ">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="surname" placeholder="ФАМИЛИЯ">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-card__save">
-                                    <input id="save-card" type="checkbox" checked disabled> <label for="save-card">Запомнить эту карту</label>
+                                    <input id="save-card" type="checkbox" checked> <label for="save-card">Запомнить эту
+                                    карту</label>
                                 </div>
-                                <div class="paypal__inner">
-                                    <a href="#" class="form-card__btn">Продолжить</a>
-                                    <span>Завершая покупку, вы принимаете данные <b>Условия предоставления услуг.</b></span>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" class="form-card__btn" value="Завершить оплату">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Завершая покупку, вы принимаете данные <a href="#">Условия предоставления услуг.</a></p>
+                                    </div>
                                 </div>
                             </form>
-
-                            <div class="paypal">
-                                <div class="paypal__header">
-                                    <input id="paypal" type="checkbox"> <label for="paypal"><img src="img/logo-paypal.png" alt=""></label>
-                                </div>
-                                <p>Чтобы завершить операцию, мы переведем вас на защищенные серверы PayPal.</p>
-                                <div class="paypal__inner">
-                                    <a href="#" class="paypal__btn">Продолжить</a>
-                                    <span>Завершая покупку, вы принимаете данные <b>Условия предоставления услуг.</b></span>
-                                </div>
-                            </div>
                         </div>
 
                     </div>

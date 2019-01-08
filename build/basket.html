@@ -49,8 +49,8 @@
                     <input type="submit" class="header__submit">
                 </div>
                 <div class="header__registr">
-                    <a href="#" class="header__auth popap_box" data-body="auth">Войти</a>
-                    <a href="#" class="header__reg popap_box" data-body="reg">Зарегистрироваться</a>
+                    <a href="#" class="header__auth popap_box" data-body="reg">Войти</a>
+                    <a href="#" class="header__reg popap_box" data-body="auth">Зарегистрироваться</a>
                     <a href="#" class="header__basket"></a>
                 </div>
                 <div class="hidden">
@@ -145,7 +145,9 @@
         <div class="main__count">
             <div class="container">
                 <div class="row">
-                    Курсов в корзине: 3
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>Курсов в корзине: 3</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,7 +186,7 @@
                                 <div class="basket__txt">
                                     <div class="basket__name">Кодировка в реальном времени - просто и легко</div>
                                     <div class="basket__author">Ермек Кажигулов</div>
-                                    <a href="#" class="basket__favorit">Уже в избранном</a>
+                                    <a href="#" class="basket__favorit active">Уже в избранном</a>
                                     <div class="basket__price">
                                         <div class="basket__cena">6 500 тг</div>
                                         <div class="basket__discount">7 500 тг</div>
@@ -216,7 +218,7 @@
                                 </div>
                                 <a href="#" class="form-order__btn">Оформление заказа</a>
                                 <input type="text" class="form-order__promo" placeholder="Напишите промо-код">
-                                <input type="submit" class="form-order__btn form-order__btn--submit">
+                                <input type="submit" class="form-order__btn form-order__btn--submit" value="Добавить промо-код">
                             </form>
                         </div>
 
