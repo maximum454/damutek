@@ -95,6 +95,7 @@ $(function () {
     if ($('.js-filter-btn').length) {
         $('.js-filter-btn').on('click', function () {
             $('.filter__panel').slideToggle();
+            $(this).toggleClass('active');
         });
     }
 

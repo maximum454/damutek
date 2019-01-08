@@ -60,6 +60,12 @@
 					height: 18px;
 				}
 			}
+			&.active{
+				a{
+					color: #75a7f4;
+				}
+
+			}
 		}
 		.nav-link{
 			color: #fff;
