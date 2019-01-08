@@ -68,6 +68,7 @@ $(function () {
         fileBrowse: 'Прикрепить изображение'
     });
 
+
     if ($('.js-select').length) {
         $('.js-select').on('click', function (e) {
             e.preventDefault();

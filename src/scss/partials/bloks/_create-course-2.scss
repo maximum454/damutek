@@ -55,6 +55,24 @@
 		border: 1px solid #487fc7;
 		color: #9fa0a0;
 		font-size: 16px;
+		&.promo{
+			background-color: #1a2a75;
+			padding-left: 5px;
+			padding-right: 5px;
+			color: #fff;
+			&::-webkit-input-placeholder {
+				color: #fff;
+			}
+			&::-moz-placeholder {
+				color: #fff;
+			}
+			&:-ms-input-placeholder {
+				color: #fff;
+			}
+			&:-moz-placeholder {
+				color: #fff;
+			}
+		}
 	}
 	.jq-selectbox{
 		width: 100%;

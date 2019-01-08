@@ -1,0 +1,22 @@
+.content-course{
+	background-color: #f0f1f4;
+	padding: 30px 0;
+	margin-bottom: 30px;
+	&__item{
+		width: 100%;
+		display: flex;
+		padding: 30px 0;
+	}
+	&__name{
+		color: #487fc7;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 257px;
+		flex-shrink: 0;
+	}
+	&__anons{
+		width: 100%;
+	}
+}
