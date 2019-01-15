@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/meta.html
+    <title>База тестовых заданий</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-teacher.html
+    <main class="main">
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>База тестовых заданий</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="base-test">
+            <div class="base-test__left"></div>
+            <div class="base-test__right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="base-test__inner">
+                        <div class="base-test__aside">
+                            <div class="base-test__menu">
+                                <div class="base-test__title">Группы тестов</div>
+                                <ul class="base-test__list">
+                                    <li>
+                                        <a href="#">Группа тестов 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Тесты экономика</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Тесты по Микроэконеомике</a>
+                                    </li>
+                                </ul>
+
+                                <a class="base-test__add" href="#">Создать новую группу тестов</a>
+
+                                <a class="base-test__draft" href="#">Черновики <span>6</span></a>
+
+                            </div>
+
+                        </div>
+                        <div class="base-test__content">
+                            <form action="" class="form-base-test">
+                                <div class="form-group">
+                                    <label class="form-base-test__label" for="">Название базы тестов</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Введите название базы тестовых заданий">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-base-test__label" for="">Описание базы тестов</label>
+                                    <textarea class="form-control" name="" rows='3'
+                                              placeholder="Введите описание базы тестовых заданий"></textarea>
+                                </div>
+                                <div class="form-base-test__inner">
+                                    <div class="form-base-test__num"><span>1</span> из 5</div>
+                                    <div class="form-base-test__type">
+                                        <label class="" for="">Тип вопроса:</label>
+                                        <select name="" id="">
+                                            <option value="">Вопрос с одиночным вариантом выбора ответа</option>
+                                            <option value="">Вопрос с множественным вариантом выбора ответа</option>
+                                            <option value="">Вопрос с загрузкой изображения</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-base-test__photo">
+                                        <textarea class="form-control" name="" id="" cols="30" rows="10"
+                                                  placeholder="Введите основную формулировку вашего вопроса"></textarea>
+                                        <div class="form-base-test__img"></div>
+                                    </div>
+                                    <div class="form-base-test__formulation">
+                                        <button class="form-base-test__btn">Добавить формулировку вопроса</button>
+                                        <button class="form-base-test__btn dark">Удалить формулировку вопроса</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="" rows='3'
+                                                  placeholder="Введите дополнительную формулировку"></textarea>
+                                    </div>
+                                    <div class="form-base-test__formulation">
+                                        <button class="form-base-test__btn">Добавить формулировку вопроса</button>
+                                        <button class="form-base-test__btn dark">Удалить формулировку вопроса</button>
+                                    </div>
+
+                                    <div class="form-base-test__warning">
+                                        Введите варианты ответа к вопросу и выделите правильный вариант в<br> окошке
+                                        слева.
+                                    </div>
+                                    <div class="form-base-test__checked">
+                                        <div class="form-base-test__checked-item">
+                                            <input type="checkbox"> <input class="form-control" type="text"
+                                                                           placeholder="Введите вариант ответа A">
+                                        </div>
+                                        <div class="form-base-test__checked-item">
+                                            <input type="checkbox"> <input class="form-control" type="text"
+                                                                           placeholder="Введите вариант ответа B">
+                                        </div>
+                                        <div class="form-base-test__checked-item">
+                                            <input type="checkbox"> <input class="form-control" type="text"
+                                                                           placeholder="Введите вариант ответа C">
+                                        </div>
+                                        <div class="form-base-test__checked-item">
+                                            <input type="checkbox"> <input class="form-control" type="text"
+                                                                           placeholder="Введите вариант ответа D">
+                                        </div>
+                                        <div class="form-base-test__checked-item">
+                                            <input type="checkbox"> <input class="form-control" type="text"
+                                                                           placeholder="Введите вариант ответа E">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-base-test__warning">
+                                        <p><b>Связанная лекция</b></p>
+                                        <p>Если Ваш вопрос предназначается для определенного урока, Вы можете прикрепить
+                                            ссылку на данный урок, как вспомогательный материал</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-base-test__label form-base-test__label--default" for="">Выберите
+                                            курс</label>
+                                        <select name="" id="">
+                                            <option value="">Не выбрано</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-base-test__label form-base-test__label--default" for="">Выберите
+                                            урок</label>
+                                        <select name="" id="">
+                                            <option value="">Не выбрано</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-base-test__inner-panel">
+                                        <button class="form-base-test__btn color"><i><</i>Предыдущий вопрос</button>
+                                        <div class="form-base-test__panel-line"></div>
+                                        <button class="form-base-test__btn color"><i>+</i>Добавить вопрос</button>
+                                        <div class="form-base-test__panel-line"></div>
+                                        <button class="form-base-test__btn color"><i>x</i>Удалить вопрос</button>
+                                        <div class="form-base-test__panel-line"></div>
+                                        <button class="form-base-test__btn color">Следующий вопрос <i> ></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="form-base-test__inner">
+                                    <p><b>Дополнительные возможности группы тестов:</b></p>
+                                    <div class="form-base-test__addop">
+                                        <label class="mb-4" for=""><input type="checkbox">Перемешать вопросы в группе
+                                            при прохождении теста</label>
+                                        <label for=""><input type="checkbox">Ограничить количество вопросов из данной
+                                            группы в тесте до </label>
+                                        <input class="form-base-test__coutn" type="text" value="5">
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
