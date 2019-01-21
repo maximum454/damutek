@@ -28,13 +28,13 @@
                             <div class="base-test__menu">
                                 <div class="base-test__title">Группы тестов</div>
                                 <ul class="base-test__list">
-                                    <li>
+                                    <li class="js-delete">
                                         <a href="#">Группа тестов 1</a>
                                     </li>
-                                    <li>
+                                    <li class="js-delete">
                                         <a href="#">Тесты экономика</a>
                                     </li>
-                                    <li>
+                                    <li class="js-delete">
                                         <a href="#">Тесты по Микроэконеомике</a>
                                     </li>
                                 </ul>
@@ -47,6 +47,15 @@
 
                         </div>
                         <div class="base-test__content">
+                            <form action="" class="form-base">
+                                <div class="form-base__header">
+                                    Вы уверены, что хотите удалить данную группу тестов?
+                                </div>
+                                <div class="form-base__inner">
+                                    <input type="submit" value="Да, удалить базу">
+                                    <input type="button" class="js-close" value="Нет, отменить">
+                                </div>
+                            </form>
                             <form action="" class="form-base-test">
                                 <div class="form-group">
                                     <label class="form-base-test__label" for="">Название базы тестов</label>
@@ -154,7 +163,6 @@
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>

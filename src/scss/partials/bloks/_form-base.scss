@@ -1,0 +1,38 @@
+.form-base{
+	width: 100%;
+	max-width: 650px;
+	position: absolute;
+	left: 50%;
+	top: 70px;
+	transform: translate(-50%,0);
+	z-index: 10;
+	display: none;
+	&__header{
+		background-color: #26286f;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		padding: 20px;
+	}
+	&__inner{
+		background-color: #487fc7;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px;
+	}
+	input[type=submit],
+	input[type=reset],
+	input[type=button]{
+		width: 100%;
+		max-width: 231px;
+		height: 48px;
+		background-color: #26286f;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		border: 0;
+	}
+}

@@ -105,6 +105,13 @@ $(function () {
     $(".collapse").collapse({
         parent: false,
         toggle: false
-    })
+    });
+
+    $('.js-delete').on('click', function () {
+        $('.form-base').toggle();
+    });
+    $('.js-close').on('click', function () {
+        $('.form-base').hide();
+    });
 });
 
