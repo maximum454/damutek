@@ -107,8 +107,11 @@ $(function () {
         toggle: false
     });
 
+    $('.js-trans').on('click', function () {
+        $('.form-base--trans').toggle();
+    });
     $('.js-delete').on('click', function () {
-        $('.form-base').toggle();
+        $('.form-base--delete').toggle();
     });
     $('.js-close').on('click', function () {
         $('.form-base').hide();

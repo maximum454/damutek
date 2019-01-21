@@ -28,14 +28,17 @@
                             <div class="base-test__menu">
                                 <div class="base-test__title">Группы тестов</div>
                                 <ul class="base-test__list">
-                                    <li class="js-delete">
-                                        <a href="#">Группа тестов 1</a>
+                                    <li>
+                                        <a href="#" class="js-trans">Группа тестов 1</a>
+                                        <div class="base-test__basket js-delete"></div>
                                     </li>
-                                    <li class="js-delete">
-                                        <a href="#">Тесты экономика</a>
+                                    <li>
+                                        <a href="#" class="js-trans">Тесты экономика</a>
+                                        <div class="base-test__basket js-delete"></div>
                                     </li>
-                                    <li class="js-delete">
-                                        <a href="#">Тесты по Микроэконеомике</a>
+                                    <li>
+                                        <a href="#" class="js-trans">Тесты по микроэкономике</a>
+                                        <div class="base-test__basket js-delete"></div>
                                     </li>
                                 </ul>
 
@@ -47,9 +50,19 @@
 
                         </div>
                         <div class="base-test__content">
-                            <form action="" class="form-base">
+                            <form action="" class="form-base form-base--delete">
                                 <div class="form-base__header">
                                     Вы уверены, что хотите удалить данную группу тестов?
+                                </div>
+                                <div class="form-base__inner">
+                                    <input type="submit" value="Да, удалить базу">
+                                    <input type="button" class="js-close" value="Нет, отменить">
+                                </div>
+                            </form>
+                            <form action="" class="form-base form-base--trans">
+                                <div class="form-base__header">
+                                    Вы уверены, что хотите перейти к группе тестов «Тесты экономика»?
+                                    Не сохранненые изменения в открытой группе тестов будут потеряны.
                                 </div>
                                 <div class="form-base__inner">
                                     <input type="submit" value="Да, удалить базу">
