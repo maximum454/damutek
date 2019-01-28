@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Twitter Card data -->
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <a href="#" class="header__logo"><img src="img/logo-damutek.svg" alt=""></a>
+                <div class="header__category dropdown">
+                    <div class="dropdown-toggle" data-toggle="dropdown">Категории</div>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Экономика</a></li>
+                        <li><a href="#">Юридическое лицо</a></li>
+                        <li><a href="#">Архитектура</a></li>
+                        <li><a href="#">2D графика</a></li>
+                        <li><a href="#">3D графика</a></li>
+                        <li><a href="#">Менеджмент</a></li>
+                        <li><a href="#">Бизнес</a></li>
+                        <li><a href="#">Личностный рост</a></li>
+                    </ul>
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__input">
+                    <input type="submit" class="header__submit">
+                </div>
+                <div class="header__registr">
+                    <a href="#" class="header__auth popap_box" data-body="reg">Войти</a>
+                    <a href="#" class="header__reg popap_box" data-body="auth">Зарегистрироваться</a>
+                    <a href="#" class="header__basket"></a>
+                </div>
+                <div class="hidden">
+                    <div id="modalbox_auth" class="modal-auth">
+                        <div class="box-modal_close arcticmodal-close"></div>
+                        <div class="modal-auth__logo"><img src="img/modal__logo.png" alt=""></div>
+                        <div class="modal-auth__header">ЗАРЕГИСТРИРОВАТЬСЯ КАК ПРЕПОДАВАТЕЛЬ</div>
+    
+                        <div class="modal-auth__anons">
+                            Здравствуйте! Для того, чтобы стать преподавателем на нашем ресурсе, делиться своими
+                            знаниями и иметь дополнительный источник дохода, Вам необходимо пройти несколько процедур:
+                        </div>
+                        <div class="modal-auth__inner">
+                            <div class="modal-auth__item">
+                                <div class="modal-auth__num">1</div>
+                                <p>Ознакомиться с договором<br>
+                                    о сотрудничестве</p>
+                            </div>
+                            <div class="modal-auth__item">
+                                <div class="modal-auth__num">2</div>
+                                <p>Пройти процедуру регистрации<br>
+                                    аккаунта преподавателя</p>
+                            </div>
+                            <div class="modal-auth__item">
+                                <div class="modal-auth__num">3</div>
+                                <p>Записать 3-х минутное видео<br>
+                                    о курсе, который вы будете<br>
+                                    преподавать и отправить нам.</p>
+                            </div>
+                            <a href="#" class="modal-auth__btn">Продолжить</a>
+                            <a href="#" class="modal-auth__btn modal-auth__btn--gray">Отмена</a>
+                        </div>
+                    </div>
+    
+                    <div id="modalbox_reg" class="modal-reg">
+                        <div class="box-modal_close arcticmodal-close"></div>
+                        <div class="modal-reg__logo"><img src="img/modal__logo.png" alt=""></div>
+    
+                        <div class="modal-reg__tabs">
+                            <input class="modal-reg__input" id="tab1" type="radio" name="tabs" checked>
+                            <label class="modal-reg__label" for="tab1" title="Вкладка 1">ВОЙТИ</label>
+    
+                            <input class="modal-reg__input" id="tab2" type="radio" name="tabs">
+                            <label class="modal-reg__label" for="tab2" title="Вкладка 2">ЗАРЕГИСТРИРОВАТЬСЯ</label>
+    
+                            <section class="modal-reg__content" id="content1">
+                                <form class="form-reg" action="">
+                                    <div class="form-reg__item">
+                                        <label class="form-reg__label" for="login">Адрес электронной почты</label>
+                                        <input id="login" type="text" class="form-reg__input"
+                                               placeholder="Andrei@mail.com">
+                                    </div>
+                                    <div class="form-reg__item">
+                                        <label class="form-reg__label" for="pass">Пароль</label>
+                                        <input id="pass" type="text" class="form-reg__input"
+                                               placeholder="***************">
+                                    </div>
+                                    <div class="form-reg__item">
+                                        <a href="#" class="form-reg__forgot">Забыли пароль?</a>
+                                    </div>
+                                    <div class="form-reg__item">
+                                        <a href="#" class="modal-reg__btn">Войти</a>
+                                    </div>
+                                    <div class="form-reg__social">
+                                        <p>Войти через социальные сети: </p>
+                                        <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
+                                        <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
+                                        <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
+                                    </div>
+                                </form>
+                            </section>
+                            <section class="modal-reg__content" id="content2">
+                                2
+                            </section>
+                        </div>
+                        <div class="modal-reg__problem">
+                            <a href="#">У Вас возникли проблемы со входом?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="vacancy">
+            <div class="vacancy__header">
+                <img src="img/vacancy.png" alt="">
+                <div class="vacancy__caption">
+                    <h1>Станьте частью нашей команды!</h1>
+                    <h3>«В одиночку мы можем так мало, вместе мы можем свернуть горы!» — Хелен Келлер (с)</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Открытые вакансии</h2>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Маркетолог - консультант</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения и распространения
+                                    лучших проявлений преподавательского таланта. Наша команда стремится обеспечить
+                                    условия при которых образование высокого уровня и экономические возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить деньги и каким образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука - прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть ежеквартальная (на основании
+                                        выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и печенье.</li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО МИРА.</li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                <div class="form-vacancy__item">
+                                    <div class="form-vacancy__row">
+                                        <label for="">ФИО*</label>
+                                        <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                    </div>
+                                    <div class="form-vacancy__row">
+                                        <label for="">Резюме</label>
+                                        <input type="file" placeholder="Введите ваши ФИО">
+                                    </div>
+                                </div>
+                                <div class="form-vacancy__item">
+                                    <div class="form-vacancy__row">
+                                        <label for="">e-mail*</label>
+                                        <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                    </div>
+                                    <div class="form-vacancy__row">
+                                        <label for="">Контактный телефон*</label>
+                                        <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                    </div>
+                                </div>
+                                <div class="form-vacancy__item">
+                                    <div class="form-vacancy__row">
+                                        <label for="">Социальные сети</label>
+                                        <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                    </div>
+                                    <div class="form-vacancy__row">
+                                        <label for="">&nbsp;</label>
+                                        <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                    </div>
+                                </div>
+                                <div class="form-vacancy__item">
+                                    <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                    <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                </div>
+                                <input class="btn" type="submit" value="Отправить заявку">
+
+                            </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Маркетолог</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения и
+                                    распространения
+                                    лучших проявлений преподавательского таланта. Наша команда стремится обеспечить
+                                    условия при которых образование высокого уровня и экономические возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить деньги и каким
+                                        образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука -
+                                        прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть ежеквартальная (на
+                                        основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и печенье.</li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО МИРА.</li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Администратор</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения и
+                                    распространения
+                                    лучших проявлений преподавательского таланта. Наша команда стремится
+                                    обеспечить
+                                    условия при которых образование высокого уровня и экономические возможности
+                                    для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить деньги и каким
+                                        образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука -
+                                        прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть ежеквартальная (на
+                                        основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и печенье.</li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО МИРА.</li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Модератор</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения и
+                                    распространения
+                                    лучших проявлений преподавательского таланта. Наша команда стремится
+                                    обеспечить
+                                    условия при которых образование высокого уровня и экономические
+                                    возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить деньги и
+                                        каким образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука -
+                                        прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть ежеквартальная (на
+                                        основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и печенье.</li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО МИРА.</li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Маркетолог - консультант</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения и
+                                    распространения
+                                    лучших проявлений преподавательского таланта. Наша команда стремится
+                                    обеспечить
+                                    условия при которых образование высокого уровня и экономические
+                                    возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить деньги и
+                                        каким образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука -
+                                        прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие
+                                        специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть ежеквартальная
+                                        (на основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и
+                                        печенье.
+                                    </li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО МИРА.
+                                    </li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Маркетолог</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения
+                                    и распространения
+                                    лучших проявлений преподавательского таланта. Наша команда
+                                    стремится обеспечить
+                                    условия при которых образование высокого уровня и экономические
+                                    возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить
+                                        деньги и каким образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука
+                                        - прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие
+                                        специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть
+                                        ежеквартальная (на основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и
+                                        печенье.
+                                    </li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО
+                                        МИРА.
+                                    </li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                    <div class="vacancy__item">
+                        <div class="vacancy__head">
+                            <div class="vacancy__name">Администратор</div>
+                            <div class="vacancy__city">г. Астана</div>
+                            <div class="vacancy__info js-vacancy-info">Информация</div>
+                        </div>
+                        <div class="vacancy__contant">
+                            <div class="vacancy__type">
+                                <p><b>Тип занятости:</b></p>
+                                <p>Полный рабочий день</p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>О Damutek</b></p>
+                                <p>Дамутек создан в 2018 году группой энтузиастов с целью сохранения
+                                    и распространения
+                                    лучших проявлений преподавательского таланта. Наша команда
+                                    стремится обеспечить
+                                    условия при которых образование высокого уровня и экономические
+                                    возможности для
+                                    роста доступны каждому. </p>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Обязанности</b></p>
+                                <ul>
+                                    <li>Составление бюджета по маркетингу (на что будем тратить
+                                        деньги и каким образом
+                                        нам это принесет еще больше денег).
+                                    </li>
+                                    <li>Предоставление прогнозов продаж (маркетинг это наука, наука
+                                        - прогнозируемая).
+                                    </li>
+                                    <li>Организация и проведение выставок.</li>
+                                    <li>Разработка каталогов, буклетов, акций и презентаций.</li>
+                                    <li>Переговоры с партнерами компании.</li>
+                                    <li>Составление полного описания продукта.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b>Требования:</b></p>
+                                <ul>
+                                    <li>Высшее образование (маркетинг, реклама, PR, близкие
+                                        специальности -
+                                        журналистика, менеджмент, творческие профессии)
+                                    </li>
+                                    <li>Знание веб-маркетинга, продвижения сайта, рассылки.</li>
+                                    <li>Знание языков.</li>
+                                    <li>Коммуникативные навыки.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__type">
+                                <p><b></b></p>
+                                <ul>
+                                    <li>Заработная плата: фикс. оклад + премиальная часть
+                                        ежеквартальная (на основании выполнения KPI).
+                                    </li>
+                                    <li>График работы понедельник-пятница с 09:00 до 18:00.</li>
+                                    <li>Обед за счет компании, при результативной работе еще и
+                                        печенье.
+                                    </li>
+                                    <li>Корпоративная библиотека, тренинги и обучение</li>
+                                    <li>Сотовая связь и оплата всех рабочих расходов</li>
+                                    <li>Возможность карьерного роста до ХОЗЯИНА МАРКЕТИНГА ВСЕГО
+                                        МИРА.
+                                    </li>
+                                    <li>Оформление согласно ТК РК.</li>
+                                </ul>
+                            </div>
+                            <div class="vacancy__form">
+                                <form class="form-vacancy" action="">
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">ФИО*</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Введите ваши ФИО">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Резюме</label>
+                                            <input type="file" placeholder="Введите ваши ФИО">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">e-mail*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Введите адрес вашей электронной почты">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">Контактный телефон*</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Укажите контактный телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <div class="form-vacancy__row">
+                                            <label for="">Социальные сети</label>
+                                            <input class="form-vacancy__input" class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                        <div class="form-vacancy__row">
+                                            <label for="">&nbsp;</label>
+                                            <input class="form-vacancy__input" type="text" placeholder="Добавьте адрес на Ваш профиль в соц. сети">
+                                        </div>
+                                    </div>
+                                    <div class="form-vacancy__item">
+                                        <label for="">Дополнительная информация/сопроводительное письмо</label>
+                                        <textarea class="form-vacancy__textarea" name="" id="" cols="30" rows="10" placeholder="Напишите дополнительные сведения о Вас"></textarea>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить заявку">
+
+                                </form>
+                            </div>
+                            <button class="btn js-vacancy-btn">ПОДАТЬ ЗАЯВКУ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                    <a href="#" class="footer__logo"><img src="img/logo-damutek.svg" alt=""></a>
+                    <p>Информационно-образовательный портал</p>
+                    <p>2018 Дамутек. Все права защищены</p>
+                </div>
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__header">КОМПАНИЯ</div>
+                    <a href="#">О нас</a>
+                    <a href="#">Damutek для бизнеса</a>
+                    <a href="#">Стань преподавателем</a>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Сертификаты</a>
+                    <a href="#">Руководство по созданию курса</a>
+                </div>
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__header">БУДЬ С НАМИ</div>
+                    <a href="#">События</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Форум</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Приложения</a>
+                </div>
+                <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="footer__header">ЕЩЕ</div>
+                    <a href="#">Поддержка</a>
+                    <a href="#">Наши партнеры</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Конфиденциальность</a>
+                    <a href="#">Интелектуальная собственность</a>
+                    <div class="footer__social">
+                        <span>Мы в социальных сетях:</span>
+                        <a href="#"><img src="img/footer__insta.svg" width="22" alt=""></a>
+                        <a href="#"><img src="img/footer__vk.svg" width="33" alt=""></a>
+                        <a href="#"><img src="img/footer__fb.svg" width="22" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>

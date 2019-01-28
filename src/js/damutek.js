@@ -116,5 +116,13 @@ $(function () {
     $('.js-close').on('click', function () {
         $('.form-base').hide();
     });
+
+    $('.js-vacancy-info').on('click', function () {
+        $(this).parents('.vacancy__item').find('.vacancy__contant').toggle();
+    });
+
+    $('.js-vacancy-btn').on('click', function () {
+        $(this).parents('.vacancy__contant').find('.vacancy__form').toggle();
+    });
 });
 
