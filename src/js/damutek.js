@@ -8,8 +8,8 @@
 //= partials/jquery.formstyler.js
 //= partials/step-form.js
 
-
 $(function () {
+
     /*Подробнее курс всплывашка*/
     $('.js-course-btn').on("click",function () {
         $(this).prev(".course__anons").slideToggle();
@@ -25,7 +25,7 @@ $(function () {
         });
     }
 
-    $('.popap_box').click(function() {
+    $('.popap_box').on('click',function() {
         $('#modalbox_' + $(this).data('body')).arcticmodal({
             overlay: {
                 css: {
@@ -124,5 +124,8 @@ $(function () {
     $('.js-vacancy-btn').on('click', function () {
         $(this).parents('.vacancy__contant').find('.vacancy__form').toggle();
     });
+
+
+
 });
 
