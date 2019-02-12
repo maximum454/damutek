@@ -1,0 +1,57 @@
+.header-business{
+	position: relative;
+	padding: 25px 0 40px;
+	color: #040308;
+	&__category {
+		color: #040308;
+		font-size: 14px;
+	}
+	.dropdown-menu{
+		width: 212px;
+		padding: 0;
+		margin: 0;
+		top: 35px;
+		box-shadow: 0 2px 8px 1px rgba(#000, .5);
+		li{
+			border-bottom: 1px solid #5693e3;
+			&:last-of-type{
+				border-bottom: none;
+			}
+
+		}
+		a{
+			display: block;
+			color: #fff;
+			font-size: 16px;
+			text-decoration: none;
+			font-weight: normal;
+			text-transform: none;
+			padding: 5px 20px;
+			background-color: #487fc7;
+			background-image: none;
+			&:hover{
+				color: #fff;
+				background-color: #1a2a75;
+				background-image: none;
+			}
+		}
+	}
+	.dropdown-toggle{
+		color: #000;
+	}
+	&__login{
+		color: #000;
+		margin-right: 30px;
+	}
+	.btn-proceesed{
+		display: inline-block;
+		background-color: #487fc7;
+		width: 170px;
+		padding: 10px;
+		color: #fff;
+		text-align: center;
+		border-radius: 10px;
+		margin-right: 0;
+		margin-left: auto;
+	}
+}
