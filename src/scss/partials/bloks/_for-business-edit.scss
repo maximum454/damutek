@@ -51,6 +51,9 @@
 		}
 	}
 	&__col{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-shrink: 0;
 		background-color: rgba(#dedede,.5);
 		width: 64px;
@@ -78,5 +81,16 @@
 		font-weight: bold;
 		border: 0;
 		border-radius: 0;
+	}
+	.jq-checkbox{
+		background-color: #fff;
+		border: 1px solid #888888;
+		&.checked{
+			display: flex;
+			background-color: #787676;
+			.jq-checkbox__div{
+
+			}
+		}
 	}
 }
