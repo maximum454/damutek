@@ -1,0 +1,49 @@
+.table-history{
+	width: 100%;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 0;
+	thead{
+		background-color: #487fc7;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		td{
+			padding: 10px 0 20px;
+		}
+	}
+	tbody{
+		background-color: #ededed;
+		color: #000;
+		font-size: 16px;
+		td{
+			position: relative;
+			border-right: 1px solid #cacaca;
+			padding: 10px;
+			&:last-child{
+				border: 0;
+			}
+		}
+	}
+	&__tooltip{
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.primary{
+		color: #487fc7;
+	}
+	.success{
+		color: #0a8604;	
+	}
+	.warning{
+		color: #7a7878;
+	}
+	.danger{
+		color: #a40101;
+	}
+	.tooltip{
+		display: none;
+	}
+}

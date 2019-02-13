@@ -7,7 +7,6 @@
 //= partials/rating.js
 //= partials/jquery.formstyler.js
 //= partials/step-form.js
-
 $(function () {
 
     /*Подробнее курс всплывашка*/
@@ -102,10 +101,12 @@ $(function () {
 
     $('.js-transcript').tooltip();
 
-    $(".collapse").collapse({
-        parent: false,
-        toggle: false
-    });
+    if ($('.collapse').length) {
+        $(".collapse").collapse({
+            parent: false,
+            toggle: false
+        });
+    }
 
     $('.js-trans').on('click', function () {
         $('.form-base--trans').toggle();
@@ -124,8 +125,6 @@ $(function () {
     $('.js-vacancy-btn').on('click', function () {
         $(this).parents('.vacancy__contant').find('.vacancy__form').toggle();
     });
-
-
 
 });
 
