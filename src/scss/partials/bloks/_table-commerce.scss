@@ -3,21 +3,29 @@
 	color: #fff;
 	font-size: 16px;
 	border-collapse: separate;
-	border-spacing: 2px;
+	border-spacing: 0;
 	margin-bottom: 20px;
-	&--collapse{
+
+	&--collapse {
 		border-collapse: collapse;
 		border-spacing: 0;
 		border: 20px solid #487fc7;
-		tr{
+
+		tr {
 			border-bottom: 1px solid #fff;
 		}
-		td:last-child{
-			text-align: right;
+
+		td {
+			border: 0!important;
+			&:last-child {
+				text-align: right;
+			}
 		}
 	}
+
 	td {
 		background-color: #487fc7;
 		padding: 10px;
+		border: 2px solid #fff;
 	}
 }
