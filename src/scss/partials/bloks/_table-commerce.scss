@@ -1,0 +1,23 @@
+.table-commerce {
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+	border-collapse: separate;
+	border-spacing: 2px;
+	margin-bottom: 20px;
+	&--collapse{
+		border-collapse: collapse;
+		border-spacing: 0;
+		border: 20px solid #487fc7;
+		tr{
+			border-bottom: 1px solid #fff;
+		}
+		td:last-child{
+			text-align: right;
+		}
+	}
+	td {
+		background-color: #487fc7;
+		padding: 10px;
+	}
+}
