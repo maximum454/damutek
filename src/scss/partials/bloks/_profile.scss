@@ -370,6 +370,16 @@
 			font-size: 24px;
 		}
 	}
+	&__info{
+		background-color: #487fc7;
+		padding: 20px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: normal;
+		p a{
+			color: #fff;
+		}
+	}
 	&__title {
 		font-size: 21px;
 		letter-spacing: -1px;
@@ -393,5 +403,23 @@
 	}
 	.jq-checkbox {
 		vertical-align: top;
+	}
+	table{
+
+	}
+	.table-bordered th,
+	.table-bordered td{
+		border: 1px solid #000;
+	}
+	.table-light, .table-light>td, .table-light>th{
+		background-color: #f3f3f3;
+	}
+	.thead-light{
+		th{
+			background-color: #d5d5d5;
+			font-size: 14px;
+			font-weight: bold;
+			vertical-align: top;
+		}
 	}
 }
