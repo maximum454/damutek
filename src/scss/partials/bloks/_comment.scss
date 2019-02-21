@@ -1,0 +1,71 @@
+.comment{
+	hr{
+		border-top: 2px solid #c4c4c4;
+		margin-bottom: 40px;
+	}
+	&__header{
+		background-color: #487fc7;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 23px;
+		color: #fff;
+		a{
+			color: inherit;
+		}
+	}
+	&__item{
+		display: flex;
+		margin-bottom: 30px;
+		&.answer{
+			margin-left: 75px;
+		}
+	}
+	&__info{
+		background-color: #f0f1f4;
+		padding: 15px 23px;
+		color: #6a6464;
+	}
+	&__ava{
+		background-image: url("../img/comment-no-ava.png");
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		margin-right: 30px;
+		flex-shrink: 0;
+	}
+	&__name{
+		font-size: 18px;
+		font-weight: bold;
+		span{
+			color: #c4c4c4;
+			font-weight: normal;
+			margin-left: 20px;
+		}
+	}
+	&__anons{
+
+	}
+	.form-control{
+		background-color: #f0f1f4;
+		border: 1px solid #a2a2a2;
+		resize: none;
+		border-radius: 0;
+	}
+	.btn{
+		border-radius: 0;
+		min-width: 234px;
+		color: #fff;
+		font-weight: normal;
+		text-shadow: none;
+	}
+	.btn-default{
+		background-image: none;
+		background-color: #487fc7;
+		font-weight: normal;
+	}
+	.btn-dark{
+		background-color: #1a2a75;
+
+	}
+}
