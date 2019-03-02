@@ -1,0 +1,88 @@
+.form-request {
+	background-color: #efefef;
+	padding: 30px 88px;
+	margin: 30px auto;
+
+	h2 {
+		margin-bottom: 40px;
+		font-size: 16px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	label {
+		color: #000;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.form-group {
+		margin-bottom: 30px;
+	}
+
+	.jq-file__name {
+		max-width: 100%;
+		height: 35px;
+		line-height: 35px;
+		background-color: #fff;
+		border: 1px solid #6f6f6f;
+	}
+
+	.jq-file__browse {
+		height: 35px;
+		line-height: 35px;
+		background-color: #487fc7;
+	}
+
+	.jq-file {
+		margin-bottom: 20px;
+	}
+
+	.btn {
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		user-select: none;
+		border: none;
+		padding: .375rem .75rem;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.5;
+		border-radius: 0;
+	}
+
+	.btn-primary {
+		background-image: none;
+		background-color: #8f8f8f;
+	}
+
+	.btn-secondary {
+		background-image: none;
+		background-color: #3478d0;
+	}
+	.btn-dark{
+		background-image: none;
+		background-color: #1a2a75;
+	}
+	.modal-dialog{
+		max-width: 490px;
+	}
+	.modal-header{
+		border: 0;
+	}
+	.modal-body{
+		padding: 0;
+	}
+	.modal-content{
+		background-color: #3478d0;
+		padding: 43px 65px;
+		text-align: center;
+		p{
+			color:#fff;
+		}
+	}
+	.modal-footer{
+		border: 0;
+	}
+}

@@ -63,8 +63,13 @@ $(function () {
     /*Рейтинг*/
     $('.js-star').rating();
 
-    $('input[type=checkbox],input[type=file], select').styler({
+    $('input[type=checkbox], select').styler({
         fileBrowse: 'Прикрепить изображение'
+    });
+
+    $('.js-form-request-file').styler({
+        fileBrowse: 'Прикрепить',
+        filePlaceholder: 'Вы можете прикрепить скринtшот вашей проблемы'
     });
 
 

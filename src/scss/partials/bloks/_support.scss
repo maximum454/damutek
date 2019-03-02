@@ -1,0 +1,174 @@
+.support {
+	hr {
+		border-top: 1px solid #000;
+		margin: 40px 0;
+	}
+
+	&__title {
+		background-color: #1a2a75;
+		width: 100%;
+		padding: 40px 0;
+		color: #fff;
+		text-align: center;
+		font-size: 48px;
+		font-weight: normal;
+		text-transform: uppercase;
+		&--request{
+			font-size: 24px;
+			padding: 15px 0;
+			text-transform: none;
+		}
+	}
+
+	&__info {
+		background-color: #e3e3e3;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&__req {
+		background-color: #efefef;
+		padding: 50px 0;
+		text-align: center;
+
+		&.light {
+			background-color: #fff;
+		}
+
+		p {
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+
+	&__name {
+		background-color: #3478d0;
+		color: #fff;
+		padding: 10px 64px;
+	}
+
+	&__link {
+		background-color: #1a2a75;
+		color: #fff;
+		text-align: center;
+		padding: 10px 64px;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	&__text {
+		background-color: #e3e3e3;
+		color: #000;
+		text-align: center;
+		padding: 10px 64px;
+	}
+	&__send{
+		background-color: #3478d0;
+		padding: 20px 0;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		p{
+			width: 100%;
+			max-width: 768px;
+			margin: 0 auto 30px;
+		}
+		.btn-dark{
+			width: 100%;
+			height: 53px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.navbar {
+		background-color: #3478d0;
+
+		&.dark {
+			background-color: #1a2a75;
+		}
+
+		.navbar-nav {
+			margin-left: -2rem;
+		}
+
+		&.navbar-expand-lg .navbar-nav .nav-link {
+			padding-right: 2rem;
+			padding-left: 2rem;
+
+		}
+
+		a {
+			color: #fff;
+			font-size: 16px;
+		}
+	}
+
+	.form-control {
+		border-radius: 0;
+	}
+
+	.pagination {
+		.page-link {
+			color: #000;
+			border: 0;
+		}
+	}
+
+	.btn-default {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: none;
+		background-color: #3478d0;
+		width: 100%;
+		height: 53px;
+		color: #fff;
+		font-size: 16px;
+		border-radius: 0;
+		border: 0;
+		text-transform: uppercase;
+	}
+
+	.btn-search {
+		background-color: #1a2a75;
+		width: 40px;
+		height: 38px;
+		border-radius: 0;
+		border: 0;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-image: url("../img/course-pass-search.png");
+			width: 17px;
+			height: 17px;
+		}
+
+		&.light {
+			background-color: #3478d0;
+		}
+	}
+
+	.btn-disable {
+		width: 315px;
+		background-color: #ababab;
+		color: #fff;
+		border-radius: 0;
+	}
+
+	.btn-dark {
+		width: 315px;
+		background-color: #1a2a75;
+		color: #fff;
+		border-radius: 0;
+	}
+}

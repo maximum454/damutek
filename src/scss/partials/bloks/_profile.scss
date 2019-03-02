@@ -1,5 +1,6 @@
 .profile {
 	position: relative;
+	overflow: hidden;
 	&:after {
 		content: '';
 		display: table;
@@ -420,6 +421,14 @@
 			font-size: 14px;
 			font-weight: bold;
 			vertical-align: top;
+		}
+	}
+	.alert{
+		border-radius: 0;
+		border: none;
+		&.alert-secondary{
+			border-color: transparent;
+			background-color: #e4e4e4;
 		}
 	}
 }
