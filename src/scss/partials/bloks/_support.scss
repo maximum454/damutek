@@ -13,6 +13,11 @@
 		font-size: 48px;
 		font-weight: normal;
 		text-transform: uppercase;
+		&--request{
+			font-size: 24px;
+			padding: 15px 0;
+			text-transform: none;
+		}
 	}
 
 	&__info {

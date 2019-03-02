@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-student.html
+    <main class="main">
+        <div class="support">
+            <div class="support__title support__title--request">Как мы можем Вам помочь?</div>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Вернуться назад</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control" type="search" placeholder="Damutek" aria-label="Search">
+                            <button class="btn btn-search" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <form class="form-request">
+                    <h2>ФОРМА ЗАПРОСА</h2>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <button type="button" class="btn w-100 btn-primary">Студент</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn w-100 btn-secondary">Преподаватель</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Адрес эл. почты или Damutek ID: *</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Тема *</label>
+                        <input type="password" class="form-control" placeholder="Проблемы с просмотром видео">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Описание *</label>
+                        <textarea class="form-control mb-3" rows="5"
+                                  placeholder="Введите данные своего запроса **"></textarea>
+                        <small class="form-text text-muted">* обязательные формы для заполнения</small>
+                        <small class="form-text text-muted">** Чем детальнее Ваше описание, тем легче будет нашей
+                            команде решить Вашу проблему.
+                        </small>
+                    </div>
+                    <div class="form-group mb-5">
+                        <label for="">Прикрепленные файлы (Максимум 5 изображений)</label>
+                        <input type="file" class="form-control-file js-form-request-file" placeholder="Вы можете прикрепить скриншот вашей проблемы">
+                        <input type="file" class="form-control-file js-form-request-file">
+                        <input type="file" class="form-control-file js-form-request-file">
+                        <input type="file" class="form-control-file js-form-request-file">
+                        <input type="file" class="form-control-file js-form-request-file">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col">
+                            <button type="button" class="btn w-100 btn-primary">Вернуться назад</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn w-100 btn-secondary"  data-toggle="modal" data-target="#exampleModalLong">Отправить запрос</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-header mb-3">
+                                <img src="img/modal__logo.png" class=" ml-auto mr-auto" alt="">
+                            </div>
+                            <div class="modal-content">
+                                <div class="modal-body mb-4">
+                                    <img src="img/form-request.png" class="mb-4" alt="">
+                                    <p>Спасибо за&nbsp;Ваш запрос, сотрудник нашей службы поддержки ответит Вам<br> в&nbsp;ближайшее время.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn w-100 btn-dark">Вернуться на страницу поддержки</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+
+</body>
+</html>
