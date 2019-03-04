@@ -51,15 +51,21 @@
 	&__about-input{
 		width: 100%;
 		height: 38px;
-		padding: 20px;
+		padding: 18px 15px;
 		border: 1px solid #487fc7;
 		color: #9fa0a0;
 		font-size: 16px;
 		&.promo{
 			background-color: #1a2a75;
-			padding-left: 5px;
-			padding-right: 5px;
+			width: 82px;
+			padding: 5px;
 			color: #fff;
+			font-weight: normal;
+			letter-spacing: -.5px;
+			flex-shrink: 0;
+			border: 0;
+			cursor: pointer;
+			outline: none;
 			&::-webkit-input-placeholder {
 				color: #fff;
 			}
