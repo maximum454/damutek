@@ -63,7 +63,7 @@ $(function () {
     /*Рейтинг*/
     $('.js-star').rating();
 
-    $('input[type=checkbox], select').styler({
+    $('input[type=checkbox],input[type=radio], select').styler({
         fileBrowse: 'Прикрепить изображение'
     });
 
@@ -71,20 +71,13 @@ $(function () {
         fileBrowse: 'Прикрепить',
         filePlaceholder: 'Вы можете прикрепить скринtшот вашей проблемы'
     });
+    $('.js-discouont-active').on('click', function () {
+        $('.form-disable').removeClass(' disable');
+    });
+    $('.js-discouont-disable').on('click', function () {
+        $('.form-disable').addClass(' disable');
+    });
 
-
-    if ($('.js-select').length) {
-        $('.js-select').on('click', function (e) {
-            e.preventDefault();
-            $('.basket__item').each(function() {
-                if ( $('.basket__check').attr('checked')) {
-                    $('.basket__check').attr('checked', false).trigger('refresh');
-                } else {
-                    $('.basket__check').attr('checked', 'checked').trigger('refresh');
-                }
-            });
-        });
-    }
 
 
     if ($('.js-delet-all').length) {

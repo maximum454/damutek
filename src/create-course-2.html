@@ -108,29 +108,6 @@
                                             <button type="button" class="create-course-2__about-input promo"
                                                     data-toggle="modal" data-target="#promo">Промо код
                                             </button>
-
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="promo" tabindex="-1" role="dialog"
-                                                 aria-labelledby="promoTitle" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="promoTtitle">Modal title</h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                    data-dismiss="modal">Close
-                                                            </button>
-                                                            <button type="button" class="btn btn-primary">Save changes
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -322,6 +299,80 @@
                         <button class="create-course-2__btn save">Предварительный просмотр</button>
                         <button class="create-course-2__btn save">Сохранить в черновик</button>
                         <button class="create-course-2__btn next mr-3 ml-auto">Далее</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="promo" tabindex="-1" role="dialog"
+                 aria-labelledby="promoTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-logo">
+                        <img src="img/modal__logo.png" alt="">
+                        <h4>СИСТЕМА КУПОНОВ И ПРОМО-КОДОВ</h4>
+                    </div>
+                    <div class="modal-content d-none">
+                        <div class="modal-header">
+                            <p>Компания Damutek предлагает Вам создать специальный скидочных промо-код к вашему курсу,
+                                благодаря которому Вы сможете увеличить вашу аудиторию и повысить доход.</p>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/cupon.png" class="mb-3" alt="">
+                            <p class="modal-body__p">Создать промо-код к данному курсу?</p>
+                            <button type="button" class="btn btn-primary w-100 mb-3">Создать промо-код</button>
+                            <button type="button" class="btn btn-secondary w-100" data-dismiss="modal"
+                                    aria-label="Close">Отмена
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-content modal-content__2">
+                        <div class="modal-header">
+                            <p class="m-0">Название промокода должно содержать от&nbsp;6 до&nbsp;20 символов. Это может
+                                быть любая комбинация из&nbsp;латинских букв (
+                                <nobr>A-Z</nobr>
+                                ), цифр<br> (0&ndash;9), и&nbsp;символов (&raquo;.&raquo;, &laquo;_&raquo;, &laquo;-&laquo;)
+                            </p>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="cupon">Название промо-кода</label>
+                                    <input type="text" class="form-control" id="cupon" placeholder="например PROMOCOD7">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cupon">Тип купона</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input js-discouont-disable checked" type="radio" name="exampleRadios">
+                                        <label class="form-check-label">Бесплатный курс</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input js-discouont-active" type="radio" name="exampleRadios">
+                                        <label class="form-check-label">Скидка на стоимость курса</label>
+                                    </div>
+                                </div>
+                                <div class="form-disable disable">
+                                    <div class="form-group">
+                                        <label>Введите размер скидки*</label>
+                                        <div class="d-flex"><input type="text" class="form-control" placeholder="10">
+                                            <div class="discouont">%</div>
+                                        </div>
+                                        <small class="form-text">Рекомендуемый размер скидки - 10%</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Введите количество купонов, штук*</label>
+                                        <input type="text" class="form-control" placeholder="15">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Действителен до:</label>
+                                        <input type="date" class="form-control" placeholder="15">
+                                        <small class="form-text text-muted">* обязательные к заполнению поля</small>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary w-100 mb-3">Создать купон</button>
+                                <button type="button" class="btn btn-dark w-100" data-dismiss="modal"
+                                        aria-label="Close">Отменить
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

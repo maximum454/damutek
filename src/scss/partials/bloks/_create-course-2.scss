@@ -1,61 +1,73 @@
-.create-course-2{
+.create-course-2 {
 	position: relative;
 	margin-bottom: 20px;
-	&__title{
+
+	&__title {
 		color: #fff;
 		font-size: 24px;
 		font-weight: bold;
 	}
-	&__subtitle{
+
+	&__subtitle {
 		color: #fff;
 		font-size: 16px;
 		font-weight: bold;
 		margin-bottom: 50px;
 	}
-	&__num{
+
+	&__num {
 		position: absolute;
 		top: -18px;
 		right: 0;
 		color: #6b6b6b;
 		font-size: 12px;
-		&.white{
+
+		&.white {
 			color: #fff;
 		}
-		&.pos{
+
+		&.pos {
 			top: 10px;
 		}
-		span{
+
+		span {
 			color: #487fc7;
 		}
 	}
-	&__about{
+
+	&__about {
 		background-color: #f0f1f4;
 		padding: 40px 0;
 	}
-	&__about-item{
+
+	&__about-item {
 		position: relative;
 		margin-bottom: 11px;
-		label{
+
+		label {
 			display: block;
 			color: #040308;
 			font-size: 16px;
 			margin-bottom: 5px;
 		}
 	}
-	&__about-line{
+
+	&__about-line {
 		width: 1px;
 		height: 100%;
 		background-color: #487fc7;
 		margin: 0 auto;
 	}
-	&__about-input{
+
+	&__about-input {
 		width: 100%;
 		height: 38px;
 		padding: 18px 15px;
 		border: 1px solid #487fc7;
 		color: #9fa0a0;
 		font-size: 16px;
-		&.promo{
+
+		&.promo {
 			background-color: #1a2a75;
 			width: 82px;
 			padding: 5px;
@@ -66,75 +78,88 @@
 			border: 0;
 			cursor: pointer;
 			outline: none;
+
 			&::-webkit-input-placeholder {
 				color: #fff;
 			}
+
 			&::-moz-placeholder {
 				color: #fff;
 			}
+
 			&:-ms-input-placeholder {
 				color: #fff;
 			}
+
 			&:-moz-placeholder {
 				color: #fff;
 			}
 		}
 	}
-	.jq-selectbox{
+
+	.jq-selectbox {
 		width: 100%;
-		&__select{
+
+		&__select {
 			width: 100%;
 			height: 38px;
 			background: #fff;
 			border: 1px solid #487fc7;
 			border-radius: 0;
 		}
-		&__trigger{
+
+		&__trigger {
 			background-color: #487fc7;
 			width: 25px;
-			&-arrow{
+
+			&-arrow {
 				right: 7px;
 				border-top: 5px solid #fff;
 			}
 		}
 	}
-	&__about-img{
+
+	&__about-img {
 		width: 340px;
 		height: 240px;
 		background-color: #8c8c8c;
 		position: relative;
 		flex-shrink: 0;
 		margin-right: 30px;
-		img{
+
+		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 		}
-		&.play{
-			&:before{
+
+		&.play {
+			&:before {
 				content: '';
 				position: absolute;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%);
+				transform: translate(-50%, -50%);
 				background-image: url("../img/create-course-2-play.png");
 				width: 40px;
 				height: 55px;
 			}
 		}
 	}
-	&__about-txt{
-		p{
+
+	&__about-txt {
+		p {
 			font-size: 16px;
 			line-height: 21px;
 			margin-bottom: 12px;
 		}
 	}
-	&__about-delete{
+
+	&__about-delete {
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		background-color: rgba(#000,.57);
+		background-color: rgba(#000, .57);
 		width: 100%;
 		padding: 14px;
 		color: #fff;
@@ -143,13 +168,15 @@
 		z-index: 10;
 	}
 
-	&__target{
+	&__target {
 		background-color: #487fc7;
 		padding: 40px 0;
-		hr{
+
+		hr {
 			background-color: #fff;
 		}
-		label{
+
+		label {
 			width: 100%;
 			max-width: 234px;
 			padding-right: 50px;
@@ -157,29 +184,36 @@
 			font-size: 18px;
 			font-weight: bold;
 		}
-		textarea{
+
+		textarea {
 			background-color: #2963b0;
 			width: 100%;
 			height: 70px;
 			padding: 10px 25px;
 			border: 1px solid #fff;
 			color: #fff;
+
 			&::-webkit-input-placeholder {
 				color: #fff;
 			}
+
 			&::-moz-placeholder {
 				color: #fff;
 			}
+
 			&:-ms-input-placeholder {
 				color: #fff;
 			}
+
 			&:-moz-placeholder {
 				color: #fff;
 			}
 		}
-		.jq-selectbox{
+
+		.jq-selectbox {
 			width: 100%;
-			&__select{
+
+			&__select {
 				width: 100%;
 				height: 38px;
 				background: #2963b0;
@@ -190,45 +224,52 @@
 				color: #fff;
 				text-shadow: none;
 			}
-			&__trigger{
+
+			&__trigger {
 				background-color: #487fc7;
 				width: 25px;
 				border-left: 0;
-				&-arrow{
+
+				&-arrow {
 					right: 7px;
 					border-top: 5px solid #fff;
 				}
 			}
 		}
 	}
-	&__teacher{
+
+	&__teacher {
 		background-color: #ffffff;
 		padding: 40px 0;
 	}
-	&__teacher-title{
+
+	&__teacher-title {
 		color: #487fc7;
 		font-size: 24px;
 		font-weight: bold;
 		margin-bottom: 40px;
 	}
-	&__teacher-img{
+
+	&__teacher-img {
 		width: 100%;
 		height: calc(100% - 48px);
 		border: 1px solid #487fc7;
 		position: relative;
-		&:before{
+
+		&:before {
 			content: '';
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 			background-image: url("../img/teacher-course__img-no.png");
 			background-size: 100%;
 			width: 180px;
 			height: 180px;
 		}
 	}
-	&__teacher-input{
+
+	&__teacher-input {
 		background-color: transparent;
 		width: 100%;
 		height: 38px;
@@ -237,7 +278,8 @@
 		color: #9fa0a0;
 		font-size: 16px;
 	}
-	&__teacher-textarea{
+
+	&__teacher-textarea {
 		background-color: transparent;
 		width: 100%;
 		height: 160px;
@@ -246,33 +288,188 @@
 		color: #9fa0a0;
 		font-size: 16px;
 	}
-	&__teacher-panel{
+
+	&__teacher-panel {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		.icon{
+
+		.icon {
 			margin-right: 6px;
 		}
 	}
-	.disable{
+
+	.disable {
 		color: #a4a4a4;
 	}
-	&__btn{
+
+	&__btn {
 		width: 100%;
 		height: 48px;
 		background-color: #487fc7;
 		color: #fff;
 		font-weight: bold;
 		border: none;
+
 		&.back,
 		&.next {
 			width: 155px;
 			background-color: #1a2a75;
 		}
-		&.save{
+
+		&.save {
 			width: 236px;
 			background-color: #8b8a8a;
 			margin: 0 8px;
 		}
+	}
+
+	.modal-dialog {
+		max-width: 415px;
+	}
+
+	.modal-logo {
+		text-align: center;
+		padding: 20px;
+
+		h4 {
+			color: #fff;
+			font-size: 16px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	}
+
+	.modal-header {
+		background-color: #487fc7;
+		padding: 20px 50px;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		border-radius: 0;
+		border: 0;
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -29px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			border: 12px solid transparent;
+			border-bottom: 18px solid #487fc7;
+		}
+	}
+
+	.modal-content {
+		border-radius: 0;
+		border: 0;
+	}
+
+	.modal-body {
+		padding: 40px 60px;
+		text-align: center;
+
+		&__p {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	.btn-primary {
+		background-image: none;
+		background-color: #487fc7;
+		border: 0;
+		border-radius: 0;
+	}
+
+	.btn-secondary {
+		background-image: none;
+		background-color: #b1b1b1;
+		border: 0;
+		border-radius: 0;
+		font-weight: normal;
+		padding: .375rem .75rem;
+	}
+
+	.btn-dark {
+		background-color: #1a2a75;
+		border: 0;
+		border-radius: 0;
+	}
+
+	.close {
+		float: none;
+		font-size: 16px;
+		color: #fff;
+		text-shadow: none;
+		opacity: 1;
+	}
+
+	form {
+		text-align: left;
+	}
+
+	.form-group {
+		label {
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+
+	.form-check {
+		label {
+			font-size: 16px;
+			font-weight: normal;
+		}
+	}
+
+	.form-control {
+		border-color: #487fc7;
+		border-radius: 0;
+	}
+	.discouont {
+		position: relative;
+		background-color: #838383;
+		width: 34px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.form-check {
+		padding-left: 0;
+	}
+	.form-disable{
+		&.disable{
+			color: #838383;
+			.form-control {
+				border-color: #838383;
+				border-radius: 0;
+			}
+		}
+	}
+
+	.jq-radio {
+		vertical-align: -4px;
+		width: 27px;
+		height: 27px;
+		margin: 0 4px 0 0;
+		padding: 4px;
+		border: none;
+		border-radius: 0;
+		background-color: #eeeeee;
+		cursor: pointer;
+	}
+
+	.jq-radio.checked .jq-radio__div {
+		background-image: none;
+		background-color: #487fc7;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
 	}
 }
