@@ -364,6 +364,9 @@
 	.modal-content {
 		border-radius: 0;
 		border: 0;
+		&__2{
+			display: none;
+		}
 	}
 
 	.modal-body {

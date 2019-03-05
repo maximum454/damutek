@@ -77,6 +77,10 @@ $(function () {
     $('.js-discouont-disable').on('click', function () {
         $('.form-disable').addClass(' disable');
     });
+    $('.js-promo').on('click', function () {
+       $('.modal-content').hide();
+       $('.modal-content__2').show();
+    });
 
 
 
