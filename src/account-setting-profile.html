@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/meta.html
+    <title>Настройки профиля - профиль</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-teacher.html
+    <main class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="row">
+                    Настройки
+                </div>
+            </div>
+        </div>
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__left"></div>
+            <div class="profile__right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="profile__inner">
+                        <div class="profile__aside">
+                            <div class="profile__photo">
+                                <img src="img/del/profile__photo.jpg" alt="">
+                            </div>
+                            <div class="profile__name">Ержан<br> <b>Куанбеков</b></div>
+
+                            <a class="profile__link active" href="#">Профиль</a>
+                            <a class="profile__link" href="#">Фотография</a>
+                            <a class="profile__link" href="#">Учетная запись</a>
+                            <a class="profile__link" href="#">Конфиденциальность</a>
+                            <a class="profile__link" href="#">Вернуться к профиль</a>
+                        </div>
+                        <div class="profile__content">
+                            <form class="setting-profile" action="">
+                                <p><b>Добавьте информацию о себе на страницу профиля.</b></p>
+                                <div class="setting-profile__item">
+                                    <label for="">Главное:</label>
+                                    <input type="text" placeholder="Имя">
+                                    <input type="text" placeholder="Фамилия">
+                                    <input type="text" placeholder="Специализация">
+                                    <input type="text" placeholder="Ученая степень">
+                                </div>
+                                <div class="setting-profile__item">
+                                    <label for="">Биография:</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Информация о себе, вставка ссылок запрещена"></textarea>
+                                    <p><span>Ссылки можете указать в данных ниже на странице.</span></p>
+                                </div>
+                                <div class="setting-profile__item">
+                                    <label for="">Язык:</label>
+                                    <input type="text" placeholder="Русский">
+                                </div>
+                                <div class="setting-profile__item">
+                                    <label for="">Ссылки:</label>
+                                    <input type="text" placeholder="Профиль vk.com">
+                                    <input type="text" placeholder="Профиль facebook.com">
+                                    <input type="text" placeholder="Ссылка на Google +">
+                                    <input type="text" placeholder="Профиль Linkedin">
+                                </div>
+                                <hr>
+                                <button class="setting-profile__btn">Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+</body>
+</html>
