@@ -83,4 +83,61 @@
 	#tab2:checked ~ #content2{
 		display: block;
 	}
+	.nav{
+		background-color: transparent;
+		padding: 0 30px;
+		justify-content: space-around;
+	}
+	.nav-tabs{
+		border-bottom: none;
+		a{
+			color: #fff;
+			text-transform: uppercase;
+			&.active{
+				position: relative;
+				&:after{
+					content: '';
+					position: absolute;
+					bottom: -36px;
+					left: 50%;
+					transform: translate(-50%,0);
+					border: 13px solid transparent;
+					border-bottom: 16px solid #fff;
+				}
+			}
+		}
+	}
+	.tab-content{
+		background-color: #fff;
+		padding: 30px 50px;
+		.alert{
+			border-radius: 0;
+			border: none;
+		}
+		label{
+			color: #000;
+			font-size: 16px;
+		}
+		.form-control{
+			border:1px solid #487fc7;
+			border-radius: 0;
+			&.error{
+				background-color: #ffcece;
+			}
+		}
+		.form-check{
+			display: flex;
+			padding-left: 0;
+		}
+		.jq-checkbox{
+			flex-shrink: 0;
+		}
+	}
+
+	.btn-primary{
+		background-image: none;
+		background-color: #487fc7;
+		border: none;
+		border-radius: 0;
+	}
 }

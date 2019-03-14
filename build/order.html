@@ -90,41 +90,93 @@
                         <div class="modal-reg__logo"><img src="img/modal__logo.png" alt=""></div>
     
                         <div class="modal-reg__tabs">
-                            <input class="modal-reg__input" id="tab1" type="radio" name="tabs" checked>
-                            <label class="modal-reg__label" for="tab1" title="Вкладка 1">ВОЙТИ</label>
-    
-                            <input class="modal-reg__input" id="tab2" type="radio" name="tabs">
-                            <label class="modal-reg__label" for="tab2" title="Вкладка 2">ЗАРЕГИСТРИРОВАТЬСЯ</label>
-    
-                            <section class="modal-reg__content" id="content1">
-                                <form class="form-reg" action="">
-                                    <div class="form-reg__item">
-                                        <label class="form-reg__label" for="login">Адрес электронной почты</label>
-                                        <input id="login" type="text" class="form-reg__input"
-                                               placeholder="Andrei@mail.com">
-                                    </div>
-                                    <div class="form-reg__item">
-                                        <label class="form-reg__label" for="pass">Пароль</label>
-                                        <input id="pass" type="text" class="form-reg__input"
-                                               placeholder="***************">
-                                    </div>
-                                    <div class="form-reg__item">
-                                        <a href="#" class="form-reg__forgot">Забыли пароль?</a>
-                                    </div>
-                                    <div class="form-reg__item">
-                                        <a href="#" class="modal-reg__btn">Войти</a>
-                                    </div>
-                                    <div class="form-reg__social">
-                                        <p>Войти через социальные сети: </p>
-                                        <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
-                                        <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
-                                        <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
-                                    </div>
-                                </form>
-                            </section>
-                            <section class="modal-reg__content" id="content2">
-                                2
-                            </section>
+                            <!-- Навигация -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active"><a href="#sign" class="active" aria-controls="sign" role="tab"
+                                                      data-toggle="tab">ВОЙТИ</a></li>
+                                <li><a href="#regis" aria-controls="regis" role="tab"
+                                       data-toggle="tab">ЗАРЕГИСТРИРОВАТЬСЯ</a></li>
+                            </ul>
+                            <!-- Содержимое вкладок -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="sign">
+                                    <form class="form-reg" action="">
+                                        <div class="form-reg__item has-error">
+                                            <label class="form-reg__label" for="login">Адрес электронной почты</label>
+                                            <input id="login" type="text" class="form-reg__input"
+                                                   placeholder="Andrei@mail.com">
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <label class="form-reg__label" for="pass">Пароль</label>
+                                            <input id="pass" type="text" class="form-reg__input"
+                                                   placeholder="***************">
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <a href="#" class="form-reg__forgot">Забыли пароль?</a>
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Пожалуйста, проверьте адрес своей электронной почты и пароль.
+                                        </div>
+                                        <div class="form-reg__item">
+                                            <button type="submit" class="btn btn-primary w-100">Войти</button>
+                                        </div>
+                                        <div class="form-reg__social">
+                                            <p>Войти через социальные сети: </p>
+                                            <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="regis">
+                                    <form class="form-reg  needs-validation" action="">
+                                        <div class="form-group">
+                                            <label>Имя</label>
+                                            <input type="text" class="form-control" placeholder="Ануар">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Фамилия</label>
+                                            <input type="text" class="form-control" placeholder="Рахметов">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Электронный адрес</label>
+                                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                                                   placeholder="anuarkz4545@mail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Пароль</label>
+                                            <input type="password" class="form-control error" placeholder="**********">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Повторите пароль</label>
+                                            <input type="password" class="form-control" placeholder="**********">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Создавая аккаунт, я
+                                                    принимаю
+                                                    <b>Условия<br>
+                                                        использования и Политика
+                                                        конфиденциальности</b> Damutek </label>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">
+                                            Пароль должен состоять минимум
+                                            из 6 символов.
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                                        </div>
+                                        <div class="form-reg__social">
+                                            <p>Войти через социальные сети: </p>
+                                            <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-reg__problem">
                             <a href="#">У Вас возникли проблемы со входом?</a>
