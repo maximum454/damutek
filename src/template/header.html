@@ -22,41 +22,507 @@
             </div>
             <div class="header__registr">
                 <a href="#" class="header__auth popap_box" data-body="reg">Войти</a>
-                <a href="#" class="header__reg popap_box" data-body="auth">Зарегистрироваться</a>
+                <a href="#" class="header__reg" data-toggle="modal" data-target="#ModalAuth">Зарегистрироваться</a>
                 <a href="#" class="header__basket"></a>
             </div>
-            <div class="hidden">
-                <div id="modalbox_auth" class="modal-auth">
-                    <div class="box-modal_close arcticmodal-close"></div>
-                    <div class="modal-auth__logo"><img src="img/modal__logo.png" alt=""></div>
-                    <div class="modal-auth__header">ЗАРЕГИСТРИРОВАТЬСЯ КАК ПРЕПОДАВАТЕЛЬ</div>
+            <!-- Modal -->
+            <div class="modal modal-auth fade" id="ModalAuth" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-auth__logo"><img src="img/modal__logo.png" alt=""></div>
+                        <div class="modal-auth__header">ЗАРЕГИСТРИРОВАТЬСЯ КАК ПРЕПОДАВАТЕЛЬ</div>
+                        <div class="modal-body">
+                            <div class="contant active">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Здравствуйте! Для того, чтобы стать преподавателем на нашем
+                                        ресурсе, делиться своими
+                                        знаниями и иметь дополнительный источник дохода, Вам необходимо пройти несколько
+                                        процедур:</h5>
+                                </div>
+                                <div class="modal-auth__inner">
+                                    <ul class="modal-auth__list">
+                                        <li>
+                                            <div class="modal-auth__num">1</div>
+                                            <p>Ознакомиться с договором<br>
+                                                о сотрудничестве</p>
+                                        </li>
+                                        <li>
+                                            <div class="modal-auth__num">2</div>
+                                            <p>Пройти процедуру регистрации<br>
+                                                аккаунта преподавателя</p>
+                                        </li>
+                                        <li>
+                                            <div class="modal-auth__num">3</div>
+                                            <p>Записать 3-х минутное видео<br>
+                                                о курсе, который вы будете<br>
+                                                преподавать и отправить нам.</p>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary w-100 mb-3 ja-modal-auth">Продолжить</button>
+                                    <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Отмена
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="contant big">
+                                <div class="modal-header">
+                                    <div class="modal-num">1</div>
+                                    <h5 class="modal-title text-center">Пользовательское<br> Соглашение</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        x
+                                    </button>
+                                </div>
+                                <div class="modal-auth__inner">
+                                    <div class="modal-over mb-4">
+                                        <p>These Terms and Conditions of&nbsp;Use (the &laquo;Terms of&nbsp;Use&raquo;)
+                                            apply to&nbsp;the Apple web site located at&nbsp;www.apple.com, and all
+                                            associated sites linked to&nbsp;www.apple.com by&nbsp;Apple, its
+                                            subsidiaries and affiliates, including Apple sites around the world
+                                            (collectively, the &laquo;Site&raquo;). The Site is&nbsp;the property of&nbsp;Apple
+                                            Inc. (&laquo;Apple&raquo;) and its licensors. BY&nbsp;USING THE SITE, YOU
+                                            AGREE TO&nbsp;THESE TERMS OF&nbsp;USE; IF&nbsp;YOU DO&nbsp;NOT AGREE, DO&nbsp;NOT
+                                            USE THE SITE.</p>
+                                        <p>Apple reserves the right, at&nbsp;its sole discretion, to&nbsp;change,
+                                            modify, add or&nbsp;remove portions of&nbsp;these Terms of&nbsp;Use, at&nbsp;any
+                                            time. It&nbsp;is&nbsp;your responsibility to&nbsp;check these Terms of&nbsp;Use
+                                            periodically for changes. Your continued use of&nbsp;the Site following the
+                                            posting of&nbsp;changes will mean that you accept and agree to&nbsp;the
+                                            changes. As&nbsp;long as&nbsp;you comply with these Terms of&nbsp;Use, Apple
+                                            grants you a&nbsp;personal,
+                                            <nobr>non-exclusive</nobr>
+                                            ,
+                                            <nobr>non-transferable</nobr>
+                                            , limited privilege to&nbsp;enter and use the Site.
+                                        </p>
+                                        <p>Content<br/>
+                                            All text, graphics, user interfaces, visual interfaces, photographs,
+                                            trademarks, logos, sounds, music, artwork and computer code (collectively,
+                                            &laquo;Content&raquo;), including but not limited to&nbsp;the design,
+                                            structure, selection, coordination, expression, &laquo;look and feel&raquo;
+                                            and arrangement of</p>
+                                        <p>Except as&nbsp;expressly provided in&nbsp;these Terms of&nbsp;Use, no&nbsp;part
+                                            of&nbsp;the Site and no&nbsp;Content may be&nbsp;copied, reproduced,
+                                            republished, uploaded, posted, publicly displayed, encoded, translated,
+                                            transmitted or&nbsp;distributed in&nbsp;any way (including &laquo;mirroring&raquo;)
+                                            to&nbsp;any other computer, server, Web site or&nbsp;other medium for
+                                            publication or&nbsp;distribution or&nbsp;for any commercial enterprise,
+                                            without Apple’s&nbsp;express prior written consent.</p>
+                                        <p>You may use information on&nbsp;Apple products and services (such as&nbsp;data
+                                            sheets, knowledge base articles, and similar materials) purposely made
+                                            available by&nbsp;Apple for downloading from the Site, provided that you (1)
+                                            not remove any proprietary notice language in&nbsp;all copies of&nbsp;such
+                                            documents, (2) use such information only for your personal,
+                                            <nobr>non-commercial</nobr>
+                                            informational purpose and do&nbsp;not copy or&nbsp;post such information on&nbsp;any
+                                            networked computer or&nbsp;broadcast it&nbsp;in&nbsp;any media, (3) make no&nbsp;modifications
+                                            to&nbsp;any such information, and (4) not make any additional
+                                            representations or&nbsp;warranties relating to&nbsp;such documents.
+                                        </p>
+                                        <p>Your Use of&nbsp;the Site<br/>
+                                            You may not use any
+                                            <nobr>&laquo;deep-link&raquo;</nobr>
+                                            ,
+                                            <nobr>&laquo;page-scrape&raquo;</nobr>
+                                            , &laquo;robot&raquo;, &laquo;spider&raquo; or&nbsp;other automatic device,
+                                            program, algorithm or&nbsp;methodology, or&nbsp;any similar or&nbsp;equivalent
+                                            manual process, to&nbsp;access, acquire, copy or&nbsp;monitor any portion of&nbsp;the
+                                            Site or&nbsp;any Content, or&nbsp;in&nbsp;any way reproduce or&nbsp;circumvent
+                                            the navigational structure or&nbsp;presentation of&nbsp;the Site or&nbsp;any
+                                            Content, to&nbsp;obtain or&nbsp;attempt to&nbsp;obtain any materials,
+                                            documents or&nbsp;information through any means not purposely made available
+                                            through the Site. Apple reserves the right to&nbsp;bar any such activity.
+                                        </p>
+                                        <p>You may not attempt to&nbsp;gain unauthorized access to&nbsp;any portion or&nbsp;feature
+                                            of&nbsp;the Site, or&nbsp;any other systems or&nbsp;networks connected to&nbsp;the
+                                            Site or&nbsp;to&nbsp;any Apple server, or&nbsp;to&nbsp;any of&nbsp;the
+                                            services offered on&nbsp;or&nbsp;through the Site, by&nbsp;hacking, password
+                                            &laquo;mining&raquo; or&nbsp;any other illegitimate means.</p>
+                                        <p>You may not probe, scan or&nbsp;test the vulnerability of&nbsp;the Site or&nbsp;any
+                                            network connected to&nbsp;the Site, nor breach the security or&nbsp;authentication
+                                            measures on&nbsp;the Site or&nbsp;any network connected to&nbsp;the Site.
+                                            You may not reverse
+                                            <nobr>look-up</nobr>
+                                            , trace or&nbsp;seek to&nbsp;trace any information on&nbsp;any other user of&nbsp;or&nbsp;visitor
+                                            to&nbsp;the Site, or&nbsp;any other customer of&nbsp;Apple, including any
+                                            Apple account not owned by&nbsp;you, to&nbsp;its source, or&nbsp;exploit the
+                                            Site or&nbsp;any service or&nbsp;information made available or&nbsp;offered
+                                            by&nbsp;or&nbsp;through the Site, in&nbsp;any way where the purpose is&nbsp;to&nbsp;reveal
+                                            any information, including but not limited to&nbsp;personal identification
+                                            or&nbsp;information, other than your own information, as&nbsp;provided for
+                                            by&nbsp;the Site.
+                                        </p>
+                                        <p>You agree that you will not take any action that imposes an&nbsp;unreasonable
+                                            or&nbsp;disproportionately large load on&nbsp;the infrastructure of&nbsp;the
+                                            Site or&nbsp;Apple’s&nbsp;systems or&nbsp;networks, or&nbsp;any systems or&nbsp;networks
+                                            connected to&nbsp;the Site or&nbsp;to&nbsp;Apple.</p>
+                                        <p>You agree not to&nbsp;use any device, software or&nbsp;routine to&nbsp;interfere
+                                            or&nbsp;attempt to&nbsp;interfere with the proper working of&nbsp;the Site
+                                            or&nbsp;any transaction being conducted on&nbsp;the Site, or&nbsp;with any
+                                            other person’s&nbsp;use of&nbsp;the Site.</p>
+                                        <p>You may not forge headers or&nbsp;otherwise manipulate identifiers in&nbsp;order
+                                            to&nbsp;disguise the origin of&nbsp;any message or&nbsp;transmittal you send
+                                            to&nbsp;Apple on&nbsp;or&nbsp;through the Site or&nbsp;any service offered
+                                            on&nbsp;or&nbsp;through the Site. You may not pretend that you are, or&nbsp;that
+                                            you represent, someone else, or&nbsp;impersonate any other individual or&nbsp;entity.</p>
+                                        <p>You may not use the Site or&nbsp;any Content for any purpose that is&nbsp;unlawful
+                                            or&nbsp;prohibited by&nbsp;these Terms of&nbsp;Use, or&nbsp;to&nbsp;solicit
+                                            the performance of&nbsp;any illegal activity or&nbsp;other activity which
+                                            infringes the rights of&nbsp;Apple or&nbsp;others.</p>
+                                        <p>Purchases; Other Terms and Conditions<br/>
+                                            Additional terms and conditions may apply to&nbsp;purchases of&nbsp;goods or&nbsp;services
+                                            and to&nbsp;specific portions or&nbsp;features of&nbsp;the Site, including
+                                            contests, promotions or&nbsp;other similar features, all of&nbsp;which terms
+                                            are made a&nbsp;part of&nbsp;these Terms of&nbsp;Use by&nbsp;this reference.
+                                            You agree to&nbsp;abide by&nbsp;such other terms and conditions, including
+                                            where applicable representing that you are of&nbsp;sufficient legal age to&nbsp;use
+                                            or&nbsp;participate in&nbsp;such service or&nbsp;feature. If&nbsp;there is&nbsp;a&nbsp;conflict
+                                            between these Terms of&nbsp;Use and the terms posted for or&nbsp;applicable
+                                            to&nbsp;a&nbsp;specific portion of&nbsp;the Site or&nbsp;for any service
+                                            offered on&nbsp;or&nbsp;through the Site, the latter terms shall control
+                                            with respect to&nbsp;your use of&nbsp;that portion of&nbsp;the Site or&nbsp;the
+                                            specific service.</p>
+                                        <p>Apple’s&nbsp;obligations, if&nbsp;any, with regard to&nbsp;its products and
+                                            services are governed solely by&nbsp;the agreements pursuant to&nbsp;which
+                                            they are provided, and nothing on&nbsp;this Site should be&nbsp;construed to&nbsp;alter
+                                            such agreements.</p>
+                                        <p>Apple may make changes to&nbsp;any products or&nbsp;services offered on&nbsp;the
+                                            Site, or&nbsp;to&nbsp;the applicable prices for any such products or&nbsp;services,
+                                            at&nbsp;any time, without notice. The materials on&nbsp;the Site with
+                                            respect to&nbsp;products and services may be&nbsp;out of&nbsp;date, and
+                                            Apple makes no&nbsp;commitment to&nbsp;update the materials on&nbsp;the Site
+                                            with respect to&nbsp;such products and services.</p>
+                                        <p>The following terms also govern and apply to&nbsp;your use of&nbsp;the Site,
+                                            and they are incorporated herein by&nbsp;this reference:</p>
+                                        <p>Guidelines for Using Apple Trademarks & Copyrights<br/>
+                                            Rights & Permissions<br/>
+                                            Trademarks<br/>
+                                            Claims of&nbsp;Copyright Infringement<br/>
+                                            Piracy<br/>
+                                            Counterfeit Products<br/>
+                                            Apple’s&nbsp;Unsolicited Idea Submission Policy<br/>
+                                            Software License Information<br/>
+                                            Legal Contacts<br/>
+                                            Each of&nbsp;these policies may be&nbsp;changed from time to&nbsp;time and
+                                            are effective immediately upon posting such changes on&nbsp;the Site.</p>
+                                        <p>Accounts, Passwords and Security<br/>
+                                            Certain features or&nbsp;services offered on&nbsp;or&nbsp;through the Site
+                                            may require you to&nbsp;open an&nbsp;account (including setting up&nbsp;an&nbsp;Apple
+                                            ID&nbsp;and password). You are entirely responsible for maintaining the
+                                            confidentiality of&nbsp;the information you hold for your account, including
+                                            your password, and for any and all activity that occurs under your account
+                                            as&nbsp;a&nbsp;result of&nbsp;your failing to&nbsp;keep this information
+                                            secure and confidential. You agree to&nbsp;notify Apple immediately of&nbsp;any
+                                            unauthorized use of&nbsp;your account or&nbsp;password, or&nbsp;any other
+                                            breach of&nbsp;security. You may be&nbsp;held liable for losses incurred by&nbsp;Apple
+                                            or&nbsp;any other user of&nbsp;or&nbsp;visitor to&nbsp;the Site due to&nbsp;someone
+                                            else using your Apple ID, password or&nbsp;account as&nbsp;a&nbsp;result of&nbsp;your
+                                            failing to&nbsp;keep your account information secure and confidential.</p>
+                                        <p>You may not use anyone else’s&nbsp;Apple ID, password or&nbsp;account at&nbsp;any
+                                            time without the express permission and consent of&nbsp;the holder of&nbsp;that
+                                            Apple ID, password or&nbsp;account. Apple cannot and will not be&nbsp;liable
+                                            for any loss or&nbsp;damage arising from your failure to&nbsp;comply with
+                                            these obligations.</p>
+                                        <p>Privacy<br/>
+                                            Apple’s&nbsp;Privacy Policy applies to&nbsp;use of&nbsp;this Site, and its
+                                            terms are made a&nbsp;part of&nbsp;these Terms of&nbsp;Use by&nbsp;this
+                                            reference. To&nbsp;view Apple’s&nbsp;Privacy Policy, click here.
+                                            Additionally, by&nbsp;using the Site, you acknowledge and agree that
+                                            Internet transmissions are never completely private or&nbsp;secure. You
+                                            understand that any message or&nbsp;information you send to&nbsp;the Site
+                                            may be&nbsp;read or&nbsp;intercepted by&nbsp;others, even if&nbsp;there is&nbsp;a&nbsp;special
+                                            notice that a&nbsp;particular transmission (for example, credit card
+                                            information) is&nbsp;encrypted.</p>
+                                        <p>Links to&nbsp;Other Sites and to&nbsp;the Apple Site<br/>
+                                            This Site may contain links to&nbsp;other independent
+                                            <nobr>third-party</nobr>
+                                            Web sites (&laquo;Linked Sites&raquo;). These Linked Sites are provided
+                                            solely as&nbsp;a&nbsp;convenience to&nbsp;our visitors. Such Linked Sites
+                                            are not under Apple’s&nbsp;control, and Apple is&nbsp;not responsible for
+                                            and does not endorse the content of&nbsp;such Linked Sites, including any
+                                            information or&nbsp;materials contained on&nbsp;such Linked Sites. You will
+                                            need to&nbsp;make your own independent judgment regarding your interaction
+                                            with these Linked Sites.
+                                        </p>
+                                        <p>Disclaimers<br/>
+                                            APPLE DOES NOT PROMISE THAT THE SITE OR&nbsp;ANY CONTENT, SERVICE OR&nbsp;FEATURE
+                                            OF&nbsp;THE SITE WILL BE&nbsp;<nobr>ERROR-FREE</nobr>
+                                            OR&nbsp;UNINTERRUPTED, OR&nbsp;THAT ANY DEFECTS WILL BE&nbsp;CORRECTED, OR&nbsp;THAT
+                                            YOUR USE OF&nbsp;THE SITE WILL PROVIDE SPECIFIC RESULTS. THE SITE AND ITS
+                                            CONTENT ARE DELIVERED ON&nbsp;AN&nbsp;<nobr>&laquo;AS-IS&raquo;</nobr>
+                                            AND
+                                            <nobr>&laquo;AS-AVAILABLE&raquo;</nobr>
+                                            BASIS. ALL INFORMATION PROVIDED ON&nbsp;THE SITE IS&nbsp;SUBJECT TO&nbsp;CHANGE
+                                            WITHOUT NOTICE. APPLE CANNOT ENSURE THAT ANY FILES OR&nbsp;OTHER DATA YOU
+                                            DOWNLOAD FROM THE SITE WILL BE&nbsp;FREE OF&nbsp;VIRUSES OR&nbsp;CONTAMINATION
+                                            OR&nbsp;DESTRUCTIVE FEATURES. APPLE DISCLAIMS ALL WARRANTIES, EXPRESS OR&nbsp;IMPLIED,
+                                            INCLUDING ANY WARRANTIES OF&nbsp;ACCURACY,
+                                            <nobr>NON-INFRINGEMENT</nobr>
+                                            , MERCHANTABILITY AND FITNESS FOR A&nbsp;PARTICULAR PURPOSE. APPLE DISCLAIMS
+                                            ANY AND ALL LIABILITY FOR THE ACTS, OMISSIONS AND CONDUCT OF&nbsp;ANY THIRD
+                                            PARTIES IN&nbsp;CONNECTION WITH OR&nbsp;RELATED TO&nbsp;YOUR USE OF&nbsp;THE
+                                            SITE AND/OR ANY APPLE SERVICES. YOU ASSUME TOTAL RESPONSIBILITY FOR YOUR USE
+                                            OF&nbsp;THE SITE AND ANY LINKED SITES. YOUR SOLE REMEDY AGAINST APPLE FOR
+                                            DISSATISFACTION WITH THE SITE OR&nbsp;ANY CONTENT IS&nbsp;TO&nbsp;STOP USING
+                                            THE SITE OR&nbsp;ANY SUCH CONTENT. THIS LIMITATION OF&nbsp;RELIEF IS&nbsp;A&nbsp;PART
+                                            OF&nbsp;THE BARGAIN BETWEEN THE PARTIES.
+                                        </p>
+                                        <p>The above disclaimer applies to&nbsp;any damages, liability or&nbsp;injuries
+                                            caused by&nbsp;any failure of&nbsp;performance, error, omission,
+                                            interruption, deletion, defect, delay in&nbsp;operation or&nbsp;transmission,
+                                            computer virus, communication line failure, theft or&nbsp;destruction of&nbsp;or&nbsp;unauthorized
+                                            access to, alteration of, or&nbsp;use, whether for breach of&nbsp;contract,
+                                            tort, negligence or&nbsp;any other cause of&nbsp;action.</p>
+                                        <p>Apple reserves the right to&nbsp;do&nbsp;any of&nbsp;the following, at&nbsp;any
+                                            time, without notice: (1) to&nbsp;modify, suspend or&nbsp;terminate
+                                            operation of&nbsp;or&nbsp;access to&nbsp;the Site, or&nbsp;any portion of&nbsp;the
+                                            Site, for any reason; (2) to&nbsp;modify or&nbsp;change the Site, or&nbsp;any
+                                            portion of&nbsp;the Site, and any applicable policies or&nbsp;terms; and (3)
+                                            to&nbsp;interrupt the operation of&nbsp;the Site, or&nbsp;any portion of&nbsp;the
+                                            Site, as&nbsp;necessary to&nbsp;perform routine or&nbsp;<nobr>non-routine
+                                            </nobr>
+                                            maintenance, error correction, or&nbsp;other changes.
+                                        </p>
+                                        <p>Limitation of&nbsp;Liability<br/>
+                                            Except where prohibited by&nbsp;law, in&nbsp;no&nbsp;event will Apple be&nbsp;liable
+                                            to&nbsp;you for any indirect, consequential, exemplary, incidental or&nbsp;punitive
+                                            damages, including lost profits, even if&nbsp;Apple has been advised of&nbsp;the
+                                            possibility of&nbsp;such damages.</p>
+                                        <p>If, notwithstanding the other provisions of&nbsp;these Terms of&nbsp;Use,
+                                            Apple is&nbsp;found to&nbsp;be&nbsp;liable to&nbsp;you for any damage or&nbsp;loss
+                                            which arises out of&nbsp;or&nbsp;is&nbsp;in&nbsp;any way connected with your
+                                            use of&nbsp;the Site or&nbsp;any Content, Apple’s&nbsp;liability shall in&nbsp;no&nbsp;event
+                                            exceed the greater of&nbsp;(1) the total of&nbsp;any subscription or&nbsp;similar
+                                            fees with respect to&nbsp;any service or&nbsp;feature of&nbsp;or&nbsp;on&nbsp;the
+                                            Site paid in&nbsp;the six months prior to&nbsp;the date of&nbsp;the initial
+                                            claim made against Apple (but not including the purchase price for any Apple
+                                            hardware or&nbsp;software products or&nbsp;any AppleCare or&nbsp;similar
+                                            support program), or&nbsp;(2) US$100.00. Some jurisdictions do&nbsp;not
+                                            allow limitations of&nbsp;liability, so&nbsp;the foregoing limitation may
+                                            not apply to&nbsp;you.</p>
+                                        <p>Indemnity<br/>
+                                            You agree to&nbsp;indemnify and hold Apple, its officers, directors,
+                                            shareholders, predecessors, successors in&nbsp;interest, employees, agents,
+                                            subsidiaries and affiliates, harmless from any demands, loss, liability,
+                                            claims or&nbsp;expenses (including attorneys’ fees), made against Apple by&nbsp;any
+                                            third party due to&nbsp;or&nbsp;arising out of&nbsp;or&nbsp;in&nbsp;connection
+                                            with your use of&nbsp;the Site.</p>
+                                        <p>Violation of&nbsp;These Terms of&nbsp;Use<br/>
+                                            Apple may disclose any information we&nbsp;have about you (including your
+                                            identity) if&nbsp;we&nbsp;determine that such disclosure is&nbsp;necessary
+                                            in&nbsp;connection with any investigation or&nbsp;complaint regarding your
+                                            use of&nbsp;the Site, or&nbsp;to&nbsp;identify, contact or&nbsp;bring legal
+                                            action against someone who may be&nbsp;causing injury to&nbsp;or&nbsp;interference
+                                            with (either intentionally or&nbsp;unintentionally) Apple’s&nbsp;rights or&nbsp;property,
+                                            or&nbsp;the rights or&nbsp;property of&nbsp;visitors to&nbsp;or&nbsp;users
+                                            of&nbsp;the Site, including Apple’s&nbsp;customers. Apple reserves the right
+                                            at&nbsp;all times to&nbsp;disclose any information that Apple deems
+                                            necessary to&nbsp;comply with any applicable law, regulation, legal process
+                                            or&nbsp;governmental request. Apple also may disclose your information when
+                                            Apple determines that applicable law requires or&nbsp;permits such
+                                            disclosure, including exchanging information with other companies and
+                                            organizations for fraud protection purposes.</p>
+                                        <p>You acknowledge and agree that Apple may preserve any transmittal or&nbsp;communication
+                                            by&nbsp;you with Apple through the Site or&nbsp;any service offered on&nbsp;or&nbsp;through
+                                            the Site, and may also disclose such data if&nbsp;required to&nbsp;do&nbsp;so&nbsp;by&nbsp;law
+                                            or&nbsp;Apple determines that such preservation or&nbsp;disclosure is&nbsp;reasonably
+                                            necessary to&nbsp;(1) comply with legal process, (2) enforce these Terms of&nbsp;Use,
+                                            (3) respond to&nbsp;claims that any such data violates the rights of&nbsp;others,
+                                            or&nbsp;(4) protect the rights, property or&nbsp;personal safety of&nbsp;Apple,
+                                            its employees, users of&nbsp;or&nbsp;visitors to&nbsp;the Site, and the
+                                            public.</p>
+                                        <p>You agree that Apple may, in&nbsp;its sole discretion and without prior
+                                            notice, terminate your access to&nbsp;the Site and/or block your future
+                                            access to&nbsp;the Site if&nbsp;we&nbsp;determine that you have violated
+                                            these Terms of&nbsp;Use or&nbsp;other agreements or&nbsp;guidelines which
+                                            may be&nbsp;associated with your use of&nbsp;the Site. You also agree that
+                                            any violation by&nbsp;you of&nbsp;these Terms of&nbsp;Use will constitute an&nbsp;unlawful
+                                            and unfair business practice, and will cause irreparable harm to&nbsp;Apple,
+                                            for which monetary damages would be&nbsp;inadequate, and you consent to&nbsp;Apple
+                                            obtaining any injunctive or&nbsp;equitable relief that Apple deems necessary
+                                            or&nbsp;appropriate in&nbsp;such circumstances. These remedies are in&nbsp;addition
+                                            to&nbsp;any other remedies Apple may have at&nbsp;law
+                                            or&nbsp;in&nbsp;equity.</p>
+                                        <p>You agree that Apple may, in&nbsp;its sole discretion and without prior
+                                            notice, terminate your access to&nbsp;the Site, for cause, which includes
+                                            (but is&nbsp;not limited to) (1) requests by&nbsp;law enforcement or&nbsp;other
+                                            government agencies, (2) a&nbsp;request by&nbsp;you (
+                                            <nobr>self-initiated</nobr>
+                                            account deletions), (3) discontinuance or&nbsp;material modification of&nbsp;the
+                                            Site or&nbsp;any service offered on&nbsp;or&nbsp;through the Site, or&nbsp;(4)
+                                            unexpected technical issues or&nbsp;problems.
+                                        </p>
+                                        <p>If&nbsp;Apple does take any legal action against you as&nbsp;a&nbsp;result of&nbsp;your
+                                            violation of&nbsp;these Terms of&nbsp;Use, Apple will be&nbsp;entitled to&nbsp;recover
+                                            from you, and you agree to&nbsp;pay, all reasonable attorneys’ fees and
+                                            costs of&nbsp;such action, in&nbsp;addition to&nbsp;any other relief granted
+                                            to&nbsp;Apple. You agree that Apple will not be&nbsp;liable to&nbsp;you or&nbsp;to&nbsp;any
+                                            third party for termination of&nbsp;your access to&nbsp;the Site as&nbsp;a&nbsp;result
+                                            of&nbsp;any violation of&nbsp;these Terms of&nbsp;Use.</p>
+                                        <p>Governing Law; Dispute Resolution<br/>
+                                            You agree that all matters relating to&nbsp;your access to&nbsp;or&nbsp;use
+                                            of&nbsp;the Site, including all disputes, will be&nbsp;governed by&nbsp;the
+                                            laws of&nbsp;the United States and by&nbsp;the laws of&nbsp;the State of&nbsp;California
+                                            without regard to&nbsp;its conflicts of&nbsp;laws provisions. You agree to&nbsp;the
+                                            personal jurisdiction by&nbsp;and venue in&nbsp;the state and federal courts
+                                            in&nbsp;Santa Clara County, California, and waive any objection to&nbsp;such
+                                            jurisdiction or&nbsp;venue. The preceding provision regarding venue does not
+                                            apply if&nbsp;you are a&nbsp;consumer based in&nbsp;the European Union. If&nbsp;you
+                                            are a&nbsp;consumer based in&nbsp;the European Union, you may make a&nbsp;claim
+                                            in&nbsp;the courts of&nbsp;the country where you reside. Any claim under
+                                            these Terms of&nbsp;Use must be&nbsp;brought within one (1) year after the
+                                            cause of&nbsp;action arises, or&nbsp;such claim or&nbsp;cause of&nbsp;action
+                                            is&nbsp;barred. Claims made under the separate terms and conditions of&nbsp;purchase
+                                            for goods and services are not subject to&nbsp;this limitation. No&nbsp;recovery
+                                            may be&nbsp;sought or&nbsp;received for damages other than
+                                            <nobr>out-of-pocket</nobr>
+                                            expenses, except that the prevailing party will be&nbsp;entitled to&nbsp;costs
+                                            and attorneys’ fees. In&nbsp;the event of&nbsp;any controversy or&nbsp;dispute
+                                            between Apple and you arising out of&nbsp;or&nbsp;in&nbsp;connection with
+                                            your use of&nbsp;the Site, the parties shall attempt, promptly and in&nbsp;good
+                                            faith, to&nbsp;resolve any such dispute. If&nbsp;we&nbsp;are unable to&nbsp;resolve
+                                            any such dispute within a&nbsp;reasonable time (not to&nbsp;exceed thirty
+                                            (30) days), then either party may submit such controversy or&nbsp;dispute to&nbsp;mediation.
+                                            If&nbsp;the dispute cannot be&nbsp;resolved through mediation, then the
+                                            parties shall be&nbsp;free to&nbsp;pursue any right or&nbsp;remedy available
+                                            to&nbsp;them under applicable law.
+                                        </p>
+                                        <p>Void Where Prohibited<br/>
+                                            Apple administers and operates the www.apple.com Site from its location in&nbsp;Cupertino,
+                                            California USA; other Apple sites may be&nbsp;administered and operated from
+                                            various locations outside the United States. Although the Site is&nbsp;accessible
+                                            worldwide, not all features, products or&nbsp;services discussed,
+                                            referenced, provided or&nbsp;offered through or&nbsp;on&nbsp;the Site are
+                                            available to&nbsp;all persons or&nbsp;in&nbsp;all geographic locations, or&nbsp;appropriate
+                                            or&nbsp;available for use outside the United States. Apple reserves the
+                                            right to&nbsp;limit, in&nbsp;its sole discretion, the provision and quantity
+                                            of&nbsp;any feature, product or&nbsp;service to&nbsp;any person or&nbsp;geographic
+                                            area. Any offer for any feature, product or&nbsp;service made on&nbsp;the
+                                            Site is&nbsp;void where prohibited. If&nbsp;you choose to&nbsp;access the
+                                            Site from outside the United States, you do&nbsp;so&nbsp;on&nbsp;your own
+                                            initiative and you are solely responsible for complying with applicable
+                                            local laws.</p>
+                                        <p>Miscellaneous<br/>
+                                            You may not use or&nbsp;export or&nbsp;<nobr>re-export</nobr>
+                                            any Content or&nbsp;any copy or&nbsp;adaptation of&nbsp;such Content, or&nbsp;any
+                                            product or&nbsp;service offered on&nbsp;the Site, in&nbsp;violation of&nbsp;any
+                                            applicable laws or&nbsp;regulations, including without limitation United
+                                            States export laws and regulations.
+                                        </p>
+                                        <p>If&nbsp;any of&nbsp;the provisions of&nbsp;these Terms of&nbsp;Use are held
+                                            by&nbsp;a&nbsp;court or&nbsp;other tribunal of&nbsp;competent jurisdiction
+                                            to&nbsp;be&nbsp;void or&nbsp;unenforceable, such provisions shall be&nbsp;limited
+                                            or&nbsp;eliminated to&nbsp;the minimum extent necessary and replaced with a&nbsp;valid
+                                            provision that best embodies the intent of&nbsp;these Terms of&nbsp;Use, so&nbsp;that
+                                            these Terms of&nbsp;Use shall remain in&nbsp;full force and effect. These
+                                            Terms of&nbsp;Use constitute the entire agreement between you and Apple with
+                                            regard to&nbsp;your use of&nbsp;the Site, and any and all other written or&nbsp;oral
+                                            agreements or&nbsp;understandings previously existing between you and Apple
+                                            with respect to&nbsp;such use are hereby superseded and cancelled. Other
+                                            than as&nbsp;provided in&nbsp;a&nbsp;purchase agreement you enter into with
+                                            Apple, Apple will not accept any
+                                            <nobr>counter-offers</nobr>
+                                            to&nbsp;these Terms of&nbsp;Use, and all such offers are hereby
+                                            categorically rejected. Apple’s&nbsp;failure to&nbsp;insist on&nbsp;or&nbsp;enforce
+                                            strict performance of&nbsp;these Terms of&nbsp;Use shall not be&nbsp;construed
+                                            as&nbsp;a&nbsp;waiver by&nbsp;Apple of&nbsp;any provision or&nbsp;any right
+                                            it&nbsp;has to&nbsp;enforce these Terms of&nbsp;Use, nor shall any course of&nbsp;conduct
+                                            between Apple and you or&nbsp;any other party be&nbsp;deemed to&nbsp;modify
+                                            any provision of&nbsp;these Terms of&nbsp;Use. These Terms of&nbsp;Use shall
+                                            not be&nbsp;interpreted or&nbsp;construed to&nbsp;confer any rights or&nbsp;remedies
+                                            on&nbsp;any third parties.
+                                        </p>
+                                        <p>Apple provides access to&nbsp;Apple international data and, therefore, may
+                                            contain references or&nbsp;cross references to&nbsp;Apple products, programs
+                                            and services that are not announced in&nbsp;your country. Such reference
+                                            does not imply that Apple in&nbsp;your country intends to&nbsp;announce such
+                                            products, programs or&nbsp;services.</p>
+                                        <p>Feedback and Information<br/>
+                                            Any feedback you provide at&nbsp;this site shall be&nbsp;deemed to&nbsp;be&nbsp;<nobr>
+                                                non-confidential
+                                            </nobr>
+                                            . Apple shall be&nbsp;free to&nbsp;use such information on&nbsp;an&nbsp;unrestricted
+                                            basis.
+                                        </p>
+                                        <p>The information contained in&nbsp;this web site is&nbsp;subject to&nbsp;change
+                                            without notice.<br/>
+                                            Copyright &copy; 1997&ndash;2009 Apple Inc. All rights reserved.<br/>
+                                            Apple Inc., One Apple Park Way, Cupertino, CA&nbsp;95014, USA.</p>
+                                        <p>Updated by&nbsp;The Apple Legal Team on&nbsp;Nov. 20, 2009</p>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
 
-                    <div class="modal-auth__anons">
-                        Здравствуйте! Для того, чтобы стать преподавателем на нашем ресурсе, делиться своими
-                        знаниями и иметь дополнительный источник дохода, Вам необходимо пройти несколько процедур:
-                    </div>
-                    <div class="modal-auth__inner">
-                        <div class="modal-auth__item">
-                            <div class="modal-auth__num">1</div>
-                            <p>Ознакомиться с договором<br>
-                                о сотрудничестве</p>
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label" for="">Я принимаю условия
+                                                договора</label>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-primary w-100  ja-modal-auth">Продолжить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contant">
+                                <div class="modal-header">
+                                    <div class="modal-num">2</div>
+                                    <h5 class="modal-title text-center">Пройти процедуру регистрации<br> аккаунта
+                                        преподавателя</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-auth__inner">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="">Имя</label>
+                                            <input type="text" class="form-control" placeholder="Ануар">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Фамилия</label>
+                                            <input type="text" class="form-control" placeholder="Рахметов">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Специализация</label>
+                                            <input type="text" class="form-control" placeholder="Программист">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Ученая степень</label>
+                                            <input type="text" class="form-control" placeholder="Магистр">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Электронный адрес</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="anuarkz4545@mail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Мобильный телефон</label>
+                                            <input type="email" class="form-control"  placeholder="+7 (___) ___-__-__">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="****">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="exampleInputPassword2">Повторите пароль</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="****">
+                                            <small class="form-text">Создавая аккаунт, я принимаю <b>Условия
+                                                использования и Политика конфиденциальности</b> Damutek</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary w-100">Продолжить</button>
+                                        </div>
+                                        <div class="form-reg__social">
+                                            <p>Войти через социальные сети: </p>
+                                            <a href="#"><img src="img/form-reg__vk.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__fb.png" alt=""></a>
+                                            <a href="#"><img src="img/form-reg__gm.png" alt=""></a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-auth__item">
-                            <div class="modal-auth__num">2</div>
-                            <p>Пройти процедуру регистрации<br>
-                                аккаунта преподавателя</p>
-                        </div>
-                        <div class="modal-auth__item">
-                            <div class="modal-auth__num">3</div>
-                            <p>Записать 3-х минутное видео<br>
-                                о курсе, который вы будете<br>
-                                преподавать и отправить нам.</p>
-                        </div>
-                        <a href="#" class="modal-auth__btn">Продолжить</a>
-                        <a href="#" class="modal-auth__btn modal-auth__btn--gray">Отмена</a>
                     </div>
                 </div>
+            </div>
 
+            <div class="hidden">
                 <div id="modalbox_reg" class="modal-reg">
                     <div class="box-modal_close arcticmodal-close"></div>
                     <div class="modal-reg__logo"><img src="img/modal__logo.png" alt=""></div>

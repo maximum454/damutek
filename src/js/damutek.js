@@ -127,6 +127,9 @@ $(function () {
     $('.js-vacancy-btn').on('click', function () {
         $(this).parents('.vacancy__contant').find('.vacancy__form').toggle();
     });
-
+    
+    $('.ja-modal-auth').on('click', function () {
+        $(this).parents('.contant').removeClass('active').next().addClass('active');
+    })
 });
 
