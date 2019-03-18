@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Возврат денежных средств</title>
+    <link rel="stylesheet" href="css/damutek.css">
+</head>
+<body>
+<div class="wrp">
+    //= template/header-student.html
+    <main class="main">
+        <div class="support">
+            <form>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="return" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Не понравился курс</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="return" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Не соответствует заявленному формату</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="return" id="exampleCheck3">
+                    <label class="form-check-label" for="exampleCheck3">Другое</label>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="alert alert-dark" role="alert">
+                <p>Внимание! Если вы&nbsp;не&nbsp;довольны приобретенным курсом, Damutek для большинства курсов предлагает возможность отказа от&nbsp;курса в&nbsp;течение 14 дней после покупки курса.</p>
+                <p>В&nbsp;целях безопасности возврат денежных средств будет осуществлен в&nbsp;течение 44 дней на&nbsp;платежную карту, по&nbsp;которой производилась оплата.</p>s is a dark alert—check it out!
+            </div>
+        </div>
+        <hr class="main__hr">
+    </main>
+    //= template/footer.html
+</div>
+<script src="js/damutek.js"></script>
+
+</body>
+</html>
