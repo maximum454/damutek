@@ -1,42 +1,97 @@
 <div class="header-business">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-lg-2">
-                <a href="#" class="header__logo"><img src="img/logo-damutek.svg" alt=""></a>
-            </div>
-            <div class="col-lg-2">
-                <a href="#" class="header__category"><nobr>Каталог курсов</nobr></a>
-            </div>
-            <div class="col-lg-2">
-                <div class="dropdown show">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Тарифный план
-                    </a>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand header__logo" href="#"><img src="img/logo-damutek.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                        <a class="dropdown-item" href="#">Корпоративный </a>
-                        <a class="dropdown-item" href="#">Команда</a>
-                        <a class="dropdown-item" href="#">Гибкий</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><nobr>Каталог курсов</nobr></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Тарифный план
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Корпоративный </a>
+                            <a class="dropdown-item" href="#">Команда</a>
+                            <a class="dropdown-item" href="#">Гибкий</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Тарифный план
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="#">Бизнес-кейсы</a>
+                            <a class="dropdown-item" href="#">Электронные книги</a>
+                            <a class="dropdown-item" href="#">Вебинары</a>
+                        </div>
+                    </li>
+                </ul>
+                <div  class="form-inline my-2 my-lg-0">
+                    <a href="#" class="header-business__login">Войти</a>
+                    <a href="#" class="btn-proceesed" data-toggle="modal" data-target="#ModalAuth">Приступить</a>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalAuth" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="img/logo-bussines.png" alt="">
+                            <h5>Пожалуйста оставьте нам свои контактные<br> данные, мы свяжемся с Вами в ближайшее время</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="">Имя</label>
+                                    <input type="text" class="form-control" placeholder="Ануар">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Фамилия</label>
+                                    <input type="text" class="form-control" placeholder="Рахметов">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Электронный адрес</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="anuarkz4545@mail.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Должность</label>
+                                    <input type="text" class="form-control" placeholder="Ваша должность">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Компания</label>
+                                    <input type="text" class="form-control" placeholder="Название комапнии">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Номер телефона*</label>
+                                    <div class="d-flex">
+                                        <div class="form-num flex-shrink-0">+7</div>
+                                        <input type="email" class="form-control" placeholder="7хх-ххх-хх-хх">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="">Ссылка на сайт вашей компании</label>
+                                    <input type="text" class="form-control" placeholder="Пример: www.damutek.kz">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary w-100">Связаться с нами</button>
+                                </div>
+                                <div class="form-group d-flex">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label for="" class="form-check-label">Направляя заявку, я принимаю <b>Условия использования и Политика конфиденциальности</b> Damutek</label>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="dropdown show">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Прочие услуги
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                        <a class="dropdown-item" href="#">Бизнес-кейсы</a>
-                        <a class="dropdown-item" href="#">Электронные книги</a>
-                        <a class="dropdown-item" href="#">Вебинары</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <a href="#" class="header-business__login">Войти</a>
-                <a href="#" class="btn-proceesed">Приступить</a>
-            </div>
-        </div>
+        </nav>
     </div>
 </div>

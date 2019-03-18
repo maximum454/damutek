@@ -1,0 +1,59 @@
+.modal {
+	.jq-checkbox,
+	.jq-radio{
+		margin-top: 3px;
+		flex-shrink: 0;
+	}
+	.form-check-label{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.form-num{
+		width: 44px;
+		background-color: #487fc7;
+		color:#fff;
+		line-height: 48px;
+		text-align: center;
+	}
+	.modal-body{
+		padding: 0;
+	}
+	.modal-content{
+		background-color: #fff;
+		border: none;
+		border-radius: 0;
+		outline: 0;
+		padding: 20px 60px;
+	}
+	.modal-header {
+		display: block;
+		text-align: center;
+		border: 0;
+		h5{
+			font-size: 14px;
+			font-weight: bold;
+			margin: 20px 0 10px;
+		}
+	}
+
+	.btn {
+		height: 48px;
+		border: 0;
+		border-radius: 0;
+		background-image: none;
+	}
+
+	.btn-primary {
+		background-color: #487fc7;
+	}
+
+	.btn-secondary {
+		background-color: #b1b1b1;
+	}
+
+	.form-control {
+		height: 50px;
+		border-radius: 0;
+		border: 1px solid #487fc7;
+	}
+}
