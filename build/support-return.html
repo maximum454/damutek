@@ -616,26 +616,57 @@
         </div>
     </div>
     <main class="main">
-        <div class="support">
-            <nav class="navbar navbar-expand-lg dark">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Возврат денежных средств</a>
-                            </li>
-                        </ul>
-
+        <div class="main__count">
+            <div class="container">
+                <div class="row">
+                    <div class="account-menu">
+                        <div class="account-menu__item"><span>Возврат денежных средств</span></div>
                     </div>
                 </div>
-            </nav>
-            <div class="alert"></div>
+            </div>
+        </div>
+        <div class="support mt-5">
+            <div class="container">
+                <div class="row">
+                <form class="support-return mb-5">
+                    <div class="support-return__header">Пожалуйста, укажите причину отказа от прохождения курса:</div>
+                    <div class="support-return__inner">
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-input" name="return" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Не понравился курс</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-input" name="return" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">Не соответствует заявленному
+                                формату</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-input" name="return" id="exampleCheck3">
+                            <label class="form-check-label" for="exampleCheck3">Другое</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Напишите вашу причину отказа от прохождения курса"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-dark mb-4" role="alert">
+                        <p>Внимание! Если вы&nbsp;не&nbsp;довольны приобретенным курсом, Damutek для большинства курсов
+                            предлагает возможность отказа от&nbsp;курса в&nbsp;течение 14 дней после покупки курса.</p>
+                        <p>В&nbsp;целях безопасности возврат денежных средств будет осуществлен в&nbsp;течение 30 дней
+                            на&nbsp;платежную карту, по&nbsp;которой производилась оплата.</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between no-gutter">
+                        <div class="col-4">
+                        <button type="button" class="btn btn-dark w-100">Назад к содержанию курса</button>
+                        </div>
+                        <div class="col-4">
+                        <button type="submit" class="btn btn-secondary w-100">Отправить заявку</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
         <hr class="main__hr">
     </main>
